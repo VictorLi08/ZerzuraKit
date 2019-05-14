@@ -1,6 +1,9 @@
 # ZerzuraKit
 ZerzuraKit is a new iOS/macOS framework that bundles a diverse set of functions into a streamlined and easy-to-use package. Build your apps faster with an extensive library of prebuilt methods that allow you to conveniently manage everything from core services to a range of third-party frameworks with an intuitive and lightweight syntax.
 
+Completed Features:
+- Color module, allowing comprehensive management of colors within sRGB, HSV, Hex, and CMYK color spaces.
+
 Currently working on:
 - iOS
   - Simplifying Foundation functionality (i.e. Date/Time, Location Services, etc.).
