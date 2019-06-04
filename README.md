@@ -5,7 +5,7 @@ Did I mention that it's fully documented in markdown?
 
 Completed Features:
 - ZColor, allowing color management across sRGB, HSV, Hex, and CMYK color spaces.
-- ZLocation, allowing for storage of CLLocations and address decoding.
+- ZLocation, allowing for address decoding and storage of CLLocation data.
 - ZDate, allowing for quick generation/localization of date strings.
 - ZTime, allowing for quick generation/localization of time strings.
 - ZTimer, a more comprehensive timer.
