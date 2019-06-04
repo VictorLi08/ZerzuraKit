@@ -4,12 +4,13 @@ ZerzuraKit is a new iOS/macOS framework that bundles a diverse set of methods an
 Did I mention that it's fully documented in markdown?
 
 Completed Features:
-- ZColor, allowing color management across sRGB, HSV, Hex, and CMYK color spaces.
-- ZLocation, allowing for address decoding and storage of CLLocation data.
-- ZDate, allowing for quick generation/localization of date strings.
-- ZTime, allowing for quick generation/localization of time strings.
-- ZTimer, a more comprehensive timer.
-- UIKit extensions that simplify animations for UIViews, image tinting for UIImageViews, and text/color changes for UITextViews.
+- Foundation
+  - ZColor: allows for management of color values and UIColor/NSColor across sRGB, HSV, Hex, and CMYK color spaces.
+  - ZLocation: allows for address decoding and storage of CLLocation data.
+  - ZDate: allows for quick generation/localization of date strings.
+  - ZTime: allows for quick generation/localization of time strings.
+  - ZTimer: a more comprehensive timer based on the Foundation Timer.
+  - UIKit extensions for UIView/UIImageView/UITextView: simplifies animations for UIViews, image tinting for UIImageViews, and text/color changes for UITextViews.
 
 Currently working on:
 - ZSystem, a module that simplifies interactions with device properties and interfaces.
