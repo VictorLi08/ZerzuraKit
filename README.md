@@ -4,16 +4,20 @@ ZerzuraKit is a new universal framework for iOS and macOS that bundles a diverse
 Completed Modules:
 - ZColor: allows for management of color values and UIColor/NSColor across sRGB, HSV, Hex, and CMYK color spaces.
 - ZLocation: allows for address decoding and storage of CLLocation data.
-- ZDate: allows for quick generation/localization of date strings.
 - ZTime: allows for quick generation/localization of time strings.
-- UIKit extensions that:
-  - Adds methods for animations for UIViews,
+- ZImage: allows for image compression, resize, etc.
+- UIKit and Cocoa extensions that:
+  - Adds methods for animations for UIViews/NSViews,
   - Enables image tinting for UIImageViews, and
-  - Simplifies text/color changes for UITextViews.
+  - Simplifies text/color changes for UITextViews/NSTextViews.
 
 Modules In Development:
 - ZSystem: simplifies interactions with device properties and interfaces.
-- ZImage: allows for management of PNG/JPEG image assets, including image conversion, compression, resize, etc.
-- ZDB: further abstracts SQLite3 using SQLite.swift.
+- ZNum/ZTemp: convenient methods for interacting with binary numbers and temperature values.
 
-Alpha release tentatively scheduled for __July 8th, 2019__.
+Milestone Pack 1 released __July 8th, 2019__. Release will occur in a series of stages:
+- Milestone Packs (1 - 3)
+- Alpha
+- Beta Previews (1 - 3)
+- Gold Master
+- 1.0
