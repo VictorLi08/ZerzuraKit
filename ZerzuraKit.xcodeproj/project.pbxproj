@@ -24,17 +24,17 @@
 		D59CBC9E22D408E9009ED4C2 /* ZerzuraKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D59CBCAD22D40A82009ED4C2 /* ZerzuraKit_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D59CBCAB22D40A82009ED4C2 /* ZerzuraKit_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D59CBCBC22D40B06009ED4C2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* Location.swift */; };
-		D59CBCBD22D40B06009ED4C2 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB722D40B06009ED4C2 /* System.swift */; };
-		D59CBCBE22D40B06009ED4C2 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB822D40B06009ED4C2 /* Images.swift */; };
+		D59CBCBD22D40B06009ED4C2 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB722D40B06009ED4C2 /* Device.swift */; };
 		D59CBCBF22D40B06009ED4C2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB922D40B06009ED4C2 /* Colors.swift */; };
 		D59CBCC022D40B06009ED4C2 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* DateTime.swift */; };
 		D59CBCC122D40B06009ED4C2 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBB22D40B06009ED4C2 /* Numbers.swift */; };
 		D59CBCC922D40B11009ED4C2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC322D40B11009ED4C2 /* Location.swift */; };
 		D59CBCCA22D40B11009ED4C2 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC422D40B11009ED4C2 /* System.swift */; };
-		D59CBCCB22D40B11009ED4C2 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC522D40B11009ED4C2 /* Images.swift */; };
+		D59CBCCB22D40B11009ED4C2 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC522D40B11009ED4C2 /* UI.swift */; };
 		D59CBCCC22D40B11009ED4C2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC622D40B11009ED4C2 /* Colors.swift */; };
 		D59CBCCD22D40B11009ED4C2 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC722D40B11009ED4C2 /* DateTime.swift */; };
 		D59CBCCE22D40B11009ED4C2 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC822D40B11009ED4C2 /* Numbers.swift */; };
+		D5DD662022DAC6EE00B5DAD3 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD661F22DAC6EE00B5DAD3 /* UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,17 +45,17 @@
 		D59CBCAB22D40A82009ED4C2 /* ZerzuraKit_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZerzuraKit_macOS.h; sourceTree = "<group>"; };
 		D59CBCAC22D40A82009ED4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D59CBCB622D40B06009ED4C2 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		D59CBCB722D40B06009ED4C2 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
-		D59CBCB822D40B06009ED4C2 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		D59CBCB722D40B06009ED4C2 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		D59CBCB922D40B06009ED4C2 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D59CBCBA22D40B06009ED4C2 /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		D59CBCBB22D40B06009ED4C2 /* Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
 		D59CBCC322D40B11009ED4C2 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D59CBCC422D40B11009ED4C2 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
-		D59CBCC522D40B11009ED4C2 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		D59CBCC522D40B11009ED4C2 /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
 		D59CBCC622D40B11009ED4C2 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D59CBCC722D40B11009ED4C2 /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		D59CBCC822D40B11009ED4C2 /* Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		D5DD661F22DAC6EE00B5DAD3 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +118,11 @@
 			isa = PBXGroup;
 			children = (
 				D59CBCB622D40B06009ED4C2 /* Location.swift */,
-				D59CBCB722D40B06009ED4C2 /* System.swift */,
-				D59CBCB822D40B06009ED4C2 /* Images.swift */,
+				D59CBCB722D40B06009ED4C2 /* Device.swift */,
 				D59CBCB922D40B06009ED4C2 /* Colors.swift */,
 				D59CBCBA22D40B06009ED4C2 /* DateTime.swift */,
 				D59CBCBB22D40B06009ED4C2 /* Numbers.swift */,
+				D5DD661F22DAC6EE00B5DAD3 /* UI.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -132,7 +132,7 @@
 			children = (
 				D59CBCC322D40B11009ED4C2 /* Location.swift */,
 				D59CBCC422D40B11009ED4C2 /* System.swift */,
-				D59CBCC522D40B11009ED4C2 /* Images.swift */,
+				D59CBCC522D40B11009ED4C2 /* UI.swift */,
 				D59CBCC622D40B11009ED4C2 /* Colors.swift */,
 				D59CBCC722D40B11009ED4C2 /* DateTime.swift */,
 				D59CBCC822D40B11009ED4C2 /* Numbers.swift */,
@@ -280,11 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D59CBCBD22D40B06009ED4C2 /* System.swift in Sources */,
+				D59CBCBD22D40B06009ED4C2 /* Device.swift in Sources */,
+				D5DD662022DAC6EE00B5DAD3 /* UI.swift in Sources */,
 				D59CBCBF22D40B06009ED4C2 /* Colors.swift in Sources */,
 				D59CBCC122D40B06009ED4C2 /* Numbers.swift in Sources */,
 				D59CBCC022D40B06009ED4C2 /* DateTime.swift in Sources */,
-				D59CBCBE22D40B06009ED4C2 /* Images.swift in Sources */,
 				D59CBCBC22D40B06009ED4C2 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +297,7 @@
 				D59CBCCC22D40B11009ED4C2 /* Colors.swift in Sources */,
 				D59CBCCE22D40B11009ED4C2 /* Numbers.swift in Sources */,
 				D59CBCCD22D40B11009ED4C2 /* DateTime.swift in Sources */,
-				D59CBCCB22D40B11009ED4C2 /* Images.swift in Sources */,
+				D59CBCCB22D40B11009ED4C2 /* UI.swift in Sources */,
 				D59CBCC922D40B11009ED4C2 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

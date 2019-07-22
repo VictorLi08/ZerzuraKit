@@ -190,27 +190,20 @@ public class ZTemp {
     }
     
     /**
-     Takes a Double temperature value from a given temperature scale and converts it into a String using the temperature scale preferred by the device's current region.
+     Converts a Double temperature value into a String localized to the device's current region.
      
      - Parameter value: The numeric temperature value to be converted.
-     - Parameter from: A ZTemp.TempScale value representing the temperature scale of the supplied value.
+     - Parameter from: A UnitTemperature value representing the temperature scale of the supplied value.
      
      - Returns: A String representing the localized temperature.
      */
-    public static func localizedString(value: Double, from: ZTemp.TempScale) -> String {
-        var convertFrom = UnitTemperature.kelvin
-        if from == .fahrenheit {
-            convertFrom = UnitTemperature.fahrenheit
-        }
-        else if from == .celsius {
-            convertFrom = UnitTemperature.celsius
-        }
-        
+    public static func localizedString(value: Double, from: UnitTemperature) -> String {
         let tempFormatter = MeasurementFormatter()
         let numFormatter = NumberFormatter()
         numFormatter.maximumFractionDigits = 1
+        tempFormatter.locale = ZSystem.locale()
         tempFormatter.numberFormatter = numFormatter
         
-        return String(tempFormatter.string(from: Measurement(value: value, unit: convertFrom)))
+        return String(tempFormatter.string(from: Measurement(value: value, unit: from)))
     }
 }

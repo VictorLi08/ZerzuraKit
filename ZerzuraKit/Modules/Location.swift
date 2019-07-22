@@ -6,7 +6,6 @@
 //  Copyright © 2019 Mesarthim. All rights reserved.
 //
 
-import Foundation
 import CoreLocation
 
 /**
@@ -28,6 +27,9 @@ public class ZLocation {
     
     /// The isoCountryCode of the stored location.
     public private(set) var countryCode : String = ""
+    
+    /// The postal code of the stored location.
+    public private(set) var postalCode : String = ""
     
     /// The house number of the stored location. Not all locations retrieved by CoreLocation have an associated house number.
     public private(set) var houseNumber : String = ""
@@ -149,6 +151,7 @@ public class ZLocation {
                 self.province = String(placemark?.administrativeArea ?? "")
                 self.country = String(placemark?.country ?? "")
                 self.countryCode = String(placemark?.isoCountryCode ?? "")
+                self.postalCode = String(placemark?.postalCode ?? "")
                 
                 self.houseNumber = String(placemark?.subThoroughfare ?? "")
                 self.street = String(placemark?.thoroughfare ?? "")
@@ -175,5 +178,28 @@ public class ZLocation {
     */
     public func getLocation() -> CLLocation {
         return CLLocation.init(latitude: self.latitude, longitude: self.longitude)
+    }
+    
+    /**
+     Experimental: generates a postal-appropriate address string using the stored location data.
+     
+     - Returns: A String formatted for print for the location stored.
+     */
+    public func string(withPlaceAndArea: Bool, cityAndProvince: Bool) -> String {
+        let address1 = self.houseNumber + " " + self.street
+        let address2 = self.placeName + ", " + self.area
+        
+        var address3 = ""
+        if cityAndProvince {
+            address3 = self.city + ", " + self.province + " " + self.postalCode
+        } else {
+            address3 = self.city + " " + self.postalCode
+        }
+        
+        if withPlaceAndArea {
+            return address1 + "\n" + address2 + "\n" + address3 + "\n" + self.country
+        } else {
+            return address1 + "\n" + address3 + "\n" + self.country
+        }
     }
 }

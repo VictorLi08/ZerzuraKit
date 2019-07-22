@@ -6,7 +6,6 @@
 //  Copyright © 2019 Mesarthim. All rights reserved.
 //
 
-import Foundation
 import CoreLocation
 
 /**
