@@ -21,23 +21,27 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		D52ECFAA22F4DCCB005AE4DE /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* System.swift */; };
+		D52ECFAC22F4DD07005AE4DE /* Cocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52ECFAB22F4DD07005AE4DE /* Cocoa.swift */; };
 		D59CBC9E22D408E9009ED4C2 /* ZerzuraKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D59CBCAD22D40A82009ED4C2 /* ZerzuraKit_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D59CBCAB22D40A82009ED4C2 /* ZerzuraKit_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D59CBCBC22D40B06009ED4C2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* Location.swift */; };
 		D59CBCBD22D40B06009ED4C2 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB722D40B06009ED4C2 /* Device.swift */; };
-		D59CBCBF22D40B06009ED4C2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB922D40B06009ED4C2 /* Colors.swift */; };
-		D59CBCC022D40B06009ED4C2 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* DateTime.swift */; };
+		D59CBCBF22D40B06009ED4C2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB922D40B06009ED4C2 /* UIColor.swift */; };
+		D59CBCC022D40B06009ED4C2 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* Time.swift */; };
 		D59CBCC122D40B06009ED4C2 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBB22D40B06009ED4C2 /* Numbers.swift */; };
-		D59CBCC922D40B11009ED4C2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC322D40B11009ED4C2 /* Location.swift */; };
-		D59CBCCA22D40B11009ED4C2 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC422D40B11009ED4C2 /* System.swift */; };
-		D59CBCCB22D40B11009ED4C2 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC522D40B11009ED4C2 /* UI.swift */; };
-		D59CBCCC22D40B11009ED4C2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC622D40B11009ED4C2 /* Colors.swift */; };
-		D59CBCCD22D40B11009ED4C2 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC722D40B11009ED4C2 /* DateTime.swift */; };
-		D59CBCCE22D40B11009ED4C2 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC822D40B11009ED4C2 /* Numbers.swift */; };
-		D5DD662022DAC6EE00B5DAD3 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD661F22DAC6EE00B5DAD3 /* UI.swift */; };
+		D59CBCCB22D40B11009ED4C2 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC522D40B11009ED4C2 /* Images.swift */; };
+		D59CBCCC22D40B11009ED4C2 /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC622D40B11009ED4C2 /* NSColor.swift */; };
+		D5DA152A22F4DA5F00EB4C3F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA152922F4DA5F00EB4C3F /* Images.swift */; };
+		D5DA152E22F4DB1600EB4C3F /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* Time.swift */; };
+		D5DA152F22F4DB1800EB4C3F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* Location.swift */; };
+		D5DA153122F4DB4F00EB4C3F /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* System.swift */; };
+		D5DA153222F4DB9500EB4C3F /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBB22D40B06009ED4C2 /* Numbers.swift */; };
+		D5DD662022DAC6EE00B5DAD3 /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD661F22DAC6EE00B5DAD3 /* UIKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D52ECFAB22F4DD07005AE4DE /* Cocoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocoa.swift; sourceTree = "<group>"; };
 		D59CBC9922D408E9009ED4C2 /* ZerzuraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZerzuraKit.h; sourceTree = "<group>"; };
 		D59CBC9D22D408E9009ED4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,16 +50,15 @@
 		D59CBCAC22D40A82009ED4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D59CBCB622D40B06009ED4C2 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D59CBCB722D40B06009ED4C2 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		D59CBCB922D40B06009ED4C2 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		D59CBCBA22D40B06009ED4C2 /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
+		D59CBCB922D40B06009ED4C2 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		D59CBCBA22D40B06009ED4C2 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		D59CBCBB22D40B06009ED4C2 /* Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
-		D59CBCC322D40B11009ED4C2 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		D59CBCC422D40B11009ED4C2 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
-		D59CBCC522D40B11009ED4C2 /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
-		D59CBCC622D40B11009ED4C2 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		D59CBCC722D40B11009ED4C2 /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
-		D59CBCC822D40B11009ED4C2 /* Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
-		D5DD661F22DAC6EE00B5DAD3 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		D59CBCC522D40B11009ED4C2 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		D59CBCC622D40B11009ED4C2 /* NSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
+		D5DA152722F4DA0A00EB4C3F /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		D5DA152922F4DA5F00EB4C3F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		D5DA153022F4DB4F00EB4C3F /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		D5DD661F22DAC6EE00B5DAD3 /* UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		D59CBC8F22D408E9009ED4C2 = {
 			isa = PBXGroup;
 			children = (
+				D5DA152B22F4DAC900EB4C3F /* Shared */,
 				D59CBC9B22D408E9009ED4C2 /* ZerzuraKit */,
 				D59CBCAA22D40A82009ED4C2 /* ZerzuraKit-macOS */,
 				D59CBC9A22D408E9009ED4C2 /* Products */,
@@ -97,7 +101,7 @@
 		D59CBC9B22D408E9009ED4C2 /* ZerzuraKit */ = {
 			isa = PBXGroup;
 			children = (
-				D59CBCB522D40B06009ED4C2 /* Modules */,
+				D59CBCB522D40B06009ED4C2 /* Source */,
 				D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */,
 				D59CBC9D22D408E9009ED4C2 /* Info.plist */,
 			);
@@ -107,37 +111,84 @@
 		D59CBCAA22D40A82009ED4C2 /* ZerzuraKit-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				D59CBCC222D40B11009ED4C2 /* Modules */,
+				D59CBCC222D40B11009ED4C2 /* Source */,
 				D59CBCAB22D40A82009ED4C2 /* ZerzuraKit_macOS.h */,
 				D59CBCAC22D40A82009ED4C2 /* Info.plist */,
 			);
 			path = "ZerzuraKit-macOS";
 			sourceTree = "<group>";
 		};
-		D59CBCB522D40B06009ED4C2 /* Modules */ = {
+		D59CBCB522D40B06009ED4C2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D5DA152522F4D97600EB4C3F /* UI */,
+				D5DA152622F4D98600EB4C3F /* Services */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D59CBCC222D40B11009ED4C2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D5DA153322F4DBFB00EB4C3F /* UI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D5DA152522F4D97600EB4C3F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D5DD661F22DAC6EE00B5DAD3 /* UIKit.swift */,
+				D59CBCB922D40B06009ED4C2 /* UIColor.swift */,
+				D5DA152922F4DA5F00EB4C3F /* Images.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D5DA152622F4D98600EB4C3F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D59CBCB722D40B06009ED4C2 /* Device.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D5DA152B22F4DAC900EB4C3F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D5DA152722F4DA0A00EB4C3F /* Misc.swift */,
+				D5DA152C22F4DACD00EB4C3F /* Source */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D5DA152C22F4DACD00EB4C3F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D59CBCBB22D40B06009ED4C2 /* Numbers.swift */,
+				D5DA152D22F4DAE500EB4C3F /* UI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D5DA152D22F4DAE500EB4C3F /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				D59CBCB622D40B06009ED4C2 /* Location.swift */,
-				D59CBCB722D40B06009ED4C2 /* Device.swift */,
-				D59CBCB922D40B06009ED4C2 /* Colors.swift */,
-				D59CBCBA22D40B06009ED4C2 /* DateTime.swift */,
-				D59CBCBB22D40B06009ED4C2 /* Numbers.swift */,
-				D5DD661F22DAC6EE00B5DAD3 /* UI.swift */,
+				D59CBCBA22D40B06009ED4C2 /* Time.swift */,
+				D5DA153022F4DB4F00EB4C3F /* System.swift */,
 			);
-			path = Modules;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		D59CBCC222D40B11009ED4C2 /* Modules */ = {
+		D5DA153322F4DBFB00EB4C3F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D59CBCC322D40B11009ED4C2 /* Location.swift */,
-				D59CBCC422D40B11009ED4C2 /* System.swift */,
-				D59CBCC522D40B11009ED4C2 /* UI.swift */,
-				D59CBCC622D40B11009ED4C2 /* Colors.swift */,
-				D59CBCC722D40B11009ED4C2 /* DateTime.swift */,
-				D59CBCC822D40B11009ED4C2 /* Numbers.swift */,
+				D59CBCC522D40B11009ED4C2 /* Images.swift */,
+				D59CBCC622D40B11009ED4C2 /* NSColor.swift */,
+				D52ECFAB22F4DD07005AE4DE /* Cocoa.swift */,
 			);
-			path = Modules;
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,12 +331,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D59CBCBD22D40B06009ED4C2 /* Device.swift in Sources */,
-				D5DD662022DAC6EE00B5DAD3 /* UI.swift in Sources */,
-				D59CBCBF22D40B06009ED4C2 /* Colors.swift in Sources */,
-				D59CBCC122D40B06009ED4C2 /* Numbers.swift in Sources */,
-				D59CBCC022D40B06009ED4C2 /* DateTime.swift in Sources */,
+				D5DA153122F4DB4F00EB4C3F /* System.swift in Sources */,
+				D5DD662022DAC6EE00B5DAD3 /* UIKit.swift in Sources */,
+				D5DA152A22F4DA5F00EB4C3F /* Images.swift in Sources */,
+				D59CBCBF22D40B06009ED4C2 /* UIColor.swift in Sources */,
 				D59CBCBC22D40B06009ED4C2 /* Location.swift in Sources */,
+				D59CBCC122D40B06009ED4C2 /* Numbers.swift in Sources */,
+				D59CBCC022D40B06009ED4C2 /* Time.swift in Sources */,
+				D59CBCBD22D40B06009ED4C2 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,12 +346,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D59CBCCA22D40B11009ED4C2 /* System.swift in Sources */,
-				D59CBCCC22D40B11009ED4C2 /* Colors.swift in Sources */,
-				D59CBCCE22D40B11009ED4C2 /* Numbers.swift in Sources */,
-				D59CBCCD22D40B11009ED4C2 /* DateTime.swift in Sources */,
-				D59CBCCB22D40B11009ED4C2 /* UI.swift in Sources */,
-				D59CBCC922D40B11009ED4C2 /* Location.swift in Sources */,
+				D52ECFAA22F4DCCB005AE4DE /* System.swift in Sources */,
+				D59CBCCB22D40B11009ED4C2 /* Images.swift in Sources */,
+				D59CBCCC22D40B11009ED4C2 /* NSColor.swift in Sources */,
+				D52ECFAC22F4DD07005AE4DE /* Cocoa.swift in Sources */,
+				D5DA152F22F4DB1800EB4C3F /* Location.swift in Sources */,
+				D5DA153222F4DB9500EB4C3F /* Numbers.swift in Sources */,
+				D5DA152E22F4DB1600EB4C3F /* Time.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +491,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ZerzuraKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,6 +518,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ZerzuraKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

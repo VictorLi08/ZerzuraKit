@@ -12,22 +12,7 @@ import UIKit
 /**
  A class that interacts with device settings and device properties.
  */
-public class ZDevice {
-    /// A path to the device's base document directory.
-    public let documentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
-    
-    /**
-     Gets a locale based on the device's first preferred language.
-     
-     - Returns: A Locale() object.
-     */
-    public static func preferredLocale() -> Locale {
-        guard let localeID = Locale.preferredLanguages.first else {
-            return Locale.current
-        }
-        return Locale(identifier: localeID)
-    }
-    
+extension ZDevice {
     /**
      Checks to see if the current device supports a certain version of iOS.
      

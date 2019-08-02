@@ -1,42 +1,12 @@
 //
-//  Numbers.swift
+//  Misc.swift
 //  ZerzuraKit
 //
-//  Created by Victor Li on 5/21/19.
+//  Created by Victor Li on 2019/8/2.
 //  Copyright © 2019 Mesarthim. All rights reserved.
 //
 
 import Foundation
-
-/**
- An object that contains methods for numbers.
- */
-public class ZNum {
-    /**
-     An object that contains methods for binary numbers.
-     */
-    public class binary {
-        /**
-         Pads a String with leading zeroes up to the given length.
-
-         ### Usage Example ###
-         ````
-         let c = ZNum.binary.pad(binaryString: "00001", length: 10)
-         print(c)       // 0000000001
-         ````
-         */
-        public static func pad(binaryString: String, length: Int) -> String {
-            var newString = binaryString
- 
-            if length > binaryString.count {
-                for _ in 0 ... length {
-                    newString = "0" + newString
-                }
-            }
-            return newString
-        }
-    }
-}
 
 /**
  A temperature object used to represent a temperature across multiple temperature scales.
@@ -190,7 +160,7 @@ public class ZTemp {
     }
     
     /**
-     Converts a Double temperature value into a String localized to the device's current region.
+     Converts a Double temperature value into a String localized to the device's preferred locale.
      
      - Parameter value: The numeric temperature value to be converted.
      - Parameter from: A UnitTemperature value representing the temperature scale of the supplied value.
@@ -201,7 +171,7 @@ public class ZTemp {
         let tempFormatter = MeasurementFormatter()
         let numFormatter = NumberFormatter()
         numFormatter.maximumFractionDigits = 1
-        tempFormatter.locale = ZSystem.locale()
+        tempFormatter.locale = ZDevice.preferredLocale()
         tempFormatter.numberFormatter = numFormatter
         
         return String(tempFormatter.string(from: Measurement(value: value, unit: from)))

@@ -24,14 +24,6 @@ extension NSImage {
             return NSImage(data: imageData!)
         }
     }
-    
-    /**
-     Tints the contained image using the tint color specified.
-     */
-    public func withTintColor(_ color: NSColor) {
-        self.contentTintColor = color
-        self.image = self.image!.withRenderingMode(NSImage.RenderingMode.alwaysTemplate)
-    }
 }
 
 extension NSImageView {

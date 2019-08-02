@@ -9,7 +9,7 @@
 import CoreLocation
 
 /**
- An object used to decode address from structs used by CoreLocation.
+ An object used to decode addresses from CoreLocation data structures.
  
  ### Notes ###
  * Location Services must be enabled.
@@ -181,9 +181,9 @@ public class ZLocation {
     }
     
     /**
-     Experimental: generates a postal-appropriate address string using the stored location data.
+     Experimental: generates a searchable address string using the stored location data.
      
-     - Returns: A String formatted for print for the location stored.
+     - Returns: A formatted String for the location stored.
      */
     public func string(withPlaceAndArea: Bool, cityAndProvince: Bool) -> String {
         let address1 = self.houseNumber + " " + self.street
