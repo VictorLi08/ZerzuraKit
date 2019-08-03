@@ -16,7 +16,7 @@ extension NSImage {
      
      - Returns: A NSImage compressed to the quality desired.
      */
-    public func compressed(quality: Float) -> NSImage? {
+    func compressed(quality: Float) -> NSImage? {
         if quality > 1.0 || quality < 0.0 {
             return self
         } else {
@@ -34,7 +34,7 @@ extension NSImageView {
      - Parameter width: The desired width (in pixels) of the resulting NSImageView.
      - Parameter height: The desired height (in pixels) of the resulting NSImageView.
      */
-    public func withSize(width: CGFloat?, height: CGFloat?) {
+    func withSize(width: CGFloat?, height: CGFloat?) {
         let dimensionsGiven = width != nil || height != nil
         let imageSet = self.image != nil
         if dimensionsGiven && imageSet {
@@ -73,7 +73,7 @@ extension NSImageView {
      
      - Parameter frame: A CGSize frame representing the desired dimensions of the NSImageView.
      */
-    public func resize(frame: NSRect) {
+    func resize(frame: NSRect) {
         
         // redraw the image
         let newImage = NSImage(size: frame.size)
@@ -86,5 +86,23 @@ extension NSImageView {
         newImage.size = frame.size
         
         self.image = newImage       // set the image
+    }
+    
+    /**
+     Fetches an image asynchronously and displays it in the image view.
+     
+     - Parameter: An HTTP URL to the desired image resource.
+     */
+    func imageFromURL(_ url: URL) {
+        DispatchQueue.global(qos: .utility).async {
+            let fetchURLSession = URLSession(configuration: .default)
+            let fetchTask = fetchURLSession.dataTask(with: url) { (data, response, error) in
+                if let _ = response, let imageData = data, error == nil {
+                    let newImage = NSImage(data: imageData)
+                    self.image = newImage
+                }
+            }
+            fetchTask.resume()
+        }
     }
 }

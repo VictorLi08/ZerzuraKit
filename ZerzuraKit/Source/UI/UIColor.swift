@@ -11,37 +11,37 @@ import UIKit
 /**
  An object that stores and handles conversion of color and opacity (alpha value) data.
 */
-public class ZColor {
+class ZColor {
     /// The stored color value in hexidecimal.
-    public private(set) var hexString : String = "000000"
+    private(set) var hexString : String = "000000"
     /// The stored color's alpha (opacity) value.
-    public private(set) var a : Double = 1.0
+    private(set) var a : Double = 1.0
     
     /// The stored color's red color component (sRGB).
-    public private(set) var r : Double = 0.0
+    private(set) var r : Double = 0.0
     /// The stored color's green color component (sRGB).
-    public private(set) var g : Double = 0.0
+    private(set) var g : Double = 0.0
     /// The stored color's blue color component (sRGB).
-    public private(set) var b : Double = 0.0
+    private(set) var b : Double = 0.0
     /// The stored color's hue (HSV).
-    public private(set) var h : Double = 0.0
+    private(set) var h : Double = 0.0
     /// The stored color's saturation (HSV).
-    public private(set) var s : Double = 0.0
+    private(set) var s : Double = 0.0
     /// The stored color's value or lightness (HSV).
-    public private(set) var v : Double = 0.0
+    private(set) var v : Double = 0.0
     /// The stored color's cyan color component (CMYK).
-    public private(set) var c : Double = 0.0
+    private(set) var c : Double = 0.0
     /// The stored color's magenta color component (CMYK).
-    public private(set) var m : Double = 0.0
+    private(set) var m : Double = 0.0
     /// The stored color's yellow color component (CMYK).
-    public private(set) var y : Double = 0.0
+    private(set) var y : Double = 0.0
     /// The stored color's key color component (CMYK).
-    public private(set) var k : Double = 1.0
+    private(set) var k : Double = 1.0
     
     /**
      All supported color spaces.
     */
-    public enum ColorSpace {
+    enum ColorSpace {
         /// sRGB (Adobe) color space.
         case srgb
         /// Hexidecimal color value.
@@ -56,7 +56,7 @@ public class ZColor {
     /**
      Instantiates a ZColor holding #000000 (black) at 1.0 alpha (fully opaque).
     */
-    public init() {
+    init() {
         
     }
     
@@ -68,7 +68,7 @@ public class ZColor {
      - Parameter b: Blue (0.0 to 255.0).
      - Parameter a: An optional alpha value (0.0 to 1.0). If none is provided, alpha defaults to 1.
     */
-    public init(r: Double, g: Double, b: Double, a: Double? = 0.0) {
+    init(r: Double, g: Double, b: Double, a: Double? = 0.0) {
         self.set(r: r, g: g, b: b, a: a)
     }
     
@@ -80,7 +80,7 @@ public class ZColor {
      - Parameter v: Value or Lightness (0.0 to 100.0).
      - Parameter a: An optional alpha value (0.0 to 1.0). If none is provided, alpha defaults to 1.
     */
-    public init(h: Double, s: Double, v: Double, a: Double? = 0.0) {
+    init(h: Double, s: Double, v: Double, a: Double? = 0.0) {
         self.set(h: h, s: s, v: v, a: a)
     }
     
@@ -93,7 +93,7 @@ public class ZColor {
      - Parameter k: Key (0.0 to 100.0).
      - Parameter a: An optional alpha value (0.0 to 1.0). If none is provided, alpha defaults to 1.
     */
-    public init(c: Double, m: Double, y: Double, k: Double, a: Double? = 0.0) {
+    init(c: Double, m: Double, y: Double, k: Double, a: Double? = 0.0) {
         self.set(c: c, m: m, y: y, k: k, a: a)
     }
     
@@ -108,7 +108,7 @@ public class ZColor {
      - Parameter hexString: A string containing a hexidecimal color value without the pound sign. Case does not matter.
      - Parameter a: An optional alpha value (0.0 to 1.0). If none is provided, alpha defaults to 1.
     */
-    public init(hexString: String, a: Double? = 0.0) {
+    init(hexString: String, a: Double? = 0.0) {
         self.set(hexString: hexString, a: a)
     }
     
@@ -121,7 +121,7 @@ public class ZColor {
      - Parameter b: Blue (0.0 to 255.0).
      - Parameter a: An optional alpha value (0.0 to 1.0). If none is provided, alpha defaults to 1.
     */
-    public func set(r: Double, g: Double, b: Double, a: Double? = 0.0) {
+    func set(r: Double, g: Double, b: Double, a: Double? = 0.0) {
         self.a = a!
         
         // SRGB
@@ -155,7 +155,7 @@ public class ZColor {
      - Parameter v: Value or Lightness (0.0 to 100.0).
      - Parameter a: An optional alpha value (0.0 to 1.0). If none is provided, alpha defaults to 1.
     */
-    public func set(h: Double, s: Double, v: Double, a: Double? = 0.0) {
+    func set(h: Double, s: Double, v: Double, a: Double? = 0.0) {
         self.a = a!
         
         // HSV
@@ -190,7 +190,7 @@ public class ZColor {
      - Parameter k: Key (0.0 to 100.0).
      - Parameter a: An optional alpha value (0.0 to 1.0). If none is provided, alpha defaults to 1.
     */
-    public func set(c: Double, m: Double, y: Double, k: Double, a: Double? = 0.0) {
+    func set(c: Double, m: Double, y: Double, k: Double, a: Double? = 0.0) {
         self.a = a!
         
         // CMYK
@@ -227,7 +227,7 @@ public class ZColor {
      - Parameter hexString: A string containing a hexidecimal color value without the pound sign. Case does not matter.
      - Parameter a: An optional alpha value (0.0 to 1.0). If none is provided, alpha defaults to 1.
     */
-    public func set(hexString: String, a: Double? = 0.0) {
+    func set(hexString: String, a: Double? = 0.0) {
         self.a = a!
         
         // HEX
@@ -259,7 +259,7 @@ public class ZColor {
  
      - Returns: A UIColor initialized using stored color values.
     */
-    public func get() -> UIColor {
+    func get() -> UIColor {
         return ZColor.hex(hexString: self.hexString, a: self.a)
     }
     
@@ -268,7 +268,7 @@ public class ZColor {
      
      - Returns: True or False if the two objects hold the same color.
     */
-    public static func ==(lhs: ZColor, rhs: ZColor) -> Bool {
+    static func ==(lhs: ZColor, rhs: ZColor) -> Bool {
         return (lhs.r == rhs.r) && (lhs.g == rhs.g) && (lhs.b == rhs.b) && (lhs.h == rhs.h) && (lhs.s == rhs.s) && (lhs.v == rhs.v) && (lhs.c == rhs.c) && (lhs.m == rhs.m) && (lhs.y == rhs.y) && (lhs.k == rhs.k) && (lhs.hexString == rhs.hexString) && (lhs.a == rhs.a)
     }
     
@@ -283,7 +283,7 @@ public class ZColor {
  
      - Returns: A UIColor initialized using the provided component values.
     */
-    public static func srgb(r: Double, g: Double, b: Double, a: Double? = 0.0) -> UIColor {
+    static func srgb(r: Double, g: Double, b: Double, a: Double? = 0.0) -> UIColor {
         return UIColor.init(red: CGFloat(Double(r)/256.0), green: CGFloat(Double(g)/256.0), blue: CGFloat(Double(b)/256.0), alpha: CGFloat(Double(a!)))
     }
     
@@ -297,7 +297,7 @@ public class ZColor {
      
      - Returns: A UIColor initialized using the provided component values.
     */
-    public static func hsv(h: Double, s: Double, v: Double, a: Double? = 0.0) -> UIColor {
+    static func hsv(h: Double, s: Double, v: Double, a: Double? = 0.0) -> UIColor {
         return UIColor.init(hue: CGFloat(Double(h).truncatingRemainder(dividingBy: 360.0)), saturation: CGFloat(Double(s).truncatingRemainder(dividingBy: 360.0)), brightness: CGFloat(Double(v).truncatingRemainder(dividingBy: 360.0)), alpha: CGFloat(Double(a!)))
     }
     
@@ -312,7 +312,7 @@ public class ZColor {
      
      - Returns: A UIColor initialized using the provided component values.
     */
-    public static func cmyk(c: Double, m: Double, y: Double, k: Double) -> UIColor {
+    static func cmyk(c: Double, m: Double, y: Double, k: Double) -> UIColor {
         return UIColor.white
     }
     
@@ -324,7 +324,7 @@ public class ZColor {
      
      - Returns: A UIColor initialized using the provided hex value.
     */
-    public static func hex(hexString: String, a: Double? = 0.0) -> UIColor {
+    static func hex(hexString: String, a: Double? = 0.0) -> UIColor {
         let h = convert(values: [hexString], from: .hex, to: .srgb)
         
         // use srgb to return the correct color
@@ -340,7 +340,7 @@ public class ZColor {
  
      - Returns: A list of color component values in String format.
     */
-    public static func convert(values: [String], from: ZColor.ColorSpace, to: ZColor.ColorSpace) -> [String] {
+    static func convert(values: [String], from: ZColor.ColorSpace, to: ZColor.ColorSpace) -> [String] {
         let inputValues = self.copyInputs(values: values, from: from)
         
         // begin conversion

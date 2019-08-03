@@ -9,7 +9,7 @@
 /**
  A class that defines methods used for converting time values to user-readable strings.
 */
-public class ZTime {
+class ZTime {
     /**
      Generates a localized time string, i.e. 12:00 PM.
      
@@ -20,7 +20,7 @@ public class ZTime {
      
      - Returns: A String representing the current time.
      */
-    public static func string(style: DateFormatter.Style, withSeconds: Bool? = false, date: Date? = Date(), locale: Locale? = ZDevice.preferredLocale()) -> String {
+    static func string(style: DateFormatter.Style, withSeconds: Bool? = false, date: Date? = Date(), locale: Locale? = ZDevice.preferredLocale()) -> String {
         let df = DateFormatter()
         
         df.locale = locale
@@ -38,7 +38,7 @@ public class ZTime {
      
      - Returns: A localized string representing the time between dates (e.g. 3 days; 10 hours; 30 minutes; etc.).
     */
-    public static func string(from: Date, to: Date) -> String? {
+    static func string(from: Date, to: Date) -> String? {
         // prepare the time formatter based on locale
         var systemCalendar = Calendar.current
         systemCalendar.locale = ZDevice.preferredLocale()
@@ -84,7 +84,7 @@ public class ZTime {
      
      - Returns: A localized string representing the time between dates (e.g. 3 days; 10 hours; 30 minutes; etc.).
      */
-    public static func string(timeInterval: TimeInterval) -> String? {
+    static func string(timeInterval: TimeInterval) -> String? {
         // prepare abstract dates
         let to = Date()
         let from = Date(timeIntervalSince1970: to.timeIntervalSince1970 - timeInterval)
@@ -100,7 +100,7 @@ public class ZTime {
      
      - Returns: A String representing the current time in UTC.
      */
-    public static func utc(style: DateFormatter.Style, date: Date? = Date()) -> String {
+    static func utc(style: DateFormatter.Style, date: Date? = Date()) -> String {
         let df = DateFormatter()
         df.locale = ZDevice.preferredLocale()
         df.timeZone = NSTimeZone(name: "UTC")! as TimeZone
@@ -116,7 +116,7 @@ public class ZTime {
      
      - Returns: A dictionary containing time component integer values keyed by their component type.
     */
-    public static func components(date: Date? = Date()) -> [Calendar.Component:Int] {
+    static func components(date: Date? = Date()) -> [Calendar.Component:Int] {
         let componentTypes: [Calendar.Component] = [.era, .year, .quarter, .month, .weekOfYear, .weekOfMonth, .weekday, .hour, .minute, .second, .nanosecond]
         var componentValues: [Calendar.Component:Int] = [:]
         for c in componentTypes {

@@ -34,7 +34,7 @@ extension UIImageView {
      - Parameter width: The desired width (in pixels) of the resulting UIImageView.
      - Parameter height: The desired height (in pixels) of the resulting UIImageView.
      */
-    public func withSize(width: CGFloat?, height: CGFloat?) {
+    func withSize(width: CGFloat?, height: CGFloat?) {
         let dimensionsGiven = width != nil || height != nil
         let imageSet = self.image != nil
         if dimensionsGiven && imageSet {
@@ -63,7 +63,7 @@ extension UIImageView {
      
      - Parameter size: A CGSize representing the desired dimensions of the UIImageView.
      */
-    public func withSize(size: CGSize) {
+    func withSize(size: CGSize) {
         let renderer = UIGraphicsImageRenderer(size: size)
         let resizedImage = renderer.image { _ in
             self.image!.draw(in: CGRect.init(origin: CGPoint.zero, size: size))        // render the new image
@@ -78,7 +78,7 @@ extension UIImageView {
      - Parameter image: A UIImage that will be inserted into the view.
      - Parameter duration: The amount of time desired for each animation.
      */
-    public func reshow(image: UIImage, duration: TimeInterval) {
+    func reshow(image: UIImage, duration: TimeInterval) {
         DispatchQueue.main.async {      // fade out
             UIView.animate(withDuration: duration, animations: {
                 self.alpha = 0.0
@@ -89,6 +89,24 @@ extension UIImageView {
                     self.alpha = 1.0
                 })
             }
+        }
+    }
+    
+    /**
+     Fetches an image asynchronously and displays it in the image view.
+     
+     - Parameter: An HTTP URL to the desired image resource.
+     */
+    func imageFromURL(_ url: URL) {
+        DispatchQueue.global(qos: .utility).async {
+            let fetchURLSession = URLSession(configuration: .default)
+            let fetchTask = fetchURLSession.dataTask(with: url) { (data, response, error) in
+                if let _ = response, let imageData = data, error == nil {
+                    let newImage = UIImage(data: imageData)
+                    self.image = newImage
+                }
+            }
+            fetchTask.resume()
         }
     }
 }
