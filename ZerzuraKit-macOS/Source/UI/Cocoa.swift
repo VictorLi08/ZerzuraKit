@@ -34,6 +34,30 @@ extension NSView {
 //            }
 //        }
 //    }
+    
+    func topLeftCorner() -> NSPoint {
+        let positionX = self.center.x - (self.frame.width/2.0)
+        let positionY = self.center.y - (self.frame.height/2.0)
+        return NSPoint(x: positionX, y: positionY)
+    }
+    
+    func topRightCorner() -> NSPoint {
+        let positionX = self.center.x + (self.frame.width/2.0)
+        let positionY = self.center.y - (self.frame.height/2.0)
+        return NSPoint(x: positionX, y: positionY)
+    }
+    
+    func bottomLeftCorner() -> NSPoint {
+        let positionX = self.center.x - (self.frame.width/2.0)
+        let positionY = self.center.y + (self.frame.height/2.0)
+        return NSPoint(x: positionX, y: positionY)
+    }
+    
+    func bottomRightCorner() -> NSPoint {
+        let positionX = self.center.x + (self.frame.width/2.0)
+        let positionY = self.center.y + (self.frame.height/2.0)
+        return NSPoint(x: positionX, y: positionY)
+    }
 }
 
 extension NSTextView {

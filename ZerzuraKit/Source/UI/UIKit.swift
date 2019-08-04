@@ -21,18 +21,28 @@ extension UIView {
         })
     }
     
-    func flash(cycles: Int) {
-        if self.alpha < 1.0 {
-            for _ in 1 ... cycles {
-                self.fadeIn(duration: 0.1)
-                self.fadeOut(duration: 0.1)
-            }
-        } else {
-            for _ in 1 ... cycles {
-                self.fadeOut(duration: 0.1)
-                self.fadeIn(duration: 0.1)
-            }
-        }
+    func topLeftCorner() -> CGPoint {
+        let positionX = self.center.x - (self.frame.width/2.0)
+        let positionY = self.center.y - (self.frame.height/2.0)
+        return CGPoint(x: positionX, y: positionY)
+    }
+    
+    func topRightCorner() -> CGPoint {
+        let positionX = self.center.x + (self.frame.width/2.0)
+        let positionY = self.center.y - (self.frame.height/2.0)
+        return CGPoint(x: positionX, y: positionY)
+    }
+    
+    func bottomLeftCorner() -> CGPoint {
+        let positionX = self.center.x - (self.frame.width/2.0)
+        let positionY = self.center.y + (self.frame.height/2.0)
+        return CGPoint(x: positionX, y: positionY)
+    }
+    
+    func bottomRightCorner() -> CGPoint {
+        let positionX = self.center.x + (self.frame.width/2.0)
+        let positionY = self.center.y + (self.frame.height/2.0)
+        return CGPoint(x: positionX, y: positionY)
     }
 }
 
