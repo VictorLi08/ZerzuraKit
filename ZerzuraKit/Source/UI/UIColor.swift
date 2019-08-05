@@ -130,21 +130,30 @@ class ZColor {
         self.b = b
         
         // HEX
-        let hexed = ZColor.convert(values: [String(r), String(g), String(b)], from: .srgb, to: .hex)
-        self.hexString = hexed.first!
-        
-        // CMYK
-        let cmyked = ZColor.convert(values: [String(r), String(g), String(b)], from: .srgb, to: .cmyk)
-        self.c = Double(cmyked[0])!
-        self.m = Double(cmyked[1])!
-        self.y = Double(cmyked[2])!
-        self.k = Double(cmyked[3])!
+        let hex = ZColor.convert(values: [String(r), String(g), String(b)], from: .srgb, to: .hex)
+        guard let hs = hex.first else {
+            return
+        }
+        self.hexString = hs
         
         // HSV
-        let hsved = ZColor.convert(values: [String(r), String(g), String(b)], from: .srgb, to: .hsv)
-        self.h = Double(hsved[0])!
-        self.s = Double(hsved[1])!
-        self.v = Double(hsved[2])!
+        let hsv = ZColor.convert(values: [String(r), String(g), String(b)], from: .srgb, to: .hsv)
+        guard let h = Double(hsv[0]), let s = Double(hsv[1]), let v = Double(hsv[2]) else {
+            return
+        }
+        self.h = h
+        self.s = s
+        self.v = v
+        
+        // CMYK
+        let cmyk = ZColor.convert(values: [String(r), String(g), String(b)], from: .srgb, to: .cmyk)
+        guard let c = Double(cmyk[0]), let m = Double(cmyk[1]), let y = Double(cmyk[2]), let k = Double(cmyk[3]) else {
+            return
+        }
+        self.c = c
+        self.m = m
+        self.y = y
+        self.k = k
     }
     
     /**
@@ -158,27 +167,36 @@ class ZColor {
     func set(h: Double, s: Double, v: Double, a: Double? = 0.0) {
         self.a = a!
         
+        // SRGB
+        let rgb = ZColor.convert(values: [String(h), String(s), String(v)], from: .hsv, to: .srgb)
+        guard let r = Double(rgb[0]), let g = Double(rgb[1]), let b = Double(rgb[2]) else {
+            return
+        }
+        self.r = r
+        self.g = g
+        self.b = b
+        
+        // HEX
+        let hex = ZColor.convert(values: [String(h), String(s), String(v)], from: .hsv, to: .hex)
+        guard let hs = hex.first else {
+            return
+        }
+        self.hexString = hs
+        
         // HSV
         self.h = h
         self.s = s
         self.v = v
         
-        // SRGB
-        let srgbed = ZColor.convert(values: [String(h), String(s), String(v)], from: .hsv, to: .srgb)
-        self.r = Double(srgbed[0])!
-        self.g = Double(srgbed[1])!
-        self.b = Double(srgbed[2])!
-        
-        // HEX
-        let hexed = ZColor.convert(values: [String(h), String(s), String(v)], from: .hsv, to: .hex)
-        self.hexString = hexed.first!
-        
         // CMYK
-        let cmyked = ZColor.convert(values: [String(h), String(s), String(v)], from: .hsv, to: .cmyk)
-        self.c = Double(cmyked[0])!
-        self.m = Double(cmyked[1])!
-        self.y = Double(cmyked[2])!
-        self.k = Double(cmyked[3])!
+        let cmyk = ZColor.convert(values: [String(h), String(s), String(v)], from: .hsv, to: .cmyk)
+        guard let c = Double(cmyk[0]), let m = Double(cmyk[1]), let y = Double(cmyk[2]), let k = Double(cmyk[3]) else {
+            return
+        }
+        self.c = c
+        self.m = m
+        self.y = y
+        self.k = k
     }
     
     /**
@@ -193,27 +211,36 @@ class ZColor {
     func set(c: Double, m: Double, y: Double, k: Double, a: Double? = 0.0) {
         self.a = a!
         
+        // SRGB
+        let rgb = ZColor.convert(values: [String(c), String(m), String(y), String(k)], from: .cmyk, to: .srgb)
+        guard let r = Double(rgb[0]), let g = Double(rgb[1]), let b = Double(rgb[2]) else {
+            return
+        }
+        self.r = r
+        self.g = g
+        self.b = b
+        
+        // HEX
+        let hex = ZColor.convert(values: [String(c), String(m), String(y), String(k)], from: .cmyk, to: .hex)
+        guard let hs = hex.first else {
+            return
+        }
+        self.hexString = hs
+        
+        // HSV
+        let hsv = ZColor.convert(values: [String(c), String(m), String(y), String(k)], from: .cmyk, to: .hsv)
+        guard let h = Double(hsv[0]), let s = Double(hsv[1]), let v = Double(hsv[2]) else {
+            return
+        }
+        self.h = h
+        self.s = s
+        self.v = v
+        
         // CMYK
         self.c = c
         self.m = m
         self.y = y
         self.k = k
-        
-        // SRGB
-        let srgbed = ZColor.convert(values: [String(c), String(m), String(y), String(k)], from: .cmyk, to: .srgb)
-        self.r = Double(srgbed[0])!
-        self.g = Double(srgbed[1])!
-        self.b = Double(srgbed[2])!
-        
-        // HEX
-        let hexed = ZColor.convert(values: [String(c), String(m), String(y), String(k)], from: .cmyk, to: .hex)
-        self.hexString = hexed.first!
-        
-        // HSV
-        let hsved = ZColor.convert(values: [String(c), String(m), String(y), String(k)], from: .cmyk, to: .hsv)
-        self.h = Double(hsved[0])!
-        self.s = Double(hsved[1])!
-        self.v = Double(hsved[2])!
     }
     
     /**
@@ -230,27 +257,36 @@ class ZColor {
     func set(hexString: String, a: Double? = 0.0) {
         self.a = a!
         
+        // SRGB
+        let rgb = ZColor.convert(values: [hexString], from: .hex, to: .srgb)
+        guard let r = Double(rgb[0]), let g = Double(rgb[1]), let b = Double(rgb[2]) else {
+            return
+        }
+        self.r = r
+        self.g = g
+        self.b = b
+        
         // HEX
         self.hexString = ZColor.cleanHexString(hexString: hexString)
         
-        // SRGB
-        let srgbed = ZColor.convert(values: [hexString], from: .hex, to: .srgb)
-        self.r = Double(srgbed[0])!
-        self.g = Double(srgbed[1])!
-        self.b = Double(srgbed[2])!
-        
         // HSV
-        let hsved = ZColor.convert(values: [hexString], from: .hex, to: .hsv)
-        self.h = Double(hsved[0])!
-        self.s = Double(hsved[1])!
-        self.v = Double(hsved[2])!
+        let hsv = ZColor.convert(values: [hexString], from: .hex, to: .hsv)
+        guard let h = Double(hsv[0]), let s = Double(hsv[1]), let v = Double(hsv[2]) else {
+            return
+        }
+        self.h = h
+        self.s = s
+        self.v = v
         
         // CMYK
-        let cmyked = ZColor.convert(values: [hexString], from: .hex, to: .cmyk)
-        self.c = Double(cmyked[0])!
-        self.m = Double(cmyked[1])!
-        self.y = Double(cmyked[2])!
-        self.k = Double(cmyked[3])!
+        let cmyk = ZColor.convert(values: [hexString], from: .hex, to: .cmyk)
+        guard let c = Double(cmyk[0]), let m = Double(cmyk[1]), let y = Double(cmyk[2]), let k = Double(cmyk[3]) else {
+            return
+        }
+        self.c = c
+        self.m = m
+        self.y = y
+        self.k = k
     }
     
     // instanced functions
@@ -269,7 +305,10 @@ class ZColor {
      - Returns: True or False if the two objects hold the same color.
     */
     static func ==(lhs: ZColor, rhs: ZColor) -> Bool {
-        return (lhs.r == rhs.r) && (lhs.g == rhs.g) && (lhs.b == rhs.b) && (lhs.h == rhs.h) && (lhs.s == rhs.s) && (lhs.v == rhs.v) && (lhs.c == rhs.c) && (lhs.m == rhs.m) && (lhs.y == rhs.y) && (lhs.k == rhs.k) && (lhs.hexString == rhs.hexString) && (lhs.a == rhs.a)
+        return (lhs.r == rhs.r) && (lhs.g == rhs.g) && (lhs.b == rhs.b) &&
+            (lhs.h == rhs.h) && (lhs.s == rhs.s) && (lhs.v == rhs.v) &&
+            (lhs.c == rhs.c) && (lhs.m == rhs.m) && (lhs.y == rhs.y) &&
+            (lhs.k == rhs.k) && (lhs.hexString == rhs.hexString) && (lhs.a == rhs.a)
     }
     
     // static main color return functions for iOS
@@ -284,7 +323,7 @@ class ZColor {
      - Returns: A UIColor initialized using the provided component values.
     */
     static func srgb(r: Double, g: Double, b: Double, a: Double? = 0.0) -> UIColor {
-        return UIColor.init(red: CGFloat(Double(r)/256.0), green: CGFloat(Double(g)/256.0), blue: CGFloat(Double(b)/256.0), alpha: CGFloat(Double(a!)))
+        return UIColor(red: CGFloat(Double(r)/256.0), green: CGFloat(Double(g)/256.0), blue: CGFloat(Double(b)/256.0), alpha: CGFloat(Double(a!)))
     }
     
     /**
@@ -298,7 +337,11 @@ class ZColor {
      - Returns: A UIColor initialized using the provided component values.
     */
     static func hsv(h: Double, s: Double, v: Double, a: Double? = 0.0) -> UIColor {
-        return UIColor.init(hue: CGFloat(Double(h).truncatingRemainder(dividingBy: 360.0)), saturation: CGFloat(Double(s).truncatingRemainder(dividingBy: 360.0)), brightness: CGFloat(Double(v).truncatingRemainder(dividingBy: 360.0)), alpha: CGFloat(Double(a!)))
+        let hue = CGFloat(h.truncatingRemainder(dividingBy: 360.0))
+        let sat = CGFloat(s.truncatingRemainder(dividingBy: 360.0))
+        let bright = CGFloat(v.truncatingRemainder(dividingBy: 360.0))
+        
+        return UIColor(hue: hue, saturation: sat, brightness: bright, alpha: CGFloat(a!))
     }
     
     /**
@@ -313,7 +356,11 @@ class ZColor {
      - Returns: A UIColor initialized using the provided component values.
     */
     static func cmyk(c: Double, m: Double, y: Double, k: Double) -> UIColor {
-        return UIColor.white
+        let rgb = ZColor.convert(values: [String(c), String(m), String(y), String(k)], from: .cmyk, to: .srgb)
+        guard let r = Double(rgb[0]), let g = Double(rgb[1]), let b = Double(rgb[2]) else {
+            return UIColor.white
+        }
+        return srgb(r: r, g: g, b: b, a: 1.0)
     }
     
     /**
@@ -328,7 +375,10 @@ class ZColor {
         let h = convert(values: [hexString], from: .hex, to: .srgb)
         
         // use srgb to return the correct color
-        return srgb(r: Double(h[0])!, g: Double(h[1])!, b: Double(h[2])!, a: a)
+        guard let r = Double(h[0]), let g = Double(h[1]), let b = Double(h[2]) else {
+            return UIColor.white
+        }
+        return srgb(r: r, g: g, b: b, a: a)
     }
     
     /**
@@ -344,22 +394,24 @@ class ZColor {
         let inputValues = self.copyInputs(values: values, from: from)
         
         // begin conversion
-        if from == .srgb {
+        switch from {
+        case .srgb:
             if to == .hex {
                 var hexString = ""
                 for item in inputValues {
-                    hexString.append(String(format:"%02X", Int(Double(item)!)).lowercased())
+                    if let component = Int(item) {
+                        hexString.append(String(format:"%02X", component).lowercased())
+                    } else {
+                        hexString.append("00")
+                    }
                 }
                 return [hexString]
-            }
-            else if to == .hsv {
+            } else if to == .hsv {
                 return srgbToHsv(values: inputValues)
-            }
-            else if to == .cmyk {
+            } else if to == .cmyk {
                 return srgbToCMYK(values: inputValues)
             }
-        }
-        else if from == .hsv {
+        case .hsv:
             if to == .srgb {
                 return hsvToSRGB(values: inputValues)
             }
@@ -371,29 +423,23 @@ class ZColor {
                 let intermediateValues = convert(values: inputValues, from: .hsv, to: .srgb)
                 return convert(values: intermediateValues, from: .srgb, to: .cmyk)
             }
-        }
-        else if from == .hex {
+        case .hex:
             if to == .srgb {
                 return hexToSRGB(values: inputValues)
-            }
-            else if to == .hsv {
+            } else if to == .hsv {
                 let intermediateValues = convert(values: inputValues, from: .hex, to: .srgb)
                 return convert(values: intermediateValues, from: .srgb, to: .hsv)
-            }
-            else if to == .cmyk {
+            } else if to == .cmyk {
                 let intermediateValues = convert(values: inputValues, from: .hex, to: .srgb)
                 return convert(values: intermediateValues, from: .srgb, to: .cmyk)
             }
-        }
-        else if from == .cmyk {
+        case .cmyk:
             if to == .srgb {
                 return cmykToSRGB(values: inputValues)
-            }
-            else if to == .hex {
+            } else if to == .hex {
                 let intermediateValues = convert(values: inputValues, from: .cmyk, to: .srgb)
                 return convert(values: intermediateValues, from: .srgb, to: .hex)
-            }
-            else if to == .hsv {
+            } else if to == .hsv {
                 let intermediateValues = convert(values: inputValues, from: .cmyk, to: .srgb)
                 return convert(values: intermediateValues, from: .srgb, to: .hsv)
             }
@@ -414,8 +460,7 @@ class ZColor {
         var arraySize = 3
         if from == .cmyk {
             arraySize = 4
-        }
-        else if from == .hex {
+        } else if from == .hex {
             arraySize = 1
         }
         
@@ -424,8 +469,7 @@ class ZColor {
             for _ in 0 ... arraySize - inputValues.count {
                 inputValues.append("0.0")
             }
-        }
-        else if inputValues.count > arraySize {
+        } else if inputValues.count > arraySize {
             inputValues = Array<String>(inputValues.prefix(arraySize))
         }
         
@@ -444,11 +488,9 @@ class ZColor {
         var hue = 0.0
         if cMax == rPrime {
             hue = 60.0 * (((gPrime - bPrime)/delta).truncatingRemainder(dividingBy: 6.0))
-        }
-        else if cMax == gPrime {
+        } else if cMax == gPrime {
             hue = 60.0 * (((bPrime - rPrime)/delta) + 2)
-        }
-        else if cMax == bPrime {
+        } else if cMax == bPrime {
             hue = 60.0 * (((rPrime - gPrime)/delta) + 4)
         }
         
@@ -461,44 +503,39 @@ class ZColor {
     }
     
     fileprivate static func srgbToCMYK(values: [String]) -> [String] {
-        let rPrime = Double(values[0])! / 255.0
-        let gPrime = Double(values[1])! / 255.0
-        let bPrime = Double(values[2])! / 255.0
+        guard let rPrime = Double(values[0]), let gPrime = Double(values[1]), let bPrime = Double(values[2]) else {
+            return values
+        }
         
-        let k = 1.0 - max(rPrime, gPrime, bPrime)
-        let c = (1.0 - rPrime - k) / (1.0 - k)
-        let m = (1.0 - gPrime - k) / (1.0 - k)
-        let y = (1.0 - bPrime - k) / (1.0 - k)
+        let k = 1.0 - max(rPrime/255.0, gPrime/255.0, bPrime/255.0)
+        let c = (1.0 - rPrime/255.0 - k) / (1.0 - k)
+        let m = (1.0 - gPrime/255.0 - k) / (1.0 - k)
+        let y = (1.0 - bPrime/255.0 - k) / (1.0 - k)
         
         return [String(c * 100.0), String(m * 100.0), String(y * 100.0), String(k * 100.0)]
     }
     
     fileprivate static func hsvToSRGB(values: [String]) -> [String] {
-        let h = Double(values[0])!
-        let s = Double(values[1])!/100.0
-        let v = Double(values[2])!/100.0
+        guard let h = Double(values[0]), let s = Double(values[1]), let v = Double(values[2]) else {
+            return values
+        }
         
-        let c = v * s
+        let c = (v/100.0) * (s/100.0)
         let x = c * (1.0 - fabs((h / 60.0).truncatingRemainder(dividingBy: 2.0) - 1.0))
-        let m = v - c
+        let m = (v/100.0) - c
         
         var preOutputValues : [Double] = []
         if h < 60 {
             preOutputValues = [c, x, 0.0]
-        }
-        else if h >= 60.0 && h < 120.0 {
+        } else if h >= 60.0 && h < 120.0 {
             preOutputValues = [x, c, 0.0]
-        }
-        else if h >= 120.0 && h < 180.0 {
+        } else if h >= 120.0 && h < 180.0 {
             preOutputValues = [0.0, c, x]
-        }
-        else if h >= 180.0 && h < 240.0 {
+        } else if h >= 180.0 && h < 240.0 {
             preOutputValues = [0.0, x, c]
-        }
-        else if h >= 240.0 && h < 300.0 {
+        } else if h >= 240.0 && h < 300.0 {
             preOutputValues = [x, 0.0, c]
-        }
-        else if h >= 300.0 && h < 360.0 {
+        } else if h >= 300.0 && h < 360.0 {
             preOutputValues = [c, 0.0, x]
         }
         
@@ -518,8 +555,7 @@ class ZColor {
             for _ in 0 ... (6 - cleanString.count) {
                 cleanString = cleanString + "0"
             }
-        }
-        else if values[0].count > 6 {
+        } else if values[0].count > 6 {
             // ...or, truncate everything but the first 6 characters
             cleanString = String(cleanString.prefix(6))
         }
@@ -536,13 +572,20 @@ class ZColor {
         bHex.append(String(cleanString.removeFirst()))
         bHex.append(String(cleanString.removeFirst()))
         
-        return [String(Int(rHex, radix: 16)!), String(Int(gHex, radix: 16)!), String(Int(bHex, radix: 16)!)]
+        guard let r = Int(rHex, radix: 16), let g = Int(gHex, radix: 16), let b = Int(bHex, radix: 16) else {
+            return values
+        }
+        return [String(r), String(g), String(b)]
     }
     
     fileprivate static func cmykToSRGB(values: [String]) -> [String] {
-        let r = 255.0 * (1.0 - (Double(values[0])! / 100.0)) * (1.0 - (Double(values[3])! / 100.0))
-        let g = 255.0 * (1.0 - (Double(values[1])! / 100.0)) * (1.0 - (Double(values[3])! / 100.0))
-        let b = 255.0 * (1.0 - (Double(values[2])! / 100.0)) * (1.0 - (Double(values[3])! / 100.0))
+        guard let cRaw = Double(values[0]), let mRaw = Double(values[1]), let yRaw = Double(values[2]), let kRaw = Double(values[3]) else {
+            return values
+        }
+            
+        let r = 255.0 * (1.0 - (cRaw / 100.0)) * (1.0 - (kRaw / 100.0))
+        let g = 255.0 * (1.0 - (mRaw / 100.0)) * (1.0 - (kRaw / 100.0))
+        let b = 255.0 * (1.0 - (yRaw / 100.0)) * (1.0 - (kRaw / 100.0))
         
         return [String(r), String(g), String(b)]
     }
@@ -557,8 +600,7 @@ class ZColor {
             let char = searchString.removeFirst()
             if char.isNumber {
                 cleanedString.append(char)
-            }
-            else if char.isLetter {
+            } else if char.isLetter {
                 if validChars.contains(char.lowercased()) {
                     cleanedString.append(char.lowercased())
                 }
