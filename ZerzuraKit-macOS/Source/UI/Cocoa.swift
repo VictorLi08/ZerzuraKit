@@ -35,38 +35,57 @@ extension NSView {
 //        }
 //    }
     
-    func topLeftCorner() -> NSPoint {
-        let positionX = self.center.x - (self.frame.width/2.0)
-        let positionY = self.center.y - (self.frame.height/2.0)
+    var topLeftCorner: NSPoint {
+        let positionX = self.frame.origin.x - (self.frame.width/2.0)
+        let positionY = self.frame.origin.y - (self.frame.height/2.0)
         return NSPoint(x: positionX, y: positionY)
     }
     
-    func topRightCorner() -> NSPoint {
-        let positionX = self.center.x + (self.frame.width/2.0)
-        let positionY = self.center.y - (self.frame.height/2.0)
+    var topRightCorner: NSPoint {
+        let positionX = self.frame.origin.x + (self.frame.width/2.0)
+        let positionY = self.frame.origin.y - (self.frame.height/2.0)
         return NSPoint(x: positionX, y: positionY)
     }
     
-    func bottomLeftCorner() -> NSPoint {
-        let positionX = self.center.x - (self.frame.width/2.0)
-        let positionY = self.center.y + (self.frame.height/2.0)
+    var bottomLeftCorner: NSPoint {
+        let positionX = self.frame.origin.x - (self.frame.width/2.0)
+        let positionY = self.frame.origin.y + (self.frame.height/2.0)
         return NSPoint(x: positionX, y: positionY)
     }
     
-    func bottomRightCorner() -> NSPoint {
-        let positionX = self.center.x + (self.frame.width/2.0)
-        let positionY = self.center.y + (self.frame.height/2.0)
+    var bottomRightCorner: NSPoint {
+        let positionX = self.frame.origin.x + (self.frame.width/2.0)
+        let positionY = self.frame.origin.y + (self.frame.height/2.0)
+        return NSPoint(x: positionX, y: positionY)
+    }
+    
+    var center: NSPoint {
+        let positionX = self.frame.origin.x
+        let positionY = self.frame.origin.y
         return NSPoint(x: positionX, y: positionY)
     }
 }
 
+extension NSScrollView {
+    /// Scrolls the view to its topmost position.
+    func scrollUpToTop() {
+        self.scroll(CGPoint(x: self.contentInsets.left, y: self.contentInsets.top))
+    }
+}
+
+
 extension NSTextView {
-    /// Scrolls a NSTextView to its top.
-    func scrollToTop() {
+    func scrollUpToTop() {
         self.scrollRangeToVisible(NSRange(location: 0, length: 0))
     }
-    
-//    func resize(fontSize: CGFloat) {
-//        self.font?.s
-//    }
+}
+
+extension NSText {
+    func resize(fontSize: CGFloat) {
+        guard let newDescriptor = self.font?.fontDescriptor else {
+            return
+        }
+        let newFont = NSFont(descriptor: newDescriptor, size: fontSize)
+        self.font = newFont
+    }
 }
