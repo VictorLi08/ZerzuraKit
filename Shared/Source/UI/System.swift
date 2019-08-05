@@ -13,7 +13,7 @@ import Foundation
  */
 class ZDevice {
     /**
-     Gets a locale based on the device's first preferred language.
+     Gets a locale based on the device's most preferred language.
      
      - Returns: A Locale() object.
      */
