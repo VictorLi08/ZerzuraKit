@@ -57,7 +57,6 @@
 		D59CBCBA22D40B06009ED4C2 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		D59CBCC522D40B11009ED4C2 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D59CBCC622D40B11009ED4C2 /* NSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
-		D5DA152722F4DA0A00EB4C3F /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
 		D5DA152922F4DA5F00EB4C3F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D5DA153022F4DB4F00EB4C3F /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		D5DD661F22DAC6EE00B5DAD3 /* UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.swift; sourceTree = "<group>"; };
@@ -159,7 +158,6 @@
 		D5DA152B22F4DAC900EB4C3F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				D5DA152722F4DA0A00EB4C3F /* Misc.swift */,
 				D5DA152C22F4DACD00EB4C3F /* Source */,
 			);
 			path = Shared;
