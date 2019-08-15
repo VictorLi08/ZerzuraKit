@@ -80,32 +80,35 @@ extension NSView {
 
 extension NSScrollView {
     /// Scrolls the view to its topmost position.
-    func scrollUpToTop() {
+    func top() {
         self.scroll(CGPoint(x: self.contentInsets.left, y: self.contentInsets.top))
     }
     
-    func scrollToBottom() {
+    /// Scrolls the view to its lowest position.
+    func bottom() {
         self.scroll(CGPoint(x: self.contentInsets.right, y: self.contentSize.height))
     }
 }
 
 
 extension NSTextView {
-    func scrollUpToTop() {
+    /// Scrolls the view to its topmost position.
+    func top() {
         self.scrollRangeToVisible(NSRange(location: 0, length: 0))
     }
     
-    func scrollToBottom() {
+    /// Scrolls the view to its lowest position.
+    func bottom() {
         self.scrollRangeToVisible(NSRange(location: self.string.count - 1, length: 1))
     }
 }
 
 extension NSText {
-    func resize(fontSize: CGFloat) {
+    func resizeFont(to: CGFloat) {
         guard let newDescriptor = self.font?.fontDescriptor else {
             return
         }
-        let newFont = NSFont(descriptor: newDescriptor, size: fontSize)
+        let newFont = NSFont(descriptor: newDescriptor, size: to)
         self.font = newFont
     }
 }

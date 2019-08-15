@@ -52,28 +52,31 @@ extension UIView {
 
 extension UIScrollView {
     /// Scrolls the view to its topmost position.
-    @objc func scrollToTop() {
+    @objc func top() {
         self.setContentOffset(.zero, animated: true)
     }
     
-    @objc func scrollToBottom() {
+    /// Scrolls the view to its lowest position.
+    @objc func bottom() {
         let viewBottom = CGPoint(x: 0, y: self.contentSize.height - self.bounds.height + self.adjustedContentInset.bottom)
         self.setContentOffset(viewBottom, animated: true)
     }
 }
 
 extension UITextView {
-    override func scrollToTop() {
+    /// Scrolls the view to its topmost position.
+    override func top() {
         self.scrollRangeToVisible(NSRange(location: 0, length: 0))
     }
     
-    override func scrollToBottom() {    
+    /// Scrolls the view to its lowest position.
+    override func bottom() {
         self.scrollRangeToVisible(NSRange(location: self.text.count - 1, length: 1))
     }
     
-    func resize(fontSize: CGFloat) {
+    func resizeFont(to: CGFloat) {
         if let font = self.font {
-            self.font = font.withSize(fontSize)
+            self.font = font.withSize(to)
         }
     }
 }
