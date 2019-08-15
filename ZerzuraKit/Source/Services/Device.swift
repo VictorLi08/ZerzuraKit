@@ -32,7 +32,7 @@ extension ZDevice {
      
      - Returns: True or False whether or not the device supports the iOS version specified.
      */
-    static func supports(iOS: Double) -> Bool {
-        return iOS <= (Double(UIDevice.current.systemVersion) ?? 0.0)
+    static func supports(iOS: CGFloat) -> Bool {
+        return Double(iOS) <= (Double(UIDevice.current.systemVersion) ?? 0.0)
     }
 }
