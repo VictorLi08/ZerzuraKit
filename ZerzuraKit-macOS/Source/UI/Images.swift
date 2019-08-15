@@ -90,19 +90,28 @@ extension NSImageView {
     
     /**
      Fetches an image asynchronously and displays it in the image view.
+     Errors will print the culprit image view if its accessibility label has been set.
      
      - Parameter: An HTTP URL to the desired image resource.
      */
     func imageFromURL(_ url: URL) {
         DispatchQueue.global(qos: .utility).async {
-            let fetchURLSession = URLSession(configuration: .default)
-            let fetchTask = fetchURLSession.dataTask(with: url) { (data, response, error) in
-                if let _ = response, let imageData = data, error == nil {
-                    let newImage = NSImage(data: imageData)
-                    self.image = newImage
+            do {
+                let imageData = try Data(contentsOf: url)
+                
+                DispatchQueue.main.async {
+                    if let image = NSImage(data: imageData) {
+                        self.image = image
+                        self.sizeToFit()
+                    }
+                }
+            } catch {
+                if let label = self.accessibilityLabel() {
+                    print("[ZerzuraKit] Could not fetch image for image view '\(label)'.")
+                } else {
+                    print("[ZerzuraKit] Could not fetch image for image view.")
                 }
             }
-            fetchTask.resume()
         }
     }
 }
