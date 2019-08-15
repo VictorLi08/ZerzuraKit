@@ -8,6 +8,18 @@
 
 import Cocoa
 
+extension NSWindow {
+    func setResizable(_ isResizable: Bool) {
+        if isResizable {
+            if !self.styleMask.contains(.resizable) {
+                self.styleMask.update(with: .resizable)
+            }
+        } else {
+            self.styleMask.remove(.resizable)
+        }
+    }
+}
+
 extension NSView {
 //    func fadeIn(duration: TimeInterval) {
 //        NSView.animate(withDuration: duration, animations: {
@@ -71,12 +83,20 @@ extension NSScrollView {
     func scrollUpToTop() {
         self.scroll(CGPoint(x: self.contentInsets.left, y: self.contentInsets.top))
     }
+    
+    func scrollToBottom() {
+        self.scroll(CGPoint(x: self.contentInsets.right, y: self.contentSize.height))
+    }
 }
 
 
 extension NSTextView {
     func scrollUpToTop() {
         self.scrollRangeToVisible(NSRange(location: 0, length: 0))
+    }
+    
+    func scrollToBottom() {
+        self.scrollRangeToVisible(NSRange(location: self.string.count - 1, length: 1))
     }
 }
 
