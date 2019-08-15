@@ -57,7 +57,8 @@ extension UIScrollView {
     }
     
     @objc func scrollToBottom() {
-        
+        let viewBottom = CGPoint(x: 0, y: self.contentSize.height - self.bounds.height + self.adjustedContentInset.bottom)
+        self.setContentOffset(viewBottom, animated: true)
     }
 }
 
@@ -71,7 +72,9 @@ extension UITextView {
     }
     
     func resize(fontSize: CGFloat) {
-        self.font = self.font!.withSize(fontSize)
+        if let font = self.font {
+            self.font = font.withSize(fontSize)
+        }
     }
 }
 
