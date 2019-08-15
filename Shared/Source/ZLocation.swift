@@ -17,37 +17,37 @@ import CoreLocation
 */
 class ZLocation {
     /// The city name of the stored location.
-    private(set) var city : String = ""
+    private(set) var city: String = ""
     
     /// The state or province the stored location is located in.
-    private(set) var province : String = ""
+    private(set) var province: String = ""
     
     /// The country the stored location is located in.
-    private(set) var country : String = ""
+    private(set) var country: String = ""
     
     /// The isoCountryCode of the stored location.
-    private(set) var countryCode : String = ""
+    private(set) var countryCode: String = ""
     
     /// The postal code of the stored location.
-    private(set) var postalCode : String = ""
+    private(set) var postalCode: String = ""
     
     /// The house number of the stored location. Not all locations retrieved by CoreLocation have an associated house number.
-    private(set) var houseNumber : String = ""
+    private(set) var houseNumber: String = ""
     
     /// The street name of the stored location. Not all locations retrieved by CoreLocation have an associated street name.
-    private(set) var street : String = ""
+    private(set) var street: String = ""
     
     /// A landmark associated with the stored location.
-    private(set) var placeName : String = ""
+    private(set) var placeName: String = ""
     
     /// The neighborhood or area the stored location is located in.
-    private(set) var area : String = ""
+    private(set) var area: String = ""
     
     // The latitude coordinate of the stored location.
-    private(set) var latitude : Double = 0.0
+    private(set) var latitude: Double = 0.0
     
     // The longitude coordinate of the stored location.
-    private(set) var longitude : Double = 0.0
+    private(set) var longitude: Double = 0.0
     
     /**
      Initializes a ZLocation from a CLLocationCoordinate2D.
@@ -142,7 +142,7 @@ class ZLocation {
         
         let location = CLLocation(latitude: latitude, longitude: longitude)
         let geocoder = CLGeocoder()
-        var placemark : CLPlacemark?
+        var placemark: CLPlacemark?
         geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
             let gpm = placemarks
             if ((gpm != nil) && (gpm?.count)! > 0) {
