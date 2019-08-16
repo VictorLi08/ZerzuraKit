@@ -47,30 +47,35 @@ extension NSView {
 //        }
 //    }
     
+    /// The position of the view's upper left-hand corner.
     var topLeftCorner: NSPoint {
         let positionX = self.frame.origin.x - (self.frame.width/2.0)
         let positionY = self.frame.origin.y - (self.frame.height/2.0)
         return NSPoint(x: positionX, y: positionY)
     }
     
+    /// The position of the view's upper right-hand corner.
     var topRightCorner: NSPoint {
         let positionX = self.frame.origin.x + (self.frame.width/2.0)
         let positionY = self.frame.origin.y - (self.frame.height/2.0)
         return NSPoint(x: positionX, y: positionY)
     }
     
+    /// The position of the view's lower left-hand corner.
     var bottomLeftCorner: NSPoint {
         let positionX = self.frame.origin.x - (self.frame.width/2.0)
         let positionY = self.frame.origin.y + (self.frame.height/2.0)
         return NSPoint(x: positionX, y: positionY)
     }
     
+    /// The position of the view's lower right-hand corner.
     var bottomRightCorner: NSPoint {
         let positionX = self.frame.origin.x + (self.frame.width/2.0)
         let positionY = self.frame.origin.y + (self.frame.height/2.0)
         return NSPoint(x: positionX, y: positionY)
     }
     
+    /// The position of the view's center.
     var center: NSPoint {
         let positionX = self.frame.origin.x
         let positionY = self.frame.origin.y
@@ -104,6 +109,11 @@ extension NSTextView {
 }
 
 extension NSText {
+    /**
+     Resizes the font to the given size.
+     
+     - Parameter to: The desired point size for the font.
+     */
     func resizeFont(to: CGFloat) {
         guard let newDescriptor = self.font?.fontDescriptor else {
             return

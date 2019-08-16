@@ -84,6 +84,11 @@ extension UITextView {
         self.scrollRangeToVisible(NSRange(location: self.text.count - 1, length: 1))
     }
     
+    /**
+    Resizes the font to the given size.
+    
+    - Parameter to: The desired point size for the font.
+    */
     func resizeFont(to: CGFloat) {
         if let font = self.font {
             self.font = font.withSize(to)
