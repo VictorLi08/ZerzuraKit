@@ -163,20 +163,20 @@ class ZLocation {
     }
     
     /**
-     Gets the location coordinates of the stored location.
+     The CLLocation coordinates of the stored location.
      
      - Returns: A CLLocationCoordinate2D containing the coordinates of the currently stored location.
     */
-    func getCoordinates() -> CLLocationCoordinate2D {
+    var coordinates: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
     }
     
     /**
-     Gets the CLLocation of the stored location.
+     The CLLocation of the stored location.
      
      - Returns: A CLLocation representing the currently stored location.
     */
-    func getLocation() -> CLLocation {
+    var position: CLLocation {
         return CLLocation.init(latitude: self.latitude, longitude: self.longitude)
     }
     
@@ -185,21 +185,10 @@ class ZLocation {
      
      - Returns: A formatted String for the location stored.
      */
-    open func string(withPlaceAndArea: Bool, cityAndProvince: Bool) -> String {
+    open var string: String {
         let address1 = self.houseNumber + " " + self.street
         let address2 = self.placeName + ", " + self.area
-        
-        var address3 = ""
-        if cityAndProvince {
-            address3 = self.city + ", " + self.province + " " + self.postalCode
-        } else {
-            address3 = self.city + " " + self.postalCode
-        }
-        
-        if withPlaceAndArea {
-            return address1 + "\n" + address2 + "\n" + address3 + "\n" + self.country
-        } else {
-            return address1 + "\n" + address3 + "\n" + self.country
-        }
+        let address3 = self.city + ", " + self.province + " " + self.postalCode
+        return address1 + "\n" + address2 + "\n" + address3 + "\n" + self.country
     }
 }
