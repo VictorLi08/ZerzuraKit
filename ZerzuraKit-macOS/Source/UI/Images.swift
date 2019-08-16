@@ -35,37 +35,39 @@ extension NSImageView {
      - Parameter height: The desired height (in pixels) of the resulting NSImageView.
      */
     func withSize(width: CGFloat?, height: CGFloat?) {
-        let dimensionsGiven = width != nil || height != nil
-        let imageSet = self.image != nil
-        if dimensionsGiven && imageSet {
-            var newSize = NSSize()
-            let aspectRatio = self.image!.size.width / self.image!.size.height      // determine the aspect ratio
-            
-            if width != nil {       // resize using width, keeping aspect ratio
-                newSize = NSSize(width: width!, height: width! * aspectRatio)
-            } else if height != nil {     // resize using height, keeping aspect ratio
-                newSize = NSSize(width: height! * aspectRatio, height: height!)
-            } else if width != nil && height != nil {     // resize using both, ignoring aspect ratio
-                newSize = NSSize(width: width!, height: height!)
-            }
-            
-            // redraw the image
-            let newImage = NSImage(size: newSize)
-            newImage.lockFocus()
-            self.image!.draw(in: NSMakeRect(self.frame.origin.x, self.frame.origin.y, newSize.width, newSize.height),
-                             from: NSMakeRect(self.frame.origin.x, self.frame.origin.y, self.image!.size.width, self.image!.size.height),
-                             operation: NSCompositingOperation.sourceOver, fraction: CGFloat(1))
-            
-            let existingOrigin = NSPoint(x: self.frame.origin.x, y: self.frame.origin.y)
-            self.image!.draw(at: existingOrigin,
-                             from: NSMakeRect(self.frame.origin.x, self.frame.origin.y, self.image!.size.width, self.image!.size.height),
-                             operation: NSCompositingOperation.sourceOver, fraction: CGFloat(1))
-            
-            newImage.unlockFocus()
-            newImage.size = newSize
-            
-            self.image = newImage       // set the image
+        guard let img = self.image else {
+            return
         }
+        
+        let aspectRatio = img.size.width / img.size.height      // determine the aspect ratio
+        
+        var newSize = NSSize()
+        if let w = width, h = height {      // resize using both, ignoring aspect ratio
+            newSize = NSSize(width: w, height: h)
+        } else if let w = width {       // resize using width, keeping aspect ratio
+            newSize = NSSize(width: w, height: w * aspectRatio)
+        } else if let h = height {      // resize using height, keeping aspect ratio
+            newSize = NSSize(width: h * aspectRatio, height: h)
+        } else {
+            return
+        }
+        
+        // redraw the image
+        let newImage = NSImage(size: newSize)
+        newImage.lockFocus()
+        self.image!.draw(in: NSMakeRect(self.frame.origin.x, self.frame.origin.y, newSize.width, newSize.height),
+                         from: NSMakeRect(self.frame.origin.x, self.frame.origin.y, self.image!.size.width, self.image!.size.height),
+                         operation: NSCompositingOperation.sourceOver, fraction: CGFloat(1))
+        
+        let existingOrigin = NSPoint(x: self.frame.origin.x, y: self.frame.origin.y)
+        self.image!.draw(at: existingOrigin,
+                         from: NSMakeRect(self.frame.origin.x, self.frame.origin.y, self.image!.size.width, self.image!.size.height),
+                         operation: NSCompositingOperation.sourceOver, fraction: CGFloat(1))
+        
+        newImage.unlockFocus()
+        newImage.size = newSize
+        
+        self.image = newImage       // set the image
     }
     
     /**

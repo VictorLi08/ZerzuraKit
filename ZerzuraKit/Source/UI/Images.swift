@@ -35,27 +35,29 @@ extension UIImageView {
      - Parameter height: The desired height (in pixels) of the resulting UIImageView.
      */
     func withSize(width: CGFloat?, height: CGFloat?) {
-        let dimensionsGiven = width != nil || height != nil
-        let imageSet = self.image != nil
-        if dimensionsGiven && imageSet {
-            var newSize = CGSize()
-            let aspectRatio = self.image!.size.width / self.image!.size.height      // determine the aspect ratio
-            
-            if width != nil {       // resize using width, keeping aspect ratio
-                newSize = CGSize(width: width!, height: width! * aspectRatio)
-            } else if height != nil {     // resize using height, keeping aspect ratio
-                newSize = CGSize(width: height! * aspectRatio, height: height!)
-            } else if width != nil && height != nil {     // resize using both, ignoring aspect ratio
-                newSize = CGSize(width: width!, height: height!)
-            }
-            
-            let renderer = UIGraphicsImageRenderer(size: newSize)
-            let resizedImage = renderer.image { _ in
-                self.image!.draw(in: CGRect.init(origin: frame.origin, size: newSize))      // render the new image
-            }
-            
-            self.image = resizedImage       // set the image
+        guard let img = self.image else {
+            return
         }
+        
+        let aspectRatio = img.size.width / img.size.height      // determine the aspect ratio
+        
+        var newSize = CGSize()
+        if let w = width, h = height {      // resize using both, ignoring aspect ratio
+            newSize = CGSize(width: w, height: h)
+        } else if let w = width {       // resize using width, keeping aspect ratio
+            newSize = CGSize(width: w, height: w * aspectRatio)
+        } else if let h = height {      // resize using height, keeping aspect ratio
+            newSize = CGSize(width: h * aspectRatio, height: h)
+        } else {
+            return
+        }
+        
+        let renderer = UIGraphicsImageRenderer(size: newSize)
+        let resizedImage = renderer.image { _ in
+            self.image!.draw(in: CGRect.init(origin: frame.origin, size: newSize))      // render the new image
+        }
+        
+        self.image = resizedImage       // set the image
     }
     
     /**
