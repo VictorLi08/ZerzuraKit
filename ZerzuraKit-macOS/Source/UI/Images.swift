@@ -109,9 +109,9 @@ extension NSImageView {
                 }
             } catch {
                 if let label = self.accessibilityLabel() {
-                    print("[ZerzuraKit] Could not fetch image for image view '\(label)'.")
+                    NSLog("[ZerzuraKit] Could not fetch image for image view '\(label)'.")
                 } else {
-                    print("[ZerzuraKit] Could not fetch image for image view.")
+                    NSLog("[ZerzuraKit] Could not fetch image for image view.")
                 }
             }
         }
