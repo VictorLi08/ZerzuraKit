@@ -26,6 +26,7 @@
 		D52ECFAC22F4DD07005AE4DE /* CocoaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */; };
 		D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; platformFilter = ios; };
 		D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
+		D57E53CE23075AB200CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
 		D59CBC9E22D408E9009ED4C2 /* ZerzuraKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D59CBCAD22D40A82009ED4C2 /* ZerzuraKit_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D59CBCAB22D40A82009ED4C2 /* ZerzuraKit_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D59CBCBC22D40B06009ED4C2 /* ZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* ZLocation.swift */; platformFilter = ios; };
@@ -45,6 +46,7 @@
 		D50CEF5C22FE043700667AC7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaExt.swift; sourceTree = "<group>"; };
 		D569DCE022F8E96B003F13EE /* ZColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZColor.swift; sourceTree = "<group>"; };
+		D57E53CD23075AB200CCCF9E /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
 		D59CBC9922D408E9009ED4C2 /* ZerzuraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZerzuraKit.h; sourceTree = "<group>"; };
 		D59CBC9D22D408E9009ED4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				D59CBCBA22D40B06009ED4C2 /* ZTime.swift */,
 				D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */,
 				D5DA152D22F4DAE500EB4C3F /* UI */,
+				D57E53CD23075AB200CCCF9E /* Numbers.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				D59CBCBC22D40B06009ED4C2 /* ZLocation.swift in Sources */,
 				D59CBCC022D40B06009ED4C2 /* ZTime.swift in Sources */,
 				D59CBCBD22D40B06009ED4C2 /* ZDeviceM.swift in Sources */,
+				D57E53CE23075AB200CCCF9E /* Numbers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
