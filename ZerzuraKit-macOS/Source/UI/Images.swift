@@ -42,7 +42,7 @@ extension NSImageView {
         let aspectRatio = img.size.width / img.size.height      // determine the aspect ratio
         
         var newSize = NSSize()
-        if let w = width, h = height {      // resize using both, ignoring aspect ratio
+        if let w = width, let h = height {      // resize using both, ignoring aspect ratio
             newSize = NSSize(width: w, height: h)
         } else if let w = width {       // resize using width, keeping aspect ratio
             newSize = NSSize(width: w, height: w * aspectRatio)
@@ -92,7 +92,7 @@ extension NSImageView {
     
     /**
      Fetches an image asynchronously and displays it in the image view.
-     Errors will print the culprit image view if its accessibility label has been set.
+     Logged errors will reference the culprit image view if its accessibility label has been set.
      
      - Parameter: An HTTP URL to the desired image resource.
      */

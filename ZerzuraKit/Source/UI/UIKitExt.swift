@@ -12,7 +12,7 @@ extension UIView {
     /**
      Fades the view out in the given timeframe and then sets its alpha to 0.
      
-     - Parameter duration: The number of seconds the animation should take to complete.
+     - Parameter duration: The number of seconds it should take for the animation to complete.
      */
     func fadeIn(duration: TimeInterval) {
         UIView.animate(withDuration: duration, animations: {
@@ -23,7 +23,7 @@ extension UIView {
     /**
     Fades the view in within the given timeframe and then sets its alpha to 1.
     
-    - Parameter duration: The number of seconds the animation should take to complete.
+    - Parameter duration: The number of seconds it should take for the animation to complete.
     */
     func fadeOut(duration: TimeInterval) {
         UIView.animate(withDuration: duration, animations: {

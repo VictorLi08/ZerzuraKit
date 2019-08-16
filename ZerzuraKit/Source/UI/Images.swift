@@ -42,7 +42,7 @@ extension UIImageView {
         let aspectRatio = img.size.width / img.size.height      // determine the aspect ratio
         
         var newSize = CGSize()
-        if let w = width, h = height {      // resize using both, ignoring aspect ratio
+        if let w = width, let h = height {      // resize using both, ignoring aspect ratio
             newSize = CGSize(width: w, height: h)
         } else if let w = width {       // resize using width, keeping aspect ratio
             newSize = CGSize(width: w, height: w * aspectRatio)
@@ -78,7 +78,7 @@ extension UIImageView {
      Changes a UIImageView's image and animates the image change with a fade out/fade in animation.
      
      - Parameter image: A UIImage that will be inserted into the view.
-     - Parameter duration: The amount of time desired for each animation.
+     - Parameter duration: The number of seconds it should take for all animations to complete.
      */
     func reshow(image: UIImage, duration: TimeInterval) {
         DispatchQueue.main.async {      // fade out
@@ -96,7 +96,7 @@ extension UIImageView {
     
     /**
      Fetches an image asynchronously and displays it in the image view.
-     Errors will print the culprit image view if its accessibility label has been set.
+     Logged errors will reference the culprit image view if its accessibility label has been set.
      
      - Parameter: An HTTP URL to the desired image resource.
      */
