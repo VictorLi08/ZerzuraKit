@@ -6,28 +6,72 @@
 //  Copyright © 2019 Mesarthim. All rights reserved.
 //
 
-/**
- A class that defines methods used for converting time values to user-readable strings.
-*/
-class ZTime {
+extension Date {
     /**
      Generates a localized time string, i.e. 12:00 PM.
      
      - Parameter style: A DateFormatter.Style option that decides the string's brevity or length.
      - Parameter withSeconds: Whether or not the time string should include seconds (default no).
-     - Parameter date: A Date() object representing the time to be displayed. If none is provided, the current date/time is used.
      - Parameter locale: The locale that the string should be formatted for. If none is provided, the device's current locale is used.
      
      - Returns: A String representing the current time.
      */
-    static func string(style: DateFormatter.Style, withSeconds: Bool? = false, date: Date? = Date(), locale: Locale? = ZDevice.preferredLocale()) -> String {
+    func string(style: DateFormatter.Style, withSeconds: Bool? = false, locale: Locale? = ZDevice.preferredLocale()) -> String {
         let df = DateFormatter()
         
         df.locale = locale
         df.dateStyle = .none
         df.timeStyle = style
         
-        return df.string(from: date!)
+        return df.string(from: self)
+    }
+    
+    /**
+     Generates a time string in UTC.
+     
+     - Parameter style: A DateFormatter.Style option that decides the string's brevity or length.
+     
+     - Returns: A String representing the current time in UTC.
+     */
+    func utc(style: DateFormatter.Style) -> String {
+        let df = DateFormatter()
+        df.locale = ZDevice.preferredLocale()
+        df.timeZone = NSTimeZone(name: "UTC")! as TimeZone
+        df.timeStyle = style
+        df.dateStyle = .none
+        return df.string(from: self)
+    }
+    
+    /**
+     A dictionary containing the Date's time component integer values keyed by component type.
+    */
+    var components: [Calendar.Component:Int] {
+       let componentTypes: [Calendar.Component] = [.era, .year, .quarter, .month, .weekOfYear, .weekOfMonth, .weekday, .hour, .minute, .second, .nanosecond]
+       var componentValues: [Calendar.Component:Int] = [:]
+       for c in componentTypes {
+           componentValues.updateValue(Calendar.current.component(c, from: self), forKey: c)
+       }
+       return componentValues
+    }
+    
+    /**
+     Produces a TimeInterval between this date and the given date.
+     
+     - Parameter until: A future date that will be referenced.
+    
+     - Returns: A TimeInterval representing the number of seconds between dates.
+     */
+    func timeIntervalSince1970(until: Date) -> TimeInterval {
+        return TimeInterval(until.timeIntervalSince1970 - self.timeIntervalSince1970)
+    }
+    
+    /**
+     Produces a TimeInterval between two dates.
+    
+     - Returns: A TimeInterval representing the number of seconds between dates.
+     */
+    func timeIntervalBetween(from: Date, to: Date) -> TimeInterval {
+        return TimeInterval(to.timeIntervalSince1970 - from.timeIntervalSince1970)
     }
     
     /**
@@ -38,7 +82,7 @@ class ZTime {
      
      - Returns: A localized string representing the time between dates (e.g. 3 days; 10 hours; 30 minutes; etc.).
     */
-    static func string(from: Date, to: Date) -> String? {
+    static func stringBetween(from: Date, to: Date) -> String? {
         // prepare the time formatter based on locale
         var systemCalendar = Calendar.current
         systemCalendar.locale = ZDevice.preferredLocale()
@@ -76,52 +120,19 @@ class ZTime {
         
         return timeFormatter.string(for: components)
     }
-    
+}
+
+extension TimeInterval {
     /**
-     Generates a localized string representing a time interval.
+     Generates a localized string representing a time interval (e.g. 3 days; 10 hours; 30 minutes; etc.)..
      
      - Parameter timeInterval: The time (in seconds) to be converted.
-     
-     - Returns: A localized string representing the time between dates (e.g. 3 days; 10 hours; 30 minutes; etc.).
      */
-    static func string(timeInterval: TimeInterval) -> String? {
+    var string: String? {
         // prepare abstract dates
         let to = Date()
-        let from = Date(timeIntervalSince1970: to.timeIntervalSince1970 - timeInterval)
+        let from = Date(timeIntervalSince1970: to.timeIntervalSince1970 - self.advanced(by: 0))
         
-        return self.string(from: from, to: to)
-    }
-    
-    /**
-     Generates a time string for the specified date in UTC.
-     
-     - Parameter style: A DateFormatter.Style option that decides the string's brevity or length.
-     - Parameter date: A Date() object representing the time to be displayed. If none is provided, the current date/time is used.
-     
-     - Returns: A String representing the current time in UTC.
-     */
-    static func utc(style: DateFormatter.Style, date: Date? = Date()) -> String {
-        let df = DateFormatter()
-        df.locale = ZDevice.preferredLocale()
-        df.timeZone = NSTimeZone(name: "UTC")! as TimeZone
-        df.timeStyle = style
-        df.dateStyle = .none
-        return df.string(from: date!)
-    }
-    
-    /**
-     Breaks down a provided time into a dictionary of component values keyed by time components.
- 
-     - Parameter date: A Date() object representing the time to be processed. If none is provided, the current date/time is used.
-     
-     - Returns: A dictionary containing time component integer values keyed by their component type.
-    */
-    static func components(date: Date? = Date()) -> [Calendar.Component:Int] {
-        let componentTypes: [Calendar.Component] = [.era, .year, .quarter, .month, .weekOfYear, .weekOfMonth, .weekday, .hour, .minute, .second, .nanosecond]
-        var componentValues: [Calendar.Component:Int] = [:]
-        for c in componentTypes {
-            componentValues.updateValue(Calendar.current.component(c, from: date!), forKey: c)
-        }
-        return componentValues
+        return Date.stringBetween(from: from, to: to)
     }
 }
