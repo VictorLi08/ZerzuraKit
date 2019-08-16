@@ -185,7 +185,7 @@ class ZLocation {
      
      - Returns: A formatted String for the location stored.
      */
-    func string(withPlaceAndArea: Bool, cityAndProvince: Bool) -> String {
+    open func string(withPlaceAndArea: Bool, cityAndProvince: Bool) -> String {
         let address1 = self.houseNumber + " " + self.street
         let address2 = self.placeName + ", " + self.area
         
