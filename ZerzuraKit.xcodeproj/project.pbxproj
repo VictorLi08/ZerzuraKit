@@ -27,6 +27,8 @@
 		D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; platformFilter = ios; };
 		D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
 		D57E53CE23075AB200CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
+		D57E53D02307775900CCCF9E /* ZHaptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CF2307775900CCCF9E /* ZHaptics.swift */; };
+		D57E53D1230780C100CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
 		D59CBC9E22D408E9009ED4C2 /* ZerzuraKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D59CBCAD22D40A82009ED4C2 /* ZerzuraKit_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D59CBCAB22D40A82009ED4C2 /* ZerzuraKit_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D59CBCBC22D40B06009ED4C2 /* ZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* ZLocation.swift */; platformFilter = ios; };
@@ -47,6 +49,7 @@
 		D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaExt.swift; sourceTree = "<group>"; };
 		D569DCE022F8E96B003F13EE /* ZColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZColor.swift; sourceTree = "<group>"; };
 		D57E53CD23075AB200CCCF9E /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		D57E53CF2307775900CCCF9E /* ZHaptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHaptics.swift; sourceTree = "<group>"; };
 		D59CBC9922D408E9009ED4C2 /* ZerzuraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZerzuraKit.h; sourceTree = "<group>"; };
 		D59CBC9D22D408E9009ED4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,8 +128,9 @@
 		D59CBCB522D40B06009ED4C2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D59CBCB722D40B06009ED4C2 /* ZDeviceM.swift */,
+				D57E53CF2307775900CCCF9E /* ZHaptics.swift */,
 				D5DA152522F4D97600EB4C3F /* UI */,
-				D5DA152622F4D98600EB4C3F /* Services */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -147,14 +151,6 @@
 				D5DA152922F4DA5F00EB4C3F /* Images.swift */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		D5DA152622F4D98600EB4C3F /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				D59CBCB722D40B06009ED4C2 /* ZDeviceM.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		D5DA152B22F4DAC900EB4C3F /* Shared */ = {
@@ -337,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5DA153122F4DB4F00EB4C3F /* ZDevice.swift in Sources */,
+				D57E53D02307775900CCCF9E /* ZHaptics.swift in Sources */,
 				D5DD662022DAC6EE00B5DAD3 /* UIKitExt.swift in Sources */,
 				D5DA152A22F4DA5F00EB4C3F /* Images.swift in Sources */,
 				D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */,
@@ -356,6 +353,7 @@
 				D59CBCCB22D40B11009ED4C2 /* Images.swift in Sources */,
 				D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */,
 				D59CBCCC22D40B11009ED4C2 /* ZColorD.swift in Sources */,
+				D57E53D1230780C100CCCF9E /* Numbers.swift in Sources */,
 				D52ECFAC22F4DD07005AE4DE /* CocoaExt.swift in Sources */,
 				D5DA152F22F4DB1800EB4C3F /* ZLocation.swift in Sources */,
 				D5DA152E22F4DB1600EB4C3F /* ZTime.swift in Sources */,
