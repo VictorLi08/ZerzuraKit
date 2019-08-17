@@ -13,13 +13,13 @@ ZerzuraKit is a versatile framework for iOS and macOS that bundles a diverse set
 
 Features:
 - Manage color values and UIColor/NSColor across sRGB, HSV, Hex, and CMYK color spaces with ZColor.
-- Decode addresses and store of CLLocation data using ZLocation.
-- Generate and localize time strings using ZTime.
-- Compress, resize, and fetch/display images using ZImage.
+- Decode addresses and store of CLLocation data with ZLocation.
+- Generate and localize time strings with Date and TimeInterval extensions.
+- Compute and convert numbers more conveniently with Int/Double extensions.
 - UIKit and Cocoa extensions that:
     - Add convenient methods and properties for programatically defining UI elements.
     - Allow for Apple-esque animations and haptics.
-- Seamlessly interact with a device and its properties using ZSystem.
-- All wrapped in best practices and conventions for developing in iOS/macOS.
+    - Enable image compression, resize, and asynchronous fetch/display.
+- Seamlessly interact with devices and device properties using ZDevice.
 
-Currently being developed in Xcode 11 for iOS 12.0+.
+Currently being developed in Xcode 11 for iOS 12.0+ and macOS 10.14+.
