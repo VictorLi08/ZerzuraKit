@@ -50,7 +50,7 @@ extension Int {
 
 extension Double {
     @discardableResult
-    static postfix func %(lhs: Double, rhs: Double) -> Double {
+    static func %(lhs: Double, rhs: Double) -> Double {
         return lhs.truncatingRemainder(dividingBy: rhs)
     }
 }
