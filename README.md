@@ -1,4 +1,12 @@
 # ZerzuraKit
+---
+***Warning***
+ZerzuraKit is currently under active development and is being distributed in a pre-release state with incomplete testing. Unexpected behavior is normal as functionality is refined. Please contribute by opening an issue.
+
+Thanks!
+---
+
+
 ZerzuraKit is a versatile framework for iOS and macOS that bundles a diverse set of methods and extensions into a streamlined package. Build your apps faster with an extensive library of handy methods that allow you to conveniently implement complex functionality using intuitive and lightweight syntax.
 
 Features:
@@ -12,4 +20,4 @@ Features:
 - Seamlessly interact with a device and its properties using ZSystem.
 - All wrapped in best practices and conventions for developing in iOS/macOS.
 
-This project is shifting to Gitflow and CI/CD; please be patient while organizational changes happen in the background. Thanks!
+Currently being developed in Xcode 11 for iOS 12.0+.
