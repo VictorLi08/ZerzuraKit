@@ -90,8 +90,8 @@
 			children = (
 				D50CEF5C22FE043700667AC7 /* README.md */,
 				D5DA152B22F4DAC900EB4C3F /* Shared */,
-				D59CBC9B22D408E9009ED4C2 /* ZerzuraKit */,
-				D59CBCAA22D40A82009ED4C2 /* ZerzuraKit-macOS */,
+				D59CBC9B22D408E9009ED4C2 /* iOS */,
+				D59CBCAA22D40A82009ED4C2 /* macOS */,
 				D59CBC9A22D408E9009ED4C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,24 +105,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D59CBC9B22D408E9009ED4C2 /* ZerzuraKit */ = {
+		D59CBC9B22D408E9009ED4C2 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				D59CBCB522D40B06009ED4C2 /* Source */,
 				D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */,
 				D59CBC9D22D408E9009ED4C2 /* Info.plist */,
 			);
-			path = ZerzuraKit;
+			path = iOS;
 			sourceTree = "<group>";
 		};
-		D59CBCAA22D40A82009ED4C2 /* ZerzuraKit-macOS */ = {
+		D59CBCAA22D40A82009ED4C2 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
 				D59CBCC222D40B11009ED4C2 /* Source */,
 				D59CBCAB22D40A82009ED4C2 /* ZerzuraKit_macOS.h */,
 				D59CBCAC22D40A82009ED4C2 /* Info.plist */,
 			);
-			path = "ZerzuraKit-macOS";
+			path = macOS;
 			sourceTree = "<group>";
 		};
 		D59CBCB522D40B06009ED4C2 /* Source */ = {
@@ -493,7 +493,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ZerzuraKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -520,7 +520,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ZerzuraKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -548,7 +548,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "ZerzuraKit-macOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -576,7 +576,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "ZerzuraKit-macOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
