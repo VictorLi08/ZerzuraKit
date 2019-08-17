@@ -47,3 +47,10 @@ extension Int {
         return binStr
     }
 }
+
+extension Double {
+    @discardableResult
+    static postfix func %(lhs: Double, rhs: Double) -> Double {
+        return lhs.truncatingRemainder(dividingBy: rhs)
+    }
+}
