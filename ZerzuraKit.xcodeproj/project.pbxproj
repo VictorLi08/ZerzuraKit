@@ -26,6 +26,10 @@
 		D52ECFAC22F4DD07005AE4DE /* CocoaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */; };
 		D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; platformFilter = ios; };
 		D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
+		D56E0D70230B46F0007A3468 /* ZerzuraKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E0D6F230B46F0007A3468 /* ZerzuraKitTests.swift */; };
+		D56E0D72230B46F0007A3468 /* ZerzuraKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59CBC9922D408E9009ED4C2 /* ZerzuraKit.framework */; };
+		D56E0D8E230B49EC007A3468 /* ZerzuraKit_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E0D8D230B49EC007A3468 /* ZerzuraKit_macOSTests.swift */; };
+		D56E0D90230B49EC007A3468 /* ZerzuraKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59CBCA922D40A82009ED4C2 /* ZerzuraKit_macOS.framework */; };
 		D57E53CE23075AB200CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
 		D57E53D02307775900CCCF9E /* ZHaptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CF2307775900CCCF9E /* ZHaptics.swift */; platformFilter = ios; };
 		D57E53D1230780C100CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
@@ -43,13 +47,34 @@
 		D5DD662022DAC6EE00B5DAD3 /* UIKitExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD661F22DAC6EE00B5DAD3 /* UIKitExt.swift */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D56E0D73230B46F0007A3468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59CBC9022D408E9009ED4C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D59CBC9822D408E9009ED4C2;
+			remoteInfo = ZerzuraKit;
+		};
+		D56E0D91230B49EC007A3468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59CBC9022D408E9009ED4C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D59CBCA822D40A82009ED4C2;
+			remoteInfo = "ZerzuraKit-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D50CEF5C22FE043700667AC7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D5117F31230B41940011C2C9 /* ZerzuraKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZerzuraKitTests.swift; sourceTree = "<group>"; };
-		D5117F33230B41940011C2C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaExt.swift; sourceTree = "<group>"; };
 		D53811172307ECD6006888E8 /* ZerzuraKit.tpodspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ZerzuraKit.tpodspec; sourceTree = "<group>"; };
 		D569DCE022F8E96B003F13EE /* ZColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZColor.swift; sourceTree = "<group>"; };
+		D56E0D6D230B46F0007A3468 /* ZerzuraKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZerzuraKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56E0D6F230B46F0007A3468 /* ZerzuraKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZerzuraKitTests.swift; sourceTree = "<group>"; };
+		D56E0D71230B46F0007A3468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D56E0D8B230B49EC007A3468 /* ZerzuraKit_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZerzuraKit_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56E0D8D230B49EC007A3468 /* ZerzuraKit_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZerzuraKit_macOSTests.swift; sourceTree = "<group>"; };
+		D56E0D8F230B49EC007A3468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D57E53CD23075AB200CCCF9E /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
 		D57E53CF2307775900CCCF9E /* ZHaptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHaptics.swift; sourceTree = "<group>"; };
 		D59CBC9922D408E9009ED4C2 /* ZerzuraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +94,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D56E0D6A230B46F0007A3468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56E0D72230B46F0007A3468 /* ZerzuraKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56E0D88230B49EC007A3468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56E0D90230B49EC007A3468 /* ZerzuraKit_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D59CBC9622D408E9009ED4C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,15 +127,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D5117F30230B41940011C2C9 /* ZerzuraKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				D5117F31230B41940011C2C9 /* ZerzuraKitTests.swift */,
-				D5117F33230B41940011C2C9 /* Info.plist */,
-			);
-			path = ZerzuraKitTests;
-			sourceTree = "<group>";
-		};
 		D53811182307EEB9006888E8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +147,24 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
+		D56E0D6E230B46F0007A3468 /* ZerzuraKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D56E0D6F230B46F0007A3468 /* ZerzuraKitTests.swift */,
+				D56E0D71230B46F0007A3468 /* Info.plist */,
+			);
+			path = ZerzuraKitTests;
+			sourceTree = "<group>";
+		};
+		D56E0D8C230B49EC007A3468 /* ZerzuraKit_macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D56E0D8D230B49EC007A3468 /* ZerzuraKit_macOSTests.swift */,
+				D56E0D8F230B49EC007A3468 /* Info.plist */,
+			);
+			path = ZerzuraKit_macOSTests;
+			sourceTree = "<group>";
+		};
 		D59CBC8F22D408E9009ED4C2 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +173,8 @@
 				D5DA152B22F4DAC900EB4C3F /* Shared */,
 				D59CBC9B22D408E9009ED4C2 /* iOS */,
 				D59CBCAA22D40A82009ED4C2 /* macOS */,
-				D5117F30230B41940011C2C9 /* ZerzuraKitTests */,
+				D56E0D6E230B46F0007A3468 /* ZerzuraKitTests */,
+				D56E0D8C230B49EC007A3468 /* ZerzuraKit_macOSTests */,
 				D59CBC9A22D408E9009ED4C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -133,6 +184,8 @@
 			children = (
 				D59CBC9922D408E9009ED4C2 /* ZerzuraKit.framework */,
 				D59CBCA922D40A82009ED4C2 /* ZerzuraKit_macOS.framework */,
+				D56E0D6D230B46F0007A3468 /* ZerzuraKitTests.xctest */,
+				D56E0D8B230B49EC007A3468 /* ZerzuraKit_macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,6 +269,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D56E0D6C230B46F0007A3468 /* ZerzuraKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D56E0D75230B46F0007A3468 /* Build configuration list for PBXNativeTarget "ZerzuraKitTests" */;
+			buildPhases = (
+				D56E0D69230B46F0007A3468 /* Sources */,
+				D56E0D6A230B46F0007A3468 /* Frameworks */,
+				D56E0D6B230B46F0007A3468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D56E0D74230B46F0007A3468 /* PBXTargetDependency */,
+			);
+			name = ZerzuraKitTests;
+			productName = ZerzuraKitTests;
+			productReference = D56E0D6D230B46F0007A3468 /* ZerzuraKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D56E0D8A230B49EC007A3468 /* ZerzuraKit_macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D56E0D93230B49EC007A3468 /* Build configuration list for PBXNativeTarget "ZerzuraKit_macOSTests" */;
+			buildPhases = (
+				D56E0D87230B49EC007A3468 /* Sources */,
+				D56E0D88230B49EC007A3468 /* Frameworks */,
+				D56E0D89230B49EC007A3468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D56E0D92230B49EC007A3468 /* PBXTargetDependency */,
+			);
+			name = ZerzuraKit_macOSTests;
+			productName = ZerzuraKit_macOSTests;
+			productReference = D56E0D8B230B49EC007A3468 /* ZerzuraKit_macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D59CBC9822D408E9009ED4C2 /* ZerzuraKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D59CBCA122D408E9009ED4C2 /* Build configuration list for PBXNativeTarget "ZerzuraKit" */;
@@ -262,6 +351,12 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Mesarthim;
 				TargetAttributes = {
+					D56E0D6C230B46F0007A3468 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					D56E0D8A230B49EC007A3468 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					D59CBC9822D408E9009ED4C2 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -289,11 +384,27 @@
 				D59CBC9822D408E9009ED4C2 /* ZerzuraKit */,
 				D59CBCA822D40A82009ED4C2 /* ZerzuraKit-macOS */,
 				D59CBCB122D40AA3009ED4C2 /* ZerzuraKit-Universal */,
+				D56E0D6C230B46F0007A3468 /* ZerzuraKitTests */,
+				D56E0D8A230B49EC007A3468 /* ZerzuraKit_macOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D56E0D6B230B46F0007A3468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56E0D89230B49EC007A3468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D59CBC9722D408E9009ED4C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +443,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D56E0D69230B46F0007A3468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56E0D70230B46F0007A3468 /* ZerzuraKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56E0D87230B49EC007A3468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56E0D8E230B49EC007A3468 /* ZerzuraKit_macOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D59CBC9522D408E9009ED4C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,7 +492,96 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D56E0D74230B46F0007A3468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D59CBC9822D408E9009ED4C2 /* ZerzuraKit */;
+			targetProxy = D56E0D73230B46F0007A3468 /* PBXContainerItemProxy */;
+		};
+		D56E0D92230B49EC007A3468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D59CBCA822D40A82009ED4C2 /* ZerzuraKit-macOS */;
+			targetProxy = D56E0D91230B49EC007A3468 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D56E0D76230B46F0007A3468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				INFOPLIST_FILE = ZerzuraKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ophiuchi.ZerzuraKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D56E0D77230B46F0007A3468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				INFOPLIST_FILE = ZerzuraKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ophiuchi.ZerzuraKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D56E0D94230B49EC007A3468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				INFOPLIST_FILE = ZerzuraKit_macOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D56E0D95230B49EC007A3468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				INFOPLIST_FILE = ZerzuraKit_macOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		D59CBC9F22D408E9009ED4C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -622,6 +838,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D56E0D75230B46F0007A3468 /* Build configuration list for PBXNativeTarget "ZerzuraKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56E0D76230B46F0007A3468 /* Debug */,
+				D56E0D77230B46F0007A3468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D56E0D93230B49EC007A3468 /* Build configuration list for PBXNativeTarget "ZerzuraKit_macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56E0D94230B49EC007A3468 /* Debug */,
+				D56E0D95230B49EC007A3468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D59CBC9322D408E9009ED4C2 /* Build configuration list for PBXProject "ZerzuraKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
