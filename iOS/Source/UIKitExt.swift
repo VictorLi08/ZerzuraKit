@@ -68,7 +68,7 @@ extension UIScrollView {
     
     /// Scrolls the view to its lowest position.
     @objc func bottom() {
-        let viewBottom = CGPoint(x: 0, y: self.contentSize.height - self.bounds.height + self.adjustedContentInset.bottom)
+        let viewBottom = CGPoint(x: 0, y: self.contentSize.height - self.bounds.height + self.contentInset.bottom)
         self.setContentOffset(viewBottom, animated: true)
     }
 }
