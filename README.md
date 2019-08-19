@@ -22,4 +22,4 @@ Features:
     - Enable image compression, resize, and asynchronous fetch/display.
 - Seamlessly interact with devices and device properties using ZDevice.
 
-Currently being developed in Xcode 11 for iOS 11.0+ and macOS 10.10+.
+Currently being developed in Xcode 11 for iOS 10.0+ and macOS 10.10+.
