@@ -47,6 +47,7 @@
 /* Begin PBXFileReference section */
 		D50CEF5C22FE043700667AC7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaExt.swift; sourceTree = "<group>"; };
+		D53811172307ECD6006888E8 /* ZerzuraKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ZerzuraKit.podspec; sourceTree = "<group>"; };
 		D569DCE022F8E96B003F13EE /* ZColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZColor.swift; sourceTree = "<group>"; };
 		D57E53CD23075AB200CCCF9E /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
 		D57E53CF2307775900CCCF9E /* ZHaptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHaptics.swift; sourceTree = "<group>"; };
@@ -85,9 +86,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D53811182307EEB9006888E8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D5DD661F22DAC6EE00B5DAD3 /* UIKitExt.swift */,
+				D59CBCB922D40B06009ED4C2 /* ZColorM.swift */,
+				D5DA152922F4DA5F00EB4C3F /* Images.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		D53811192307EECA006888E8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */,
+				D59CBCC622D40B11009ED4C2 /* ZColorD.swift */,
+				D59CBCC522D40B11009ED4C2 /* Images.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		D59CBC8F22D408E9009ED4C2 = {
 			isa = PBXGroup;
 			children = (
+				D53811172307ECD6006888E8 /* ZerzuraKit.podspec */,
 				D50CEF5C22FE043700667AC7 /* README.md */,
 				D5DA152B22F4DAC900EB4C3F /* Shared */,
 				D59CBC9B22D408E9009ED4C2 /* iOS */,
@@ -130,7 +152,7 @@
 			children = (
 				D59CBCB722D40B06009ED4C2 /* ZDeviceM.swift */,
 				D57E53CF2307775900CCCF9E /* ZHaptics.swift */,
-				D5DA152522F4D97600EB4C3F /* UI */,
+				D53811182307EEB9006888E8 /* UI */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -138,19 +160,9 @@
 		D59CBCC222D40B11009ED4C2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D5DA153322F4DBFB00EB4C3F /* UI */,
+				D53811192307EECA006888E8 /* UI */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		D5DA152522F4D97600EB4C3F /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				D5DD661F22DAC6EE00B5DAD3 /* UIKitExt.swift */,
-				D59CBCB922D40B06009ED4C2 /* ZColorM.swift */,
-				D5DA152922F4DA5F00EB4C3F /* Images.swift */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		D5DA152B22F4DAC900EB4C3F /* Shared */ = {
@@ -167,28 +179,10 @@
 				D59CBCB622D40B06009ED4C2 /* ZLocation.swift */,
 				D59CBCBA22D40B06009ED4C2 /* ZTime.swift */,
 				D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */,
-				D5DA152D22F4DAE500EB4C3F /* UI */,
+				D569DCE022F8E96B003F13EE /* ZColor.swift */,
 				D57E53CD23075AB200CCCF9E /* Numbers.swift */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		D5DA152D22F4DAE500EB4C3F /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				D569DCE022F8E96B003F13EE /* ZColor.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		D5DA153322F4DBFB00EB4C3F /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */,
-				D59CBCC622D40B11009ED4C2 /* ZColorD.swift */,
-				D59CBCC522D40B11009ED4C2 /* Images.swift */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -9,7 +9,7 @@ Thanks!
 ---
 
 
-ZerzuraKit is a versatile framework for iOS and macOS that bundles a diverse set of methods and extensions into a streamlined package. Build your apps faster with an extensive library of handy methods that allow you to conveniently implement complex functionality using intuitive and lightweight syntax.
+ZerzuraKit is a versatile framework for iOS and macOS that bundles a diverse set of methods and extensions into a streamlined package. Have at your disposal an extensive library of convenient methods that allow you to code intuitively and implement complex functionality using lightweight syntax.
 
 Features:
 - Manage color values and UIColor/NSColor across sRGB, HSV, Hex, and CMYK color spaces with ZColor.

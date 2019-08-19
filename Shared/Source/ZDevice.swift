@@ -6,8 +6,6 @@
 //  Copyright © 2019 Mesarthim. All rights reserved.
 //
 
-import Foundation
-
 /**
  A class that interacts with device settings and device properties.
  */
