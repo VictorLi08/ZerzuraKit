@@ -8,9 +8,15 @@
 
 extension Int {
     @discardableResult
-    static postfix func ++(lhs: inout Int) -> Int {
+    static prefix func ++(lhs: inout Int) -> Int {
         lhs += 1
         return lhs
+    }
+    
+    @discardableResult
+    static postfix func ++(lhs: inout Int) -> Int {
+        lhs += 1
+        return lhs - 1
     }
     
     /**
