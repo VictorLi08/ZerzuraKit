@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		D50CEF5C22FE043700667AC7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaExt.swift; sourceTree = "<group>"; };
-		D53811172307ECD6006888E8 /* ZerzuraKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ZerzuraKit.podspec; sourceTree = "<group>"; };
+		D53811172307ECD6006888E8 /* ZerzuraKit.tpodspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ZerzuraKit.tpodspec; sourceTree = "<group>"; };
 		D569DCE022F8E96B003F13EE /* ZColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZColor.swift; sourceTree = "<group>"; };
 		D57E53CD23075AB200CCCF9E /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
 		D57E53CF2307775900CCCF9E /* ZHaptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHaptics.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		D59CBC8F22D408E9009ED4C2 = {
 			isa = PBXGroup;
 			children = (
-				D53811172307ECD6006888E8 /* ZerzuraKit.podspec */,
+				D53811172307ECD6006888E8 /* ZerzuraKit.tpodspec */,
 				D50CEF5C22FE043700667AC7 /* README.md */,
 				D5DA152B22F4DAC900EB4C3F /* Shared */,
 				D59CBC9B22D408E9009ED4C2 /* iOS */,
