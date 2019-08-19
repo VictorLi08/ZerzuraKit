@@ -19,6 +19,18 @@ extension Int {
         return lhs - 1
     }
     
+    @discardableResult
+    static prefix func --(lhs: inout Int) -> Int {
+        lhs -= 1
+        return lhs
+    }
+    
+    @discardableResult
+    static postfix func --(lhs: inout Int) -> Int {
+        lhs -= 1
+        return lhs + 1
+    }
+    
     /**
      Generates a string representing the Int in binary.
      
