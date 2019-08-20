@@ -15,7 +15,7 @@ extension ZColor {
      - Returns: A UIColor initialized using stored color values.
     */
     func get() -> UIColor {
-        return ZColor.hex(hexString: self.hexString, a: self.a)
+        return ZColor.hex(hexString: self.hexString, alpha: self.a)
     }
 
     /**
@@ -29,7 +29,11 @@ extension ZColor {
      - Returns: A UIColor initialized using the provided component values.
     */
     static func srgb(r: Double, g: Double, b: Double, a: Double? = 0.0) -> UIColor {
-        return UIColor(red: CGFloat(Double(r)/256.0), green: CGFloat(Double(g)/256.0), blue: CGFloat(Double(b)/256.0), alpha: CGFloat(Double(a!)))
+        let redComponent = CGFloat(Double(r)/256.0)
+        let greenComponent = CGFloat(Double(g)/256.0)
+        let blueComponent = CGFloat(Double(b)/256.0)
+        let alphaComponent = CGFloat(Double(a!))
+        return UIColor(red: redComponent, green: greenComponent, blue: blueComponent, alpha: alphaComponent)
     }
 
     /**
@@ -46,7 +50,6 @@ extension ZColor {
         let hue = CGFloat(h.truncatingRemainder(dividingBy: 360.0))
         let sat = CGFloat(s.truncatingRemainder(dividingBy: 360.0))
         let bright = CGFloat(v.truncatingRemainder(dividingBy: 360.0))
-
         return UIColor(hue: hue, saturation: sat, brightness: bright, alpha: CGFloat(a!))
     }
 
@@ -63,10 +66,10 @@ extension ZColor {
     */
     static func cmyk(c: Double, m: Double, y: Double, k: Double) -> UIColor {
        let rgb = ZColor.convert(values: [String(c), String(m), String(y), String(k)], from: .cmyk, to: .srgb)
-       guard let r = Double(rgb[0]), let g = Double(rgb[1]), let b = Double(rgb[2]) else {
+       guard let red = Double(rgb[0]), let green = Double(rgb[1]), let blue = Double(rgb[2]) else {
            return UIColor.white
        }
-       return srgb(r: r, g: g, b: b, a: 1.0)
+       return srgb(r: red, g: green, b: blue, a: 1.0)
     }
 
     /**
@@ -77,13 +80,11 @@ extension ZColor {
 
      - Returns: A UIColor initialized using the provided hex value.
     */
-    static func hex(hexString: String, a: Double? = 0.0) -> UIColor {
+    static func hex(hexString: String, alpha: Double? = 0.0) -> UIColor {
         let h = convert(values: [hexString], from: .hex, to: .srgb)
-
-        // use srgb to return the correct color
-        guard let r = Double(h[0]), let g = Double(h[1]), let b = Double(h[2]) else {
+        guard let red = Double(h[0]), let green = Double(h[1]), let blue = Double(h[2]) else {
            return UIColor.white
         }
-        return srgb(r: r, g: g, b: b, a: a)
+        return srgb(r: red, g: green, b: blue, a: alpha)
     }
 }
