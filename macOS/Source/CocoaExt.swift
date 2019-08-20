@@ -9,13 +9,18 @@
 import Cocoa
 
 extension NSWindow {
-    func setResizable(_ isResizable: Bool) {
-        if isResizable {
-            if !self.styleMask.contains(.resizable) {
-                self.styleMask.update(with: .resizable)
+    var isResizable: Bool {
+        get {
+            return self.styleMask.contains(.resizable)
+        }
+        set {
+            if newValue == true {
+                if !self.styleMask.contains(.resizable) {
+                    self.styleMask.update(with: .resizable)
+                }
+            } else if newValue == false {
+                self.styleMask.remove(.resizable)
             }
-        } else {
-            self.styleMask.remove(.resizable)
         }
     }
 }

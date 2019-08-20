@@ -81,7 +81,8 @@ extension UITextView {
     
     /// Scrolls the view to its lowest position.
     override func bottom() {
-        self.scrollRangeToVisible(NSRange(location: self.text.count - 1, length: 1))
+        let endTextPosition = self.text.count - 1
+        self.scrollRangeToVisible(NSRange(location: endTextPosition, length: 0))
     }
     
     /**
