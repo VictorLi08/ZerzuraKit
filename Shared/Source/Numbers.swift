@@ -7,24 +7,28 @@
 //
 
 extension Int {
+    /// Pre-increments an integer and returns its incremented value.
     @discardableResult
     static prefix func ++(lhs: inout Int) -> Int {
         lhs += 1
         return lhs
     }
     
+    /// Post-increments an integer and returns its previous value.
     @discardableResult
     static postfix func ++(lhs: inout Int) -> Int {
         lhs += 1
         return lhs - 1
     }
     
+    /// Pre-decrements an integer and returns its decremented value.
     @discardableResult
     static prefix func --(lhs: inout Int) -> Int {
         lhs -= 1
         return lhs
     }
     
+    /// Post-decrements an integer and returns its previous value.
     @discardableResult
     static postfix func --(lhs: inout Int) -> Int {
         lhs -= 1

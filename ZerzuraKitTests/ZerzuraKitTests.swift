@@ -24,8 +24,9 @@ class ZerzuraKitTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         var a = 0
         let b = (a++)
-        XCTAssert(a == 1)
+        a++
         XCTAssert(b == 0)
+        XCTAssert(a == 2)
     }
 
     func testPerformanceExample() {
