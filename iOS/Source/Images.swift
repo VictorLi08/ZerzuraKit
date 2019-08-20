@@ -12,11 +12,15 @@ extension UIImage {
     /**
      Generates a compressed copy of the UIImage.
      
-     - Parameter quality: The quality of the compressed image relative to the current image (i.e. 0.7 = 70%).
+     - Parameter quality: The quality of the compressed image versus the current image.
      
-     - Returns: A UIImage compressed to the quality desired.
+     - Returns: A compressed UIImage.
      */
     func compressed(quality: CGFloat) -> UIImage? {
+        guard let _ = self.images else {
+            return nil
+        }
+        
         if quality > 1.0 || quality < 0.0 {
             return self
         } else {
@@ -34,30 +38,25 @@ extension UIImageView {
      - Parameter width: The desired width (in pixels) of the resulting UIImageView.
      - Parameter height: The desired height (in pixels) of the resulting UIImageView.
      */
-    func withSize(width: CGFloat?, height: CGFloat?) {
-        guard let img = self.image else {
+    func resize(width: CGFloat?, height: CGFloat?) {
+        guard let imageViewImage = self.image else {
             return
         }
         
-        let aspectRatio = img.size.width / img.size.height      // determine the aspect ratio
+        let aspectRatio = imageViewImage.size.width / imageViewImage.size.height
         
         var newSize = CGSize()
-        if let w = width, let h = height {      // resize using both, ignoring aspect ratio
-            newSize = CGSize(width: w, height: h)
-        } else if let w = width {       // resize using width, keeping aspect ratio
-            newSize = CGSize(width: w, height: w * aspectRatio)
-        } else if let h = height {      // resize using height, keeping aspect ratio
-            newSize = CGSize(width: h * aspectRatio, height: h)
+        if let newWidth = width, let newHeight = height {       // both w/h supplied
+            newSize = CGSize(width: newWidth, height: newHeight)
+        } else if let newWidth = width {        // w only
+            newSize = CGSize(width: newWidth, height: newWidth * aspectRatio)
+        } else if let newHeight = height {      // h only
+            newSize = CGSize(width: newHeight * aspectRatio, height: newHeight)
         } else {
             return
         }
         
-        let renderer = UIGraphicsImageRenderer(size: newSize)
-        let resizedImage = renderer.image { _ in
-            self.image!.draw(in: CGRect.init(origin: frame.origin, size: newSize))      // render the new image
-        }
-        
-        self.image = resizedImage       // set the image
+        self.resize(to: newSize)
     }
     
     /**
@@ -65,13 +64,18 @@ extension UIImageView {
      
      - Parameter size: A CGSize representing the desired dimensions of the UIImageView.
      */
-    func withSize(size: CGSize) {
-        let renderer = UIGraphicsImageRenderer(size: size)
-        let resizedImage = renderer.image { _ in
-            self.image!.draw(in: CGRect.init(origin: CGPoint.zero, size: size))        // render the new image
+    func resize(to newSize: CGSize) {
+        guard var imageViewImage = self.image else {
+            return
         }
         
-        self.image = resizedImage       // set the image
+        let renderer = UIGraphicsImageRenderer(size: newSize)      // render new image
+        let newImageRectangle = CGRect(origin: CGPoint.zero, size: newSize)
+        let resizedImage = renderer.image { _ in
+            imageViewImage.draw(in: newImageRectangle)
+        }
+        
+        imageViewImage = resizedImage
     }
     
     /**
@@ -81,14 +85,14 @@ extension UIImageView {
      - Parameter duration: The number of seconds it should take for all animations to complete.
      */
     func reshow(image: UIImage, duration: TimeInterval) {
-        DispatchQueue.main.async {      // fade out
+        DispatchQueue.main.async {
             UIView.animate(withDuration: duration, animations: {
-                self.alpha = 0.0
+                self.alpha = 0.0        // fade out
             }) { (finished) in
                 self.image = image      // change the image
             
-                UIView.animate(withDuration: duration, animations: {        // fade in
-                    self.alpha = 1.0
+                UIView.animate(withDuration: duration, animations: {
+                    self.alpha = 1.0        // fade in
                 })
             }
         }
@@ -98,7 +102,7 @@ extension UIImageView {
      Fetches an image asynchronously and displays it in the image view.
      Logged errors will reference the culprit image view if its accessibility label has been set.
      
-     - Parameter: An HTTP URL to the desired image resource.
+     - Parameter url: An HTTP URL to the desired image resource.
      */
     func imageFromURL(_ url: URL) {
         DispatchQueue.global(qos: .utility).async {

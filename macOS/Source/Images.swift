@@ -12,11 +12,15 @@ extension NSImage {
     /**
      Generates a compressed NSImage.
      
-     - Parameter quality: The quality of the compressed image relative to the current image (i.e. 0.7 = 70%).
+     - Parameter quality: The quality of the compressed image versus the current image.
      
-     - Returns: A NSImage compressed to the quality desired.
+     - Returns: The compressed NSImage.
      */
     func compressed(quality: Float) -> NSImage? {
+        guard let _ = self.tiffRepresentation else {
+            return nil
+        }
+        
         if quality > 1.0 || quality < 0.0 {
             return self
         } else {
@@ -34,67 +38,54 @@ extension NSImageView {
      - Parameter width: The desired width (in pixels) of the resulting NSImageView.
      - Parameter height: The desired height (in pixels) of the resulting NSImageView.
      */
-    func withSize(width: CGFloat?, height: CGFloat?) {
-        guard let img = self.image else {
+    func resize(width: CGFloat?, height: CGFloat?) {
+        guard let existingImage = self.image else {
             return
         }
         
-        let aspectRatio = img.size.width / img.size.height      // determine the aspect ratio
+        let aspectRatio = existingImage.size.width / existingImage.size.height
         
         var newSize = NSSize()
-        if let w = width, let h = height {      // resize using both, ignoring aspect ratio
-            newSize = NSSize(width: w, height: h)
-        } else if let w = width {       // resize using width, keeping aspect ratio
-            newSize = NSSize(width: w, height: w * aspectRatio)
-        } else if let h = height {      // resize using height, keeping aspect ratio
-            newSize = NSSize(width: h * aspectRatio, height: h)
+        if let newWidth = width, let newHeight = height {       // both w/h supplied
+            newSize = NSSize(width: newWidth, height: newHeight)
+        } else if let newWidth = width {        // w only
+            newSize = NSSize(width: newWidth, height: newWidth * aspectRatio)
+        } else if let newHeight = height {      // h only
+            newSize = NSSize(width: newHeight * aspectRatio, height: newHeight)
         } else {
             return
         }
         
-        // redraw the image
-        let newImage = NSImage(size: newSize)
-        newImage.lockFocus()
-        self.image!.draw(in: NSMakeRect(self.frame.origin.x, self.frame.origin.y, newSize.width, newSize.height),
-                         from: NSMakeRect(self.frame.origin.x, self.frame.origin.y, self.image!.size.width, self.image!.size.height),
-                         operation: NSCompositingOperation.sourceOver, fraction: CGFloat(1))
-        
-        let existingOrigin = NSPoint(x: self.frame.origin.x, y: self.frame.origin.y)
-        self.image!.draw(at: existingOrigin,
-                         from: NSMakeRect(self.frame.origin.x, self.frame.origin.y, self.image!.size.width, self.image!.size.height),
-                         operation: NSCompositingOperation.sourceOver, fraction: CGFloat(1))
-        
-        newImage.unlockFocus()
-        newImage.size = newSize
-        
-        self.image = newImage       // set the image
+        self.resize(to: newSize)
     }
     
     /**
-     Resizes a NSImageView to dimensions given by a frame.
+     Resizes a NSImageView to a given size.
      
-     - Parameter frame: A CGSize frame representing the desired dimensions of the NSImageView.
+     - Parameter frame: A rectangle representing the desired dimensions of the NSImageView.
      */
-    func resize(frame: NSRect) {
+    func resize(to newSize: NSSize) {
+        guard var existingImage = self.image else {
+            return
+        }
         
-        // redraw the image
-        let newImage = NSImage(size: frame.size)
+        let newFrame = NSRect(origin: .zero, size: newSize)
+        guard let existingImageData = existingImage.bestRepresentation(for: newFrame, context: nil, hints: nil) else {
+            return
+        }
         
-        newImage.lockFocus()
-        self.image!.draw(in: NSMakeRect(frame.origin.x, frame.origin.y, frame.width, frame.height),
-                         from: NSMakeRect(frame.origin.x, frame.origin.y, self.image!.size.width, self.image!.size.height),
-                         operation: NSCompositingOperation.sourceOver, fraction: CGFloat(1))
-        newImage.unlockFocus()
-        newImage.size = frame.size
+        let newImage = NSImage(size: newSize, flipped: false, drawingHandler: { (_) -> Bool in
+            return existingImageData.draw(in: newFrame)
+        })
         
-        self.image = newImage       // set the image
+        existingImage = newImage
     }
     
     /**
      Fetches an image asynchronously and displays it in the image view.
      Logged errors will reference the culprit image view if its accessibility label has been set.
      
-     - Parameter: An HTTP URL to the desired image resource.
+     - Parameter url: An HTTP URL to the desired image resource.
      */
     func imageFromURL(_ url: URL) {
         DispatchQueue.global(qos: .utility).async {
