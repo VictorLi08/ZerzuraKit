@@ -24,6 +24,7 @@ Currently being developed in Xcode 11 for iOS 10.0+ and macOS 10.10+.
 
 ---
 ***NOTICE***
+
 Animations and UI generators are no longer a part of ZerzuraKit. This functionality has been removed and will be implemented in two new upcoming frameworks: AnimationKit and RapideKit.
 
 ---
