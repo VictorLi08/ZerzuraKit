@@ -8,29 +8,7 @@
 
 import UIKit
 
-extension UIView {
-    /**
-     Fades the view out in the given timeframe and then sets its alpha to 0.
-     
-     - Parameter duration: The number of seconds it should take for the animation to complete.
-     */
-    func fadeIn(duration: TimeInterval) {
-        UIView.animate(withDuration: duration, animations: {
-            self.alpha = 1.0
-        })
-    }
-    
-    /**
-    Fades the view in within the given timeframe and then sets its alpha to 1.
-    
-    - Parameter duration: The number of seconds it should take for the animation to complete.
-    */
-    func fadeOut(duration: TimeInterval) {
-        UIView.animate(withDuration: duration, animations: {
-            self.alpha = 0.0
-        })
-    }
-    
+extension UIView {  
     /// The position of the view's upper left-hand corner.
     var topLeftCorner: CGPoint {
         let positionX = self.center.x - (self.frame.width/2.0)
