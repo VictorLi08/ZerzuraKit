@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target  = '10.0'
   spec.osx.deployment_target  = '10.10'
 
-  spec.source_files       = 'ZerzuraKit/Shared/Source/*.swift'
+  spec.source_files       = 'ZerzuraKit/Common/Source/*.swift'
   spec.ios.source_files   = 'ZerzuraKit/iOS/Source/*.swift', 'ZerzuraKit/extensions/*.swift'
   spec.osx.source_files   = 'ZerzuraKit/macOS/Source/*.swift'
 
