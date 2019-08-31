@@ -16,7 +16,7 @@ Features:
 - Generate and localize time strings with Date and TimeInterval extensions.
 - Compute and convert numbers more conveniently with Int/Double extensions.
 - UIKit and Cocoa extensions that:
-    - Add convenient methods and properties for programatically defining UI elements.
+    - Add convenient methods and properties for programmatically modifying UI elements.
     - Enable image compression, resize, and asynchronous fetch/display.
 - Seamlessly interact with devices and device properties using ZDevice.
 
