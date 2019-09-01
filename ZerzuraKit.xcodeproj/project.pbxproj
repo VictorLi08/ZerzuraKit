@@ -128,6 +128,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D522E080231B4C4C00724C62 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D59CBCB622D40B06009ED4C2 /* ZLocation.swift */,
+				D59CBCBA22D40B06009ED4C2 /* ZTime.swift */,
+				D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */,
+				D569DCE022F8E96B003F13EE /* ZColor.swift */,
+				D57E53CD23075AB200CCCF9E /* Numbers.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 		D53811182307EEB9006888E8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,21 +243,9 @@
 		D5DA152B22F4DAC900EB4C3F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				D5DA152C22F4DACD00EB4C3F /* Source */,
+				D522E080231B4C4C00724C62 /* Source */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		D5DA152C22F4DACD00EB4C3F /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				D59CBCB622D40B06009ED4C2 /* ZLocation.swift */,
-				D59CBCBA22D40B06009ED4C2 /* ZTime.swift */,
-				D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */,
-				D569DCE022F8E96B003F13EE /* ZColor.swift */,
-				D57E53CD23075AB200CCCF9E /* Numbers.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
