@@ -1,0 +1,8 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1 (swiftlang-1100.0.266.1 clang-1100.0.32.1)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ZerzuraKit
+import AudioToolbox
+import CoreLocation
+import Swift
+import UIKit
+@_exported import ZerzuraKit
