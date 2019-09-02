@@ -25,6 +25,8 @@
 		D50CEF5D22FE043700667AC7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D50CEF5C22FE043700667AC7 /* README.md */; };
 		D52ECFAA22F4DCCB005AE4DE /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; };
 		D52ECFAC22F4DD07005AE4DE /* CocoaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */; };
+		D54A3FE1231DB88900B73334 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE0231DB88900B73334 /* Logic.swift */; };
+		D54A3FE2231DB88900B73334 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE0231DB88900B73334 /* Logic.swift */; };
 		D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; platformFilter = ios; };
 		D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
 		D56E0D70230B46F0007A3468 /* ZerzuraKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E0D6F230B46F0007A3468 /* ZerzuraKitTests.swift */; };
@@ -69,6 +71,7 @@
 		D50CEF5C22FE043700667AC7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaExt.swift; sourceTree = "<group>"; };
 		D53811172307ECD6006888E8 /* ZerzuraKit.tpodspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ZerzuraKit.tpodspec; sourceTree = "<group>"; };
+		D54A3FE0231DB88900B73334 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
 		D569DCE022F8E96B003F13EE /* ZColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZColor.swift; sourceTree = "<group>"; };
 		D56E0D6D230B46F0007A3468 /* ZerzuraKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZerzuraKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56E0D6F230B46F0007A3468 /* ZerzuraKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZerzuraKitTests.swift; sourceTree = "<group>"; };
@@ -136,6 +139,7 @@
 				D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */,
 				D569DCE022F8E96B003F13EE /* ZColor.swift */,
 				D57E53CD23075AB200CCCF9E /* Numbers.swift */,
+				D54A3FE0231DB88900B73334 /* Logic.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -487,6 +491,7 @@
 				D5DA152A22F4DA5F00EB4C3F /* Images.swift in Sources */,
 				D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */,
 				D59CBCBF22D40B06009ED4C2 /* ZColorM.swift in Sources */,
+				D54A3FE1231DB88900B73334 /* Logic.swift in Sources */,
 				D59CBCBC22D40B06009ED4C2 /* ZLocation.swift in Sources */,
 				D59CBCC022D40B06009ED4C2 /* ZTime.swift in Sources */,
 				D57E53CE23075AB200CCCF9E /* Numbers.swift in Sources */,
@@ -498,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D52ECFAA22F4DCCB005AE4DE /* ZDevice.swift in Sources */,
+				D54A3FE2231DB88900B73334 /* Logic.swift in Sources */,
 				D59CBCCB22D40B11009ED4C2 /* Images.swift in Sources */,
 				D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */,
 				D59CBCCC22D40B11009ED4C2 /* ZColorD.swift in Sources */,
