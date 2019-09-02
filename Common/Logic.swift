@@ -59,7 +59,7 @@ extension Array where Element: Equatable {
         return common
     }
     
-    func &(lhs: Array, rhs: Array) -> Array {
+    static func &(lhs: Array, rhs: Array) -> Array {
         return lhs.intersect(rhs)
     }
     
@@ -91,7 +91,50 @@ extension Array where Element: Equatable {
         return difference
     }
     
-    func -(lhs: Array, rhs: Array) -> Array {
+    static func -(lhs: Array, rhs: Array) -> Array {
         return lhs.diff(rhs)
+    }
+    
+    static func ==(lhs: Array, rhs: Array) -> Bool {
+        if lhs.count != rhs.count {
+            return false
+        }
+        
+        for item in lhs {
+            if !rhs.contains(item) {
+                return false
+            }
+        }
+        
+        return true
+    }
+    
+    static func !=(lhs: Array, rhs: Array) -> Bool {
+        if lhs.count != rhs.count {
+            return true
+        }
+        
+        for item in lhs {
+            if !rhs.contains(item) {
+                return true
+            }
+        }
+        
+        return false
+    }
+    
+    static func &=(lhs: Array, rhs: Array) -> Bool {
+        if lhs.count != rhs.count {
+            return false
+        }
+        
+        let adjustedLength = lhs.count - 1
+        for index in 0 ... adjustedLength {
+            if lhs[index] != rhs[index] {
+                return false
+            }
+        }
+        
+        return true
     }
 }
