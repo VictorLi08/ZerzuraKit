@@ -50,7 +50,7 @@ class Bag<T: Equatable> {
      
      - Returns: True or False if the left-hand side is a subset of the right-hand side.
      */
-    func <=(lhs: Bag, rhs: Bag) -> Bool {
+    static func <=(lhs: Bag, rhs: Bag) -> Bool {
         return lhs.arr.isSubset(rhs.arr)
     }
 }
