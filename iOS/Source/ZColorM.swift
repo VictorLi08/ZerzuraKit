@@ -47,9 +47,9 @@ extension ZColor {
      - Returns: A UIColor initialized using the provided component values.
     */
     static func hsv(h: Double, s: Double, v: Double, a: Double? = 0.0) -> UIColor {
-        let hue = CGFloat(h.truncatingRemainder(dividingBy: 360.0))
-        let sat = CGFloat(s.truncatingRemainder(dividingBy: 360.0))
-        let bright = CGFloat(v.truncatingRemainder(dividingBy: 360.0))
+        let hue = CGFloat(h % 360.0)
+        let sat = CGFloat(s % 360.0)
+        let bright = CGFloat(v % 360.0)
         return UIColor(hue: hue, saturation: sat, brightness: bright, alpha: CGFloat(a!))
     }
 

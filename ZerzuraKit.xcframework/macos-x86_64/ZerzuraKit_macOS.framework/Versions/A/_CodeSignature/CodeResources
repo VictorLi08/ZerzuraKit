@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		lUZwyib4DIv1uewopaWuLKbmwVY=
+		uXLnl5oYaevxxD4wqJs18pthqgE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -15,11 +15,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cY6dOZZNbdAskY6ZDA7SbEVs1IE=
+			TWhYKwdZ/hASoGXt6CaWCnjrp2g=
 			</data>
 			<key>hash2</key>
 			<data>
-			jQV1KefuwZeHv4GIxHiGfvxeEgxTS61L/tEMMwRgOGI=
+			7AwnC9JOuvkinTjMgB6evKMBHGrYcPd0Zs8TNqsW6YE=
 			</data>
 		</dict>
 		<key>Headers/ZerzuraKit_macOS.h</key>
@@ -37,66 +37,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aENznslAc8SyDaFbqV0J9qzOzwQ=
+			MZxy1rfB7sZEyNfjbfS//ednHJE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jar2l+5vgnXXbVk46G/30kqUo9ewr0WnU80k7Fh7LDI=
+			mSEZPULR4aidpQ8Z+ZZqACCQmZEBMx4uV6QbPBDngN0=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit_macOS.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KKdRKyuqIT47VXk+Mg18sD3nyE4=
+			mFPa32t/LODbPtpcU5PlqzMLzgs=
 			</data>
 			<key>hash2</key>
 			<data>
-			dQhQ0uQavMTvnXtidjSiyA1v67n9FfE1Zix2Rq6/DqM=
+			5MDFy6qfgKXT8veVuJMoyAEsB4gKSOgEmbkPAObW3HA=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit_macOS.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4aMuo1CR1+syL+dakWp9i7y0diY=
+			JbNPWA4f/op9rA8u8jelpMwFzOo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zan2A/J73SGP/OMkfwQHPIcyzK5BxSQ4h3/UBpJKbz4=
+			OMOGFnuhOfCtKgILA1RCIwdNkvoMduRz6HICugi/CDo=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit_macOS.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aENznslAc8SyDaFbqV0J9qzOzwQ=
+			MZxy1rfB7sZEyNfjbfS//ednHJE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jar2l+5vgnXXbVk46G/30kqUo9ewr0WnU80k7Fh7LDI=
+			mSEZPULR4aidpQ8Z+ZZqACCQmZEBMx4uV6QbPBDngN0=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit_macOS.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KKdRKyuqIT47VXk+Mg18sD3nyE4=
+			mFPa32t/LODbPtpcU5PlqzMLzgs=
 			</data>
 			<key>hash2</key>
 			<data>
-			dQhQ0uQavMTvnXtidjSiyA1v67n9FfE1Zix2Rq6/DqM=
+			5MDFy6qfgKXT8veVuJMoyAEsB4gKSOgEmbkPAObW3HA=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit_macOS.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4aMuo1CR1+syL+dakWp9i7y0diY=
+			JbNPWA4f/op9rA8u8jelpMwFzOo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zan2A/J73SGP/OMkfwQHPIcyzK5BxSQ4h3/UBpJKbz4=
+			OMOGFnuhOfCtKgILA1RCIwdNkvoMduRz6HICugi/CDo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -114,11 +114,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lUZwyib4DIv1uewopaWuLKbmwVY=
+			uXLnl5oYaevxxD4wqJs18pthqgE=
 			</data>
 			<key>hash2</key>
 			<data>
-			uJfGr1gYdilNfiQms8n00r9Sy5beIDmfX2yxXd6I1c8=
+			RgRHXPn/mP1Yz5qLlhv06m6n2NdKhTiwmFA0+qo1Uhw=
 			</data>
 		</dict>
 	</dict>

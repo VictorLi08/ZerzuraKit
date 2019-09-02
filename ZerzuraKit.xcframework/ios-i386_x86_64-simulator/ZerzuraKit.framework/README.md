@@ -16,7 +16,7 @@ Features:
 - Generate and localize time strings with Date and TimeInterval extensions.
 - Compute and convert numbers more conveniently with Int/Double extensions.
 - UIKit and Cocoa extensions that:
-    - Add convenient methods and properties for programatically defining UI elements.
+    - Add convenient methods and properties for programmatically modifying UI elements.
     - Enable image compression, resize, and asynchronous fetch/display.
 - Seamlessly interact with devices and device properties using ZDevice.
 
@@ -25,6 +25,6 @@ Currently being developed in Xcode 11 for iOS 10.0+ and macOS 10.10+.
 ---
 ***NOTICE***
 
-Animations and UI generators are no longer a part of ZerzuraKit. This functionality has been removed and will be implemented in two new upcoming frameworks: AnimationKit and RapideKit.
+Animations and UI generators are no longer a part of ZerzuraKit. This functionality has been removed and will be implemented in two new upcoming frameworks: InteractionKit and RapideKit.
 
 ---

@@ -28,7 +28,7 @@ extension ZColor {
 
      - Returns: A NSColor initialized using the provided component values.
     */
-    static func srgb(r: Double, g: Double, b: Double, a: Double? = 0.0) -> NSColor {
+    static func srgb(r: Double, g: Double, b: Double, a: Double? = 1.0) -> NSColor {
         let redComponent = CGFloat(Double(r)/256.0)
         let greenComponent = CGFloat(Double(g)/256.0)
         let blueComponent = CGFloat(Double(b)/256.0)
@@ -47,9 +47,9 @@ extension ZColor {
      - Returns: A NSColor initialized using the provided component values.
     */
     static func hsv(h: Double, s: Double, v: Double, a: Double? = 0.0) -> NSColor {
-        let hue = CGFloat(h.truncatingRemainder(dividingBy: 360.0))
-        let sat = CGFloat(s.truncatingRemainder(dividingBy: 360.0))
-        let bright = CGFloat(v.truncatingRemainder(dividingBy: 360.0))
+        let hue = CGFloat(h % 360.0)
+        let sat = CGFloat(s % 360.0)
+        let bright = CGFloat(v % 360.0)
         return NSColor(hue: hue, saturation: sat, brightness: bright, alpha: CGFloat(a!))
     }
 

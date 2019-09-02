@@ -100,7 +100,7 @@ class ZColor {
     
     # Usage Example #
     ````
-    let amber = ZColor.init(hexString: "FFBF00")
+    let amber = ZColor(hexString: "FFBF00")
     ````
     
     - Parameter hexString: A string containing a hexidecimal color value without the pound sign. Case does not matter.
@@ -246,7 +246,7 @@ class ZColor {
     
     # Usage Example #
     ````
-    let amber = ZColor.init(hexString: "FFBF00")
+    let amber = ZColor(hexString: "FFBF00")
     ````
     
     - Parameter hexString: A string containing a hexidecimal color value without the pound sign. Case does not matter.

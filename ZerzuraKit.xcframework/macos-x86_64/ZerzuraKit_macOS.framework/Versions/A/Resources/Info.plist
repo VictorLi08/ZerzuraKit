@@ -23,21 +23,23 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>3</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11M382q</string>
+	<string>11M392r</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>19A526e</string>
+	<string>19A536d</string>
 	<key>DTSDKName</key>
 	<string>macosx10.15</string>
 	<key>DTXcode</key>
 	<string>1100</string>
 	<key>DTXcodeBuild</key>
-	<string>11M382q</string>
+	<string>11M392r</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.10</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Mesarthim. All rights reserved.</string>
 	<key>UIDeviceFamily</key>
