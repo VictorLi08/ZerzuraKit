@@ -15,7 +15,7 @@
  ````
  */
 class Bag<T: Equatable> {
-    private var arr = Array<T>()
+    internal var arr = Array<T>()
     
     init() {
         
@@ -38,5 +38,19 @@ class Bag<T: Equatable> {
     func remove() -> T {
         let chosen = Int.random(in: 0 ... (arr.count - 1))
         return arr.remove(at: chosen)
+    }
+    
+    /**
+     Determines whether or not a bag is less than or equal to another bag.
+     
+     # Usage #
+     ````
+     let lte = A <= B
+     ````
+     
+     - Returns: True or False if the left-hand side is a subset of the right-hand side.
+     */
+    func <=(lhs: Bag, rhs: Bag) -> Bool {
+        return lhs.arr.isSubset(rhs.arr)
     }
 }
