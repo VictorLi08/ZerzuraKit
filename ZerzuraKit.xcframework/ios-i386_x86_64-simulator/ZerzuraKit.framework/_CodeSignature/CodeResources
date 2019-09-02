@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oLIjOCTaGpqd3ftbEbiLZDEqa2U=
+		76yvoE62sS7gOksw1ifOdf+LnQY=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zIgrDA+CAdPaeS2cSbOaAW8ghZQ=
+		Y0rbjWen2iBeVIeOZw+fg0S+DHw=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ghnGgp8U1US7VT1VgnU86RbUgFY=
+		y/Gx4vVk19MLK9wgWJztcNOWvp4=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/i386.swiftdoc</key>
 		<data>
-		zIgrDA+CAdPaeS2cSbOaAW8ghZQ=
+		Y0rbjWen2iBeVIeOZw+fg0S+DHw=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/i386.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		ghnGgp8U1US7VT1VgnU86RbUgFY=
+		y/Gx4vVk19MLK9wgWJztcNOWvp4=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1wJokm5TA7AiPpyIiFOxgRrs/xc=
+		acEwU6oBKJ99Zx6YqKP5VPuCXco=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tpkGnNlZlmZklnSQ+Lf4VmrUifA=
+		luBXb4lnlteUEzK890nueV2lstY=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		1wJokm5TA7AiPpyIiFOxgRrs/xc=
+		acEwU6oBKJ99Zx6YqKP5VPuCXco=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		tpkGnNlZlmZklnSQ+Lf4VmrUifA=
+		luBXb4lnlteUEzK890nueV2lstY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -101,11 +101,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zIgrDA+CAdPaeS2cSbOaAW8ghZQ=
+			Y0rbjWen2iBeVIeOZw+fg0S+DHw=
 			</data>
 			<key>hash2</key>
 			<data>
-			EqeieZe7kMB4F4FSEtJ5GvvaDIK5U58vkJYs+sEsh/k=
+			HeaYwH5K+faAp5Ol9Zaq0POCk8KdD6izvIQvjoi8B2w=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
@@ -123,22 +123,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ghnGgp8U1US7VT1VgnU86RbUgFY=
+			y/Gx4vVk19MLK9wgWJztcNOWvp4=
 			</data>
 			<key>hash2</key>
 			<data>
-			KMw6vDssnpSAKjudigxDbjo9aZ81Ihgrn4MdjXPrMA4=
+			3l7KbsBtTCv8EvncClYiTQdVGjaroSkHNb5+6HEuiOM=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zIgrDA+CAdPaeS2cSbOaAW8ghZQ=
+			Y0rbjWen2iBeVIeOZw+fg0S+DHw=
 			</data>
 			<key>hash2</key>
 			<data>
-			EqeieZe7kMB4F4FSEtJ5GvvaDIK5U58vkJYs+sEsh/k=
+			HeaYwH5K+faAp5Ol9Zaq0POCk8KdD6izvIQvjoi8B2w=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/i386.swiftinterface</key>
@@ -156,22 +156,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ghnGgp8U1US7VT1VgnU86RbUgFY=
+			y/Gx4vVk19MLK9wgWJztcNOWvp4=
 			</data>
 			<key>hash2</key>
 			<data>
-			KMw6vDssnpSAKjudigxDbjo9aZ81Ihgrn4MdjXPrMA4=
+			3l7KbsBtTCv8EvncClYiTQdVGjaroSkHNb5+6HEuiOM=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1wJokm5TA7AiPpyIiFOxgRrs/xc=
+			acEwU6oBKJ99Zx6YqKP5VPuCXco=
 			</data>
 			<key>hash2</key>
 			<data>
-			fOSaEItBQA5hgWEkT2R+6Fcq71MMH6IhYpwDbciJxSo=
+			+ISyvE9I9NxKzNFa7Z3RnhcM6NrVEmKAvHEavJ554HU=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
@@ -189,22 +189,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tpkGnNlZlmZklnSQ+Lf4VmrUifA=
+			luBXb4lnlteUEzK890nueV2lstY=
 			</data>
 			<key>hash2</key>
 			<data>
-			s+6asTMtFhsqbsCxJpg5sJ+PO/vH+cWdKODqlUK8kF0=
+			4KkMx+SLvyF7NnWFxkb9BmCeWngXAQi9Q47do+3q3yk=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1wJokm5TA7AiPpyIiFOxgRrs/xc=
+			acEwU6oBKJ99Zx6YqKP5VPuCXco=
 			</data>
 			<key>hash2</key>
 			<data>
-			fOSaEItBQA5hgWEkT2R+6Fcq71MMH6IhYpwDbciJxSo=
+			+ISyvE9I9NxKzNFa7Z3RnhcM6NrVEmKAvHEavJ554HU=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64.swiftinterface</key>
@@ -222,11 +222,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tpkGnNlZlmZklnSQ+Lf4VmrUifA=
+			luBXb4lnlteUEzK890nueV2lstY=
 			</data>
 			<key>hash2</key>
 			<data>
-			s+6asTMtFhsqbsCxJpg5sJ+PO/vH+cWdKODqlUK8kF0=
+			4KkMx+SLvyF7NnWFxkb9BmCeWngXAQi9Q47do+3q3yk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

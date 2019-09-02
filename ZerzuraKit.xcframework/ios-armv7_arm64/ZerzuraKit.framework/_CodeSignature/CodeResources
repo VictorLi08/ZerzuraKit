@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		34qF6/Eq+dxd852I10Xyge2jlAg=
+		75OLeiMgwXqX0pbJIUM6OUp8nC4=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/arm.swiftdoc</key>
 		<data>
-		Waay/WZmzeZpP2iqnNvjh+uaDdQ=
+		VZF5CK7P6ZAUOnyqBrKdEmwK4Kc=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/arm.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/arm.swiftmodule</key>
 		<data>
-		Pcxgo3U1jsqMHFl3MeIgZcN75ac=
+		ikhj7yZcz3qgp/fVCmSqCRvGiBg=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		bgLAR4O3ZF7uM1Cupz7XK+ULEIk=
+		OW9xib8AX0xpRWKWglB3Ohak91Q=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ByrQotiXw986f5gZJDjgRb/aG0w=
+		/M93AT+VNbVKVUDkKF0lgoucmfg=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		bgLAR4O3ZF7uM1Cupz7XK+ULEIk=
+		OW9xib8AX0xpRWKWglB3Ohak91Q=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/arm64.swiftinterface</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ByrQotiXw986f5gZJDjgRb/aG0w=
+		/M93AT+VNbVKVUDkKF0lgoucmfg=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		Waay/WZmzeZpP2iqnNvjh+uaDdQ=
+		VZF5CK7P6ZAUOnyqBrKdEmwK4Kc=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		Pcxgo3U1jsqMHFl3MeIgZcN75ac=
+		ikhj7yZcz3qgp/fVCmSqCRvGiBg=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		Waay/WZmzeZpP2iqnNvjh+uaDdQ=
+		VZF5CK7P6ZAUOnyqBrKdEmwK4Kc=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/armv7.swiftinterface</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		Pcxgo3U1jsqMHFl3MeIgZcN75ac=
+		ikhj7yZcz3qgp/fVCmSqCRvGiBg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -113,11 +113,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Waay/WZmzeZpP2iqnNvjh+uaDdQ=
+			VZF5CK7P6ZAUOnyqBrKdEmwK4Kc=
 			</data>
 			<key>hash2</key>
 			<data>
-			lFqWA1RhRbfjXPds/eJ4llacuSzn0MO7WH6P2P/wfQg=
+			wffJOPXHT3bLgCPr+T0ubwmq/YKbSNSKejSaeVk2MRI=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/arm.swiftinterface</key>
@@ -135,22 +135,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pcxgo3U1jsqMHFl3MeIgZcN75ac=
+			ikhj7yZcz3qgp/fVCmSqCRvGiBg=
 			</data>
 			<key>hash2</key>
 			<data>
-			yJxj2aHNJZer1w0FYJBK6pqUjqgw8Csv5wkmk5iGeEc=
+			o9QGG9vEm3Tp3o1Izv9IH0bCDNCgplurme2zTrNPP70=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bgLAR4O3ZF7uM1Cupz7XK+ULEIk=
+			OW9xib8AX0xpRWKWglB3Ohak91Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			ruztSkJsiU1+xTMVXvxxV76RM2Zn6u6r6vApM3HqasU=
+			XIWwc4zgTwoQqVP+v6fz3S9Y+PUJfIarKvcVhH+d5OY=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
@@ -168,22 +168,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ByrQotiXw986f5gZJDjgRb/aG0w=
+			/M93AT+VNbVKVUDkKF0lgoucmfg=
 			</data>
 			<key>hash2</key>
 			<data>
-			FxQigQXP/WTVcud6e3OhspakLGWqKhoC1cgVU9vyuEs=
+			ZI6O6yZm91c60oupnL4zAJ/Uraf9004ES0JfitSCTfs=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bgLAR4O3ZF7uM1Cupz7XK+ULEIk=
+			OW9xib8AX0xpRWKWglB3Ohak91Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			ruztSkJsiU1+xTMVXvxxV76RM2Zn6u6r6vApM3HqasU=
+			XIWwc4zgTwoQqVP+v6fz3S9Y+PUJfIarKvcVhH+d5OY=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/arm64.swiftinterface</key>
@@ -201,22 +201,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ByrQotiXw986f5gZJDjgRb/aG0w=
+			/M93AT+VNbVKVUDkKF0lgoucmfg=
 			</data>
 			<key>hash2</key>
 			<data>
-			FxQigQXP/WTVcud6e3OhspakLGWqKhoC1cgVU9vyuEs=
+			ZI6O6yZm91c60oupnL4zAJ/Uraf9004ES0JfitSCTfs=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Waay/WZmzeZpP2iqnNvjh+uaDdQ=
+			VZF5CK7P6ZAUOnyqBrKdEmwK4Kc=
 			</data>
 			<key>hash2</key>
 			<data>
-			lFqWA1RhRbfjXPds/eJ4llacuSzn0MO7WH6P2P/wfQg=
+			wffJOPXHT3bLgCPr+T0ubwmq/YKbSNSKejSaeVk2MRI=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/armv7-apple-ios.swiftinterface</key>
@@ -234,22 +234,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pcxgo3U1jsqMHFl3MeIgZcN75ac=
+			ikhj7yZcz3qgp/fVCmSqCRvGiBg=
 			</data>
 			<key>hash2</key>
 			<data>
-			yJxj2aHNJZer1w0FYJBK6pqUjqgw8Csv5wkmk5iGeEc=
+			o9QGG9vEm3Tp3o1Izv9IH0bCDNCgplurme2zTrNPP70=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Waay/WZmzeZpP2iqnNvjh+uaDdQ=
+			VZF5CK7P6ZAUOnyqBrKdEmwK4Kc=
 			</data>
 			<key>hash2</key>
 			<data>
-			lFqWA1RhRbfjXPds/eJ4llacuSzn0MO7WH6P2P/wfQg=
+			wffJOPXHT3bLgCPr+T0ubwmq/YKbSNSKejSaeVk2MRI=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/armv7.swiftinterface</key>
@@ -267,11 +267,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pcxgo3U1jsqMHFl3MeIgZcN75ac=
+			ikhj7yZcz3qgp/fVCmSqCRvGiBg=
 			</data>
 			<key>hash2</key>
 			<data>
-			yJxj2aHNJZer1w0FYJBK6pqUjqgw8Csv5wkmk5iGeEc=
+			o9QGG9vEm3Tp3o1Izv9IH0bCDNCgplurme2zTrNPP70=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
