@@ -36,7 +36,6 @@
 		D56E0D8E230B49EC007A3468 /* ZerzuraKit_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E0D8D230B49EC007A3468 /* ZerzuraKit_macOSTests.swift */; };
 		D56E0D90230B49EC007A3468 /* ZerzuraKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59CBCA922D40A82009ED4C2 /* ZerzuraKit_macOS.framework */; };
 		D57E53CE23075AB200CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
-		D57E53D02307775900CCCF9E /* ZHaptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CF2307775900CCCF9E /* ZHaptics.swift */; platformFilter = ios; };
 		D57E53D1230780C100CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
 		D59CBC9E22D408E9009ED4C2 /* ZerzuraKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D59CBCAD22D40A82009ED4C2 /* ZerzuraKit_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D59CBCAB22D40A82009ED4C2 /* ZerzuraKit_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -83,7 +82,6 @@
 		D56E0D8D230B49EC007A3468 /* ZerzuraKit_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZerzuraKit_macOSTests.swift; sourceTree = "<group>"; };
 		D56E0D8F230B49EC007A3468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D57E53CD23075AB200CCCF9E /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
-		D57E53CF2307775900CCCF9E /* ZHaptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHaptics.swift; sourceTree = "<group>"; };
 		D59CBC9922D408E9009ED4C2 /* ZerzuraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZerzuraKit.h; sourceTree = "<group>"; };
 		D59CBC9D22D408E9009ED4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,40 +132,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D522E080231B4C4C00724C62 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				D59CBCB622D40B06009ED4C2 /* ZLocation.swift */,
-				D59CBCBA22D40B06009ED4C2 /* ZTime.swift */,
-				D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */,
-				D569DCE022F8E96B003F13EE /* ZColor.swift */,
-				D57E53CD23075AB200CCCF9E /* Numbers.swift */,
-				D54A3FE0231DB88900B73334 /* Logic.swift */,
-				D54A3FE3231DC24800B73334 /* Structs.swift */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		D53811182307EEB9006888E8 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				D5DD661F22DAC6EE00B5DAD3 /* UIKitExt.swift */,
-				D59CBCB922D40B06009ED4C2 /* ZColorM.swift */,
-				D5DA152922F4DA5F00EB4C3F /* Images.swift */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		D53811192307EECA006888E8 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */,
-				D59CBCC622D40B11009ED4C2 /* ZColorD.swift */,
-				D59CBCC522D40B11009ED4C2 /* Images.swift */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
 		D56E0D6E230B46F0007A3468 /* ZerzuraKitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,7 +178,9 @@
 		D59CBC9B22D408E9009ED4C2 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D59CBCB522D40B06009ED4C2 /* Source */,
+				D5DA152922F4DA5F00EB4C3F /* Images.swift */,
+				D5DD661F22DAC6EE00B5DAD3 /* UIKitExt.swift */,
+				D59CBCB922D40B06009ED4C2 /* ZColorM.swift */,
 				D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */,
 				D59CBC9D22D408E9009ED4C2 /* Info.plist */,
 			);
@@ -224,34 +190,25 @@
 		D59CBCAA22D40A82009ED4C2 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				D59CBCC222D40B11009ED4C2 /* Source */,
+				D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */,
+				D59CBCC622D40B11009ED4C2 /* ZColorD.swift */,
+				D59CBCC522D40B11009ED4C2 /* Images.swift */,
 				D59CBCAB22D40A82009ED4C2 /* ZerzuraKit_macOS.h */,
 				D59CBCAC22D40A82009ED4C2 /* Info.plist */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		D59CBCB522D40B06009ED4C2 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				D57E53CF2307775900CCCF9E /* ZHaptics.swift */,
-				D53811182307EEB9006888E8 /* UI */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		D59CBCC222D40B11009ED4C2 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				D53811192307EECA006888E8 /* UI */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 		D5DA152B22F4DAC900EB4C3F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				D522E080231B4C4C00724C62 /* Source */,
+				D59CBCB622D40B06009ED4C2 /* ZLocation.swift */,
+				D59CBCBA22D40B06009ED4C2 /* ZTime.swift */,
+				D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */,
+				D569DCE022F8E96B003F13EE /* ZColor.swift */,
+				D57E53CD23075AB200CCCF9E /* Numbers.swift */,
+				D54A3FE0231DB88900B73334 /* Logic.swift */,
+				D54A3FE3231DC24800B73334 /* Structs.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -490,7 +447,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5DA153122F4DB4F00EB4C3F /* ZDevice.swift in Sources */,
-				D57E53D02307775900CCCF9E /* ZHaptics.swift in Sources */,
 				D5DD662022DAC6EE00B5DAD3 /* UIKitExt.swift in Sources */,
 				D54A3FE4231DC24800B73334 /* Structs.swift in Sources */,
 				D5DA152A22F4DA5F00EB4C3F /* Images.swift in Sources */,
