@@ -16,6 +16,6 @@ Pod::Spec.new do |spec|
   spec.osx.source_files   = 'ZerzuraKit/macOS/Source/*.swift'
 
   spec.framework      = 'CoreLocation'
-  spec.ios.framework  = 'UIKit', 'AudioToolbox'
+  spec.ios.framework  = 'UIKit'
   spec.osx.framework  = 'Cocoa'
 end
