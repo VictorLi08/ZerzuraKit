@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = '5.1'
 
   spec.ios.deployment_target  = '10.0'
-  spec.osx.deployment_target  = '10.10'
+  spec.osx.deployment_target  = '10.9'
 
   spec.source_files       = 'Common/*.swift'
   spec.ios.source_files   = 'iOS/*.swift'
