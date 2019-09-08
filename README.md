@@ -22,7 +22,7 @@ Features:
     - Add convenient methods and properties for programmatically modifying UI elements.
     - Enable image compression, resize, and asynchronous fetch/display.
 
-Currently being developed in Xcode 11 for iOS 10.0+ and macOS 10.10+.
+Currently being developed in Xcode 11 for iOS 10.0+ and macOS 10.9+.
 
 ---
 ***NOTICE***
