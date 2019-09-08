@@ -12,6 +12,7 @@
 			buildConfigurationList = D59CBCB222D40AA3009ED4C2 /* Build configuration list for PBXAggregateTarget "ZerzuraKit-Universal" */;
 			buildPhases = (
 				D59CBCCF22D40B2C009ED4C2 /* ShellScript */,
+				D56E0DD8230E0774007A3468 /* ShellScript */,
 			);
 			dependencies = (
 			);
@@ -24,32 +25,88 @@
 		D50CEF5D22FE043700667AC7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D50CEF5C22FE043700667AC7 /* README.md */; };
 		D52ECFAA22F4DCCB005AE4DE /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; };
 		D52ECFAC22F4DD07005AE4DE /* CocoaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */; };
+		D52F86512325B3AC00F7E7A8 /* UIKitExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52F864F2325B3AC00F7E7A8 /* UIKitExt.swift */; platformFilter = ios; };
+		D52F86522325B3AC00F7E7A8 /* UIKitExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52F864F2325B3AC00F7E7A8 /* UIKitExt.swift */; };
+		D52F86532325B3AC00F7E7A8 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52F86502325B3AC00F7E7A8 /* Images.swift */; platformFilter = ios; };
+		D52F86542325B3AC00F7E7A8 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52F86502325B3AC00F7E7A8 /* Images.swift */; };
+		D543942A2325AFF6001106D8 /* ZerzuraKit_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D54394282325AFF6001106D8 /* ZerzuraKit_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D543942E2325B063001106D8 /* ZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* ZLocation.swift */; };
+		D543942F2325B063001106D8 /* ZTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* ZTime.swift */; };
+		D54394302325B063001106D8 /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; };
+		D54394312325B063001106D8 /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
+		D54394322325B063001106D8 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
+		D54394332325B063001106D8 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE0231DB88900B73334 /* Logic.swift */; };
+		D54394342325B063001106D8 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* Structs.swift */; };
+		D54394372325B067001106D8 /* ZColorM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB922D40B06009ED4C2 /* ZColorM.swift */; };
+		D543943A2325B06E001106D8 /* ZColorM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB922D40B06009ED4C2 /* ZColorM.swift */; };
+		D54A3FE1231DB88900B73334 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE0231DB88900B73334 /* Logic.swift */; platformFilter = ios; };
+		D54A3FE2231DB88900B73334 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE0231DB88900B73334 /* Logic.swift */; };
+		D54A3FE4231DC24800B73334 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* Structs.swift */; platformFilter = ios; };
+		D54A3FE5231DC24800B73334 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* Structs.swift */; };
 		D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; platformFilter = ios; };
 		D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
-		D57E53CE23075AB200CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
-		D57E53D02307775900CCCF9E /* ZHaptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CF2307775900CCCF9E /* ZHaptics.swift */; platformFilter = ios; };
+		D56E0D70230B46F0007A3468 /* ZerzuraKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E0D6F230B46F0007A3468 /* ZerzuraKitTests.swift */; };
+		D56E0D72230B46F0007A3468 /* ZerzuraKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59CBC9922D408E9009ED4C2 /* ZerzuraKit.framework */; };
+		D56E0D8E230B49EC007A3468 /* ZerzuraKit_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E0D8D230B49EC007A3468 /* ZerzuraKit_macOSTests.swift */; };
+		D56E0D90230B49EC007A3468 /* ZerzuraKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59CBCA922D40A82009ED4C2 /* ZerzuraKit_macOS.framework */; };
+		D57E53CE23075AB200CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; platformFilter = ios; };
 		D57E53D1230780C100CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
 		D59CBC9E22D408E9009ED4C2 /* ZerzuraKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D59CBCAD22D40A82009ED4C2 /* ZerzuraKit_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D59CBCAB22D40A82009ED4C2 /* ZerzuraKit_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D59CBCBC22D40B06009ED4C2 /* ZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* ZLocation.swift */; platformFilter = ios; };
-		D59CBCBD22D40B06009ED4C2 /* ZDeviceM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB722D40B06009ED4C2 /* ZDeviceM.swift */; platformFilter = ios; };
 		D59CBCBF22D40B06009ED4C2 /* ZColorM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB922D40B06009ED4C2 /* ZColorM.swift */; platformFilter = ios; };
 		D59CBCC022D40B06009ED4C2 /* ZTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* ZTime.swift */; platformFilter = ios; };
 		D59CBCCB22D40B11009ED4C2 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC522D40B11009ED4C2 /* Images.swift */; };
 		D59CBCCC22D40B11009ED4C2 /* ZColorD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC622D40B11009ED4C2 /* ZColorD.swift */; };
-		D5DA152A22F4DA5F00EB4C3F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA152922F4DA5F00EB4C3F /* Images.swift */; platformFilter = ios; };
+		D5CE2F292325AEE00056F6C2 /* ZerzuraKit_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CE2F272325AEE00056F6C2 /* ZerzuraKit_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5CE2F2D2325AF280056F6C2 /* ZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* ZLocation.swift */; };
+		D5CE2F2E2325AF280056F6C2 /* ZTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* ZTime.swift */; };
+		D5CE2F2F2325AF280056F6C2 /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; };
+		D5CE2F302325AF280056F6C2 /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
+		D5CE2F312325AF280056F6C2 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
+		D5CE2F322325AF280056F6C2 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE0231DB88900B73334 /* Logic.swift */; };
+		D5CE2F332325AF280056F6C2 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* Structs.swift */; };
 		D5DA152E22F4DB1600EB4C3F /* ZTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* ZTime.swift */; };
 		D5DA152F22F4DB1800EB4C3F /* ZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* ZLocation.swift */; };
 		D5DA153122F4DB4F00EB4C3F /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; platformFilter = ios; };
-		D5DD662022DAC6EE00B5DAD3 /* UIKitExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DD661F22DAC6EE00B5DAD3 /* UIKitExt.swift */; platformFilter = ios; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D56E0D73230B46F0007A3468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59CBC9022D408E9009ED4C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D59CBC9822D408E9009ED4C2;
+			remoteInfo = ZerzuraKit;
+		};
+		D56E0D91230B49EC007A3468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59CBC9022D408E9009ED4C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D59CBCA822D40A82009ED4C2;
+			remoteInfo = "ZerzuraKit-macOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D50CEF5C22FE043700667AC7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaExt.swift; sourceTree = "<group>"; };
+		D52F864F2325B3AC00F7E7A8 /* UIKitExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExt.swift; sourceTree = "<group>"; };
+		D52F86502325B3AC00F7E7A8 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		D53811172307ECD6006888E8 /* ZerzuraKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ZerzuraKit.podspec; sourceTree = "<group>"; };
+		D54394262325AFF6001106D8 /* ZerzuraKit_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54394282325AFF6001106D8 /* ZerzuraKit_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZerzuraKit_tvOS.h; sourceTree = "<group>"; };
+		D54394292325AFF6001106D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54A3FE0231DB88900B73334 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
+		D54A3FE3231DC24800B73334 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		D569DCE022F8E96B003F13EE /* ZColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZColor.swift; sourceTree = "<group>"; };
+		D56E0D6D230B46F0007A3468 /* ZerzuraKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZerzuraKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56E0D6F230B46F0007A3468 /* ZerzuraKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZerzuraKitTests.swift; sourceTree = "<group>"; };
+		D56E0D71230B46F0007A3468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D56E0D8B230B49EC007A3468 /* ZerzuraKit_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZerzuraKit_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56E0D8D230B49EC007A3468 /* ZerzuraKit_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZerzuraKit_macOSTests.swift; sourceTree = "<group>"; };
+		D56E0D8F230B49EC007A3468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D57E53CD23075AB200CCCF9E /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
-		D57E53CF2307775900CCCF9E /* ZHaptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHaptics.swift; sourceTree = "<group>"; };
 		D59CBC9922D408E9009ED4C2 /* ZerzuraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZerzuraKit.h; sourceTree = "<group>"; };
 		D59CBC9D22D408E9009ED4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,17 +114,40 @@
 		D59CBCAB22D40A82009ED4C2 /* ZerzuraKit_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZerzuraKit_macOS.h; sourceTree = "<group>"; };
 		D59CBCAC22D40A82009ED4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D59CBCB622D40B06009ED4C2 /* ZLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLocation.swift; sourceTree = "<group>"; };
-		D59CBCB722D40B06009ED4C2 /* ZDeviceM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDeviceM.swift; sourceTree = "<group>"; };
 		D59CBCB922D40B06009ED4C2 /* ZColorM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZColorM.swift; sourceTree = "<group>"; };
 		D59CBCBA22D40B06009ED4C2 /* ZTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTime.swift; sourceTree = "<group>"; };
 		D59CBCC522D40B11009ED4C2 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D59CBCC622D40B11009ED4C2 /* ZColorD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZColorD.swift; sourceTree = "<group>"; };
-		D5DA152922F4DA5F00EB4C3F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		D5CE2F252325AEE00056F6C2 /* ZerzuraKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CE2F272325AEE00056F6C2 /* ZerzuraKit_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZerzuraKit_watchOS.h; sourceTree = "<group>"; };
+		D5CE2F282325AEE00056F6C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDevice.swift; sourceTree = "<group>"; };
-		D5DD661F22DAC6EE00B5DAD3 /* UIKitExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D54394232325AFF6001106D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56E0D6A230B46F0007A3468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56E0D72230B46F0007A3468 /* ZerzuraKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56E0D88230B49EC007A3468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56E0D90230B49EC007A3468 /* ZerzuraKit_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D59CBC9622D408E9009ED4C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,16 +162,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5CE2F222325AEE00056F6C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D52F864E2325B3AC00F7E7A8 /* iOS-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				D52F864F2325B3AC00F7E7A8 /* UIKitExt.swift */,
+				D52F86502325B3AC00F7E7A8 /* Images.swift */,
+			);
+			path = "iOS-tvOS";
+			sourceTree = "<group>";
+		};
+		D54394202325AF7F001106D8 /* CommonMobile */ = {
+			isa = PBXGroup;
+			children = (
+				D59CBCB922D40B06009ED4C2 /* ZColorM.swift */,
+				D52F864E2325B3AC00F7E7A8 /* iOS-tvOS */,
+			);
+			path = CommonMobile;
+			sourceTree = "<group>";
+		};
+		D54394272325AFF6001106D8 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				D54394282325AFF6001106D8 /* ZerzuraKit_tvOS.h */,
+				D54394292325AFF6001106D8 /* Info.plist */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		D56E0D6E230B46F0007A3468 /* ZerzuraKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D56E0D6F230B46F0007A3468 /* ZerzuraKitTests.swift */,
+				D56E0D71230B46F0007A3468 /* Info.plist */,
+			);
+			path = ZerzuraKitTests;
+			sourceTree = "<group>";
+		};
+		D56E0D8C230B49EC007A3468 /* ZerzuraKit_macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D56E0D8D230B49EC007A3468 /* ZerzuraKit_macOSTests.swift */,
+				D56E0D8F230B49EC007A3468 /* Info.plist */,
+			);
+			path = ZerzuraKit_macOSTests;
+			sourceTree = "<group>";
+		};
 		D59CBC8F22D408E9009ED4C2 = {
 			isa = PBXGroup;
 			children = (
+				D53811172307ECD6006888E8 /* ZerzuraKit.podspec */,
 				D50CEF5C22FE043700667AC7 /* README.md */,
-				D5DA152B22F4DAC900EB4C3F /* Shared */,
+				D5DA152B22F4DAC900EB4C3F /* CommonAll */,
+				D54394202325AF7F001106D8 /* CommonMobile */,
 				D59CBC9B22D408E9009ED4C2 /* iOS */,
+				D54394272325AFF6001106D8 /* tvOS */,
+				D5CE2F262325AEE00056F6C2 /* watchOS */,
 				D59CBCAA22D40A82009ED4C2 /* macOS */,
+				D56E0D6E230B46F0007A3468 /* ZerzuraKitTests */,
+				D56E0D8C230B49EC007A3468 /* ZerzuraKit_macOSTests */,
 				D59CBC9A22D408E9009ED4C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +239,10 @@
 			children = (
 				D59CBC9922D408E9009ED4C2 /* ZerzuraKit.framework */,
 				D59CBCA922D40A82009ED4C2 /* ZerzuraKit_macOS.framework */,
+				D56E0D6D230B46F0007A3468 /* ZerzuraKitTests.xctest */,
+				D56E0D8B230B49EC007A3468 /* ZerzuraKit_macOSTests.xctest */,
+				D5CE2F252325AEE00056F6C2 /* ZerzuraKit_watchOS.framework */,
+				D54394262325AFF6001106D8 /* ZerzuraKit_tvOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,7 +250,6 @@
 		D59CBC9B22D408E9009ED4C2 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D59CBCB522D40B06009ED4C2 /* Source */,
 				D59CBC9C22D408E9009ED4C2 /* ZerzuraKit.h */,
 				D59CBC9D22D408E9009ED4C2 /* Info.plist */,
 			);
@@ -118,82 +259,49 @@
 		D59CBCAA22D40A82009ED4C2 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				D59CBCC222D40B11009ED4C2 /* Source */,
+				D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */,
+				D59CBCC622D40B11009ED4C2 /* ZColorD.swift */,
+				D59CBCC522D40B11009ED4C2 /* Images.swift */,
 				D59CBCAB22D40A82009ED4C2 /* ZerzuraKit_macOS.h */,
 				D59CBCAC22D40A82009ED4C2 /* Info.plist */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		D59CBCB522D40B06009ED4C2 /* Source */ = {
+		D5CE2F262325AEE00056F6C2 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				D59CBCB722D40B06009ED4C2 /* ZDeviceM.swift */,
-				D57E53CF2307775900CCCF9E /* ZHaptics.swift */,
-				D5DA152522F4D97600EB4C3F /* UI */,
+				D5CE2F272325AEE00056F6C2 /* ZerzuraKit_watchOS.h */,
+				D5CE2F282325AEE00056F6C2 /* Info.plist */,
 			);
-			path = Source;
+			path = watchOS;
 			sourceTree = "<group>";
 		};
-		D59CBCC222D40B11009ED4C2 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				D5DA153322F4DBFB00EB4C3F /* UI */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		D5DA152522F4D97600EB4C3F /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				D5DD661F22DAC6EE00B5DAD3 /* UIKitExt.swift */,
-				D59CBCB922D40B06009ED4C2 /* ZColorM.swift */,
-				D5DA152922F4DA5F00EB4C3F /* Images.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		D5DA152B22F4DAC900EB4C3F /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				D5DA152C22F4DACD00EB4C3F /* Source */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		D5DA152C22F4DACD00EB4C3F /* Source */ = {
+		D5DA152B22F4DAC900EB4C3F /* CommonAll */ = {
 			isa = PBXGroup;
 			children = (
 				D59CBCB622D40B06009ED4C2 /* ZLocation.swift */,
 				D59CBCBA22D40B06009ED4C2 /* ZTime.swift */,
 				D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */,
-				D5DA152D22F4DAE500EB4C3F /* UI */,
-				D57E53CD23075AB200CCCF9E /* Numbers.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		D5DA152D22F4DAE500EB4C3F /* UI */ = {
-			isa = PBXGroup;
-			children = (
 				D569DCE022F8E96B003F13EE /* ZColor.swift */,
+				D57E53CD23075AB200CCCF9E /* Numbers.swift */,
+				D54A3FE0231DB88900B73334 /* Logic.swift */,
+				D54A3FE3231DC24800B73334 /* Structs.swift */,
 			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		D5DA153322F4DBFB00EB4C3F /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */,
-				D59CBCC622D40B11009ED4C2 /* ZColorD.swift */,
-				D59CBCC522D40B11009ED4C2 /* Images.swift */,
-			);
-			path = UI;
+			path = CommonAll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		D54394212325AFF6001106D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D543942A2325AFF6001106D8 /* ZerzuraKit_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D59CBC9422D408E9009ED4C2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,9 +318,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5CE2F202325AEE00056F6C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CE2F292325AEE00056F6C2 /* ZerzuraKit_watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D54394252325AFF6001106D8 /* ZerzuraKit-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D543942B2325AFF6001106D8 /* Build configuration list for PBXNativeTarget "ZerzuraKit-tvOS" */;
+			buildPhases = (
+				D54394212325AFF6001106D8 /* Headers */,
+				D54394222325AFF6001106D8 /* Sources */,
+				D54394232325AFF6001106D8 /* Frameworks */,
+				D54394242325AFF6001106D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZerzuraKit-tvOS";
+			productName = "ZerzuraKit-tvOS";
+			productReference = D54394262325AFF6001106D8 /* ZerzuraKit_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D56E0D6C230B46F0007A3468 /* ZerzuraKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D56E0D75230B46F0007A3468 /* Build configuration list for PBXNativeTarget "ZerzuraKitTests" */;
+			buildPhases = (
+				D56E0D69230B46F0007A3468 /* Sources */,
+				D56E0D6A230B46F0007A3468 /* Frameworks */,
+				D56E0D6B230B46F0007A3468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D56E0D74230B46F0007A3468 /* PBXTargetDependency */,
+			);
+			name = ZerzuraKitTests;
+			productName = ZerzuraKitTests;
+			productReference = D56E0D6D230B46F0007A3468 /* ZerzuraKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D56E0D8A230B49EC007A3468 /* ZerzuraKit_macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D56E0D93230B49EC007A3468 /* Build configuration list for PBXNativeTarget "ZerzuraKit_macOSTests" */;
+			buildPhases = (
+				D56E0D87230B49EC007A3468 /* Sources */,
+				D56E0D88230B49EC007A3468 /* Frameworks */,
+				D56E0D89230B49EC007A3468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D56E0D92230B49EC007A3468 /* PBXTargetDependency */,
+			);
+			name = ZerzuraKit_macOSTests;
+			productName = ZerzuraKit_macOSTests;
+			productReference = D56E0D8B230B49EC007A3468 /* ZerzuraKit_macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D59CBC9822D408E9009ED4C2 /* ZerzuraKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D59CBCA122D408E9009ED4C2 /* Build configuration list for PBXNativeTarget "ZerzuraKit" */;
@@ -249,15 +419,43 @@
 			productReference = D59CBCA922D40A82009ED4C2 /* ZerzuraKit_macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D5CE2F242325AEE00056F6C2 /* ZerzuraKit-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5CE2F2A2325AEE00056F6C2 /* Build configuration list for PBXNativeTarget "ZerzuraKit-watchOS" */;
+			buildPhases = (
+				D5CE2F202325AEE00056F6C2 /* Headers */,
+				D5CE2F212325AEE00056F6C2 /* Sources */,
+				D5CE2F222325AEE00056F6C2 /* Frameworks */,
+				D5CE2F232325AEE00056F6C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZerzuraKit-watchOS";
+			productName = "ZerzuraKit-watchOS";
+			productReference = D5CE2F252325AEE00056F6C2 /* ZerzuraKit_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D59CBC9022D408E9009ED4C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Mesarthim;
 				TargetAttributes = {
+					D54394252325AFF6001106D8 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					D56E0D6C230B46F0007A3468 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					D56E0D8A230B49EC007A3468 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					D59CBC9822D408E9009ED4C2 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -265,6 +463,9 @@
 						CreatedOnToolsVersion = 11.0;
 					};
 					D59CBCB122D40AA3009ED4C2 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					D5CE2F242325AEE00056F6C2 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
@@ -283,13 +484,38 @@
 			projectRoot = "";
 			targets = (
 				D59CBC9822D408E9009ED4C2 /* ZerzuraKit */,
+				D56E0D6C230B46F0007A3468 /* ZerzuraKitTests */,
+				D5CE2F242325AEE00056F6C2 /* ZerzuraKit-watchOS */,
+				D54394252325AFF6001106D8 /* ZerzuraKit-tvOS */,
 				D59CBCA822D40A82009ED4C2 /* ZerzuraKit-macOS */,
+				D56E0D8A230B49EC007A3468 /* ZerzuraKit_macOSTests */,
 				D59CBCB122D40AA3009ED4C2 /* ZerzuraKit-Universal */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D54394242325AFF6001106D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56E0D6B230B46F0007A3468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56E0D89230B49EC007A3468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D59CBC9722D408E9009ED4C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,9 +531,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5CE2F232325AEE00056F6C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		D56E0DD8230E0774007A3468 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nxcrun agvtool next-version -all\n";
+		};
 		D59CBCCF22D40B2C009ED4C2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,24 +573,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# Step 1: Remove existing .xcframework if applicable\nrm -rf ${PROJECT_NAME}.xcframework\n\n# Step 2. Build .framework for iOS Device\nxcodebuild -scheme ${PROJECT_NAME} -configuration ${CONFIGURATION} -sdk iphoneos OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# Step 3. Build .framework for iOS Simulator\nxcodebuild -scheme ${PROJECT_NAME} -configuration ${CONFIGURATION} -sdk iphonesimulator OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# Step 4. Build .framework for macOS\nxcodebuild -scheme \"${PROJECT_NAME}-macOS\" -configuration ${CONFIGURATION} OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# Step 5. Create .xcframework using each of the .frameworks built previously\nxcodebuild -create-xcframework -framework \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" -framework \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework\" -framework \"${BUILD_DIR}/${CONFIGURATION}/${PROJECT_NAME}_macOS.framework\" -output ${PROJECT_NAME}.xcframework\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n# Step 1: Remove existing .xcframework if applicable\nrm -rf ${PROJECT_NAME}.xcframework\n\n# Step 2a. Build .framework for iOS Device\nxcodebuild -scheme ${PROJECT_NAME} -configuration ${CONFIGURATION} -sdk iphoneos OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# Step 2b. Build .framework for iOS Simulator\nxcodebuild -scheme ${PROJECT_NAME} -configuration ${CONFIGURATION} -sdk iphonesimulator OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# Step 2c. Build .framework for watchOS\nxcodebuild -scheme \"${PROJECT_NAME}-watchOS\" -configuration ${CONFIGURATION} OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# Step 2d. Build .framework for tvOS\nxcodebuild -scheme \"${PROJECT_NAME}-tvOS\" -configuration ${CONFIGURATION} OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# Step 2e. Build .framework for macOS\nxcodebuild -scheme \"${PROJECT_NAME}-macOS\" -configuration ${CONFIGURATION} OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# Step 3. Create .xcframework using each of the .frameworks built previously\nxcodebuild -create-xcframework -framework \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" -framework \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework\" -framework \"${BUILD_DIR}/${CONFIGURATION}/${PROJECT_NAME}_macOS.framework\" -output ${PROJECT_NAME}.xcframework\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D54394222325AFF6001106D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D54394372325B067001106D8 /* ZColorM.swift in Sources */,
+				D543942E2325B063001106D8 /* ZLocation.swift in Sources */,
+				D543942F2325B063001106D8 /* ZTime.swift in Sources */,
+				D54394302325B063001106D8 /* ZDevice.swift in Sources */,
+				D54394312325B063001106D8 /* ZColor.swift in Sources */,
+				D54394322325B063001106D8 /* Numbers.swift in Sources */,
+				D54394332325B063001106D8 /* Logic.swift in Sources */,
+				D52F86542325B3AC00F7E7A8 /* Images.swift in Sources */,
+				D52F86522325B3AC00F7E7A8 /* UIKitExt.swift in Sources */,
+				D54394342325B063001106D8 /* Structs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56E0D69230B46F0007A3468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56E0D70230B46F0007A3468 /* ZerzuraKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56E0D87230B49EC007A3468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56E0D8E230B49EC007A3468 /* ZerzuraKit_macOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D59CBC9522D408E9009ED4C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D5DA153122F4DB4F00EB4C3F /* ZDevice.swift in Sources */,
-				D57E53D02307775900CCCF9E /* ZHaptics.swift in Sources */,
-				D5DD662022DAC6EE00B5DAD3 /* UIKitExt.swift in Sources */,
-				D5DA152A22F4DA5F00EB4C3F /* Images.swift in Sources */,
+				D54A3FE4231DC24800B73334 /* Structs.swift in Sources */,
 				D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */,
 				D59CBCBF22D40B06009ED4C2 /* ZColorM.swift in Sources */,
+				D54A3FE1231DB88900B73334 /* Logic.swift in Sources */,
 				D59CBCBC22D40B06009ED4C2 /* ZLocation.swift in Sources */,
 				D59CBCC022D40B06009ED4C2 /* ZTime.swift in Sources */,
-				D59CBCBD22D40B06009ED4C2 /* ZDeviceM.swift in Sources */,
+				D52F86532325B3AC00F7E7A8 /* Images.swift in Sources */,
+				D52F86512325B3AC00F7E7A8 /* UIKitExt.swift in Sources */,
 				D57E53CE23075AB200CCCF9E /* Numbers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +633,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D52ECFAA22F4DCCB005AE4DE /* ZDevice.swift in Sources */,
+				D54A3FE2231DB88900B73334 /* Logic.swift in Sources */,
+				D54A3FE5231DC24800B73334 /* Structs.swift in Sources */,
 				D59CBCCB22D40B11009ED4C2 /* Images.swift in Sources */,
 				D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */,
 				D59CBCCC22D40B11009ED4C2 /* ZColorD.swift in Sources */,
@@ -360,9 +645,169 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5CE2F212325AEE00056F6C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D543943A2325B06E001106D8 /* ZColorM.swift in Sources */,
+				D5CE2F2D2325AF280056F6C2 /* ZLocation.swift in Sources */,
+				D5CE2F2E2325AF280056F6C2 /* ZTime.swift in Sources */,
+				D5CE2F2F2325AF280056F6C2 /* ZDevice.swift in Sources */,
+				D5CE2F302325AF280056F6C2 /* ZColor.swift in Sources */,
+				D5CE2F312325AF280056F6C2 /* Numbers.swift in Sources */,
+				D5CE2F322325AF280056F6C2 /* Logic.swift in Sources */,
+				D5CE2F332325AF280056F6C2 /* Structs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D56E0D74230B46F0007A3468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D59CBC9822D408E9009ED4C2 /* ZerzuraKit */;
+			targetProxy = D56E0D73230B46F0007A3468 /* PBXContainerItemProxy */;
+		};
+		D56E0D92230B49EC007A3468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D59CBCA822D40A82009ED4C2 /* ZerzuraKit-macOS */;
+			targetProxy = D56E0D91230B49EC007A3468 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D543942C2325AFF6001106D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		D543942D2325AFF6001106D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		D56E0D76230B46F0007A3468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				INFOPLIST_FILE = ZerzuraKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ophiuchi.ZerzuraKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D56E0D77230B46F0007A3468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				INFOPLIST_FILE = ZerzuraKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ophiuchi.ZerzuraKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D56E0D94230B49EC007A3468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				INFOPLIST_FILE = ZerzuraKit_macOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D56E0D95230B49EC007A3468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				INFOPLIST_FILE = ZerzuraKit_macOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		D59CBC9F22D408E9009ED4C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -396,7 +841,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -414,7 +859,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -459,7 +905,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -471,7 +917,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -488,19 +935,21 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 6;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/iOS/Info.plist";
+				INFOPLIST_FILE = iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.8.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = mesarthim.ZerzuraKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -515,19 +964,21 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 6;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/iOS/Info.plist";
+				INFOPLIST_FILE = iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.8.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = mesarthim.ZerzuraKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -543,19 +994,21 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 6;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/macOS/Info.plist";
+				INFOPLIST_FILE = macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 0.8.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "mesarthim.ZerzuraKit-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -571,19 +1024,21 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 6;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/macOS/Info.plist";
+				INFOPLIST_FILE = macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 0.8.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "mesarthim.ZerzuraKit-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -598,6 +1053,7 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -610,15 +1066,101 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
+		D5CE2F2B2325AEE00056F6C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D5CE2F2C2325AEE00056F6C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D543942B2325AFF6001106D8 /* Build configuration list for PBXNativeTarget "ZerzuraKit-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D543942C2325AFF6001106D8 /* Debug */,
+				D543942D2325AFF6001106D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D56E0D75230B46F0007A3468 /* Build configuration list for PBXNativeTarget "ZerzuraKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56E0D76230B46F0007A3468 /* Debug */,
+				D56E0D77230B46F0007A3468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D56E0D93230B49EC007A3468 /* Build configuration list for PBXNativeTarget "ZerzuraKit_macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56E0D94230B49EC007A3468 /* Debug */,
+				D56E0D95230B49EC007A3468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D59CBC9322D408E9009ED4C2 /* Build configuration list for PBXProject "ZerzuraKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -651,6 +1193,15 @@
 			buildConfigurations = (
 				D59CBCB322D40AA3009ED4C2 /* Debug */,
 				D59CBCB422D40AA3009ED4C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5CE2F2A2325AEE00056F6C2 /* Build configuration list for PBXNativeTarget "ZerzuraKit-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5CE2F2B2325AEE00056F6C2 /* Debug */,
+				D5CE2F2C2325AEE00056F6C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
