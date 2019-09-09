@@ -14,55 +14,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		76yvoE62sS7gOksw1ifOdf+LnQY=
+		rNhTQRedigFJFBLpO7ketKh/Fs0=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Y0rbjWen2iBeVIeOZw+fg0S+DHw=
+		6acqjZFE1GupqBQyoRkpL3vRjj8=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KZxkojJ4GFchLKbsoVYiCfzXe50=
+		fYg/g1lqiyrivv9UqrJ75S3fohw=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		y/Gx4vVk19MLK9wgWJztcNOWvp4=
+		HS9okupGRNTfr68uBYMGpqUxchY=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/i386.swiftdoc</key>
 		<data>
-		Y0rbjWen2iBeVIeOZw+fg0S+DHw=
+		6acqjZFE1GupqBQyoRkpL3vRjj8=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/i386.swiftinterface</key>
 		<data>
-		KZxkojJ4GFchLKbsoVYiCfzXe50=
+		fYg/g1lqiyrivv9UqrJ75S3fohw=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		y/Gx4vVk19MLK9wgWJztcNOWvp4=
+		HS9okupGRNTfr68uBYMGpqUxchY=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		acEwU6oBKJ99Zx6YqKP5VPuCXco=
+		YQPzpg9CmkBBIbAzBQfCf6osRNw=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		sIt4TSLxNhvUiLLCEzysNXRaa7Y=
+		xGEHOYvAjDIql6c8PdZyWQqJo+Q=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		luBXb4lnlteUEzK890nueV2lstY=
+		ht0k+W0Mvo7l7ftAN8vUO2Cin2s=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		acEwU6oBKJ99Zx6YqKP5VPuCXco=
+		YQPzpg9CmkBBIbAzBQfCf6osRNw=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		sIt4TSLxNhvUiLLCEzysNXRaa7Y=
+		xGEHOYvAjDIql6c8PdZyWQqJo+Q=
 		</data>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		luBXb4lnlteUEzK890nueV2lstY=
+		ht0k+W0Mvo7l7ftAN8vUO2Cin2s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>README.md</key>
 		<data>
-		eQ30geLGw1VS+QjgovwGa1EbO6E=
+		uyS7vw35tP+Yx2fSVGDbn3OtA6Y=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -101,132 +101,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y0rbjWen2iBeVIeOZw+fg0S+DHw=
+			6acqjZFE1GupqBQyoRkpL3vRjj8=
 			</data>
 			<key>hash2</key>
 			<data>
-			HeaYwH5K+faAp5Ol9Zaq0POCk8KdD6izvIQvjoi8B2w=
+			yGQcZqjGXYI7DQE0JZ4qQtdXWidDqmE82PdLaE9SoA4=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KZxkojJ4GFchLKbsoVYiCfzXe50=
+			fYg/g1lqiyrivv9UqrJ75S3fohw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ixd96b13AuLyfyGIkvluUkmTHSdJ8nqGvDbzvf4s7IE=
+			4Bn3Mza8hqYtVt9xVKdboiHf4xt99KX7YBu09VM1llE=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y/Gx4vVk19MLK9wgWJztcNOWvp4=
+			HS9okupGRNTfr68uBYMGpqUxchY=
 			</data>
 			<key>hash2</key>
 			<data>
-			3l7KbsBtTCv8EvncClYiTQdVGjaroSkHNb5+6HEuiOM=
+			xMzmJ/l6Ju8zl9Rbm0ye0CnW72bJY/n0Os8Fw75Rbhs=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y0rbjWen2iBeVIeOZw+fg0S+DHw=
+			6acqjZFE1GupqBQyoRkpL3vRjj8=
 			</data>
 			<key>hash2</key>
 			<data>
-			HeaYwH5K+faAp5Ol9Zaq0POCk8KdD6izvIQvjoi8B2w=
+			yGQcZqjGXYI7DQE0JZ4qQtdXWidDqmE82PdLaE9SoA4=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KZxkojJ4GFchLKbsoVYiCfzXe50=
+			fYg/g1lqiyrivv9UqrJ75S3fohw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ixd96b13AuLyfyGIkvluUkmTHSdJ8nqGvDbzvf4s7IE=
+			4Bn3Mza8hqYtVt9xVKdboiHf4xt99KX7YBu09VM1llE=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y/Gx4vVk19MLK9wgWJztcNOWvp4=
+			HS9okupGRNTfr68uBYMGpqUxchY=
 			</data>
 			<key>hash2</key>
 			<data>
-			3l7KbsBtTCv8EvncClYiTQdVGjaroSkHNb5+6HEuiOM=
+			xMzmJ/l6Ju8zl9Rbm0ye0CnW72bJY/n0Os8Fw75Rbhs=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			acEwU6oBKJ99Zx6YqKP5VPuCXco=
+			YQPzpg9CmkBBIbAzBQfCf6osRNw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+ISyvE9I9NxKzNFa7Z3RnhcM6NrVEmKAvHEavJ554HU=
+			nqwT+C2gx98Q8VdYvOBJFOj2DZWkFMZnJjjhUfywO7I=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sIt4TSLxNhvUiLLCEzysNXRaa7Y=
+			xGEHOYvAjDIql6c8PdZyWQqJo+Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			sI0e07gCT0RfXPiErSCCZqWYdJTRWUTk1b67o46/7gE=
+			HDOjnGGqj54f4wM3t0kQkA5xeY06hAINN8qu4q/Zqpo=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			luBXb4lnlteUEzK890nueV2lstY=
+			ht0k+W0Mvo7l7ftAN8vUO2Cin2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			4KkMx+SLvyF7NnWFxkb9BmCeWngXAQi9Q47do+3q3yk=
+			NXCpQjqpEIH/qAbxwwP5cKXC+CJxgpo690dPiT3UUUo=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			acEwU6oBKJ99Zx6YqKP5VPuCXco=
+			YQPzpg9CmkBBIbAzBQfCf6osRNw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+ISyvE9I9NxKzNFa7Z3RnhcM6NrVEmKAvHEavJ554HU=
+			nqwT+C2gx98Q8VdYvOBJFOj2DZWkFMZnJjjhUfywO7I=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sIt4TSLxNhvUiLLCEzysNXRaa7Y=
+			xGEHOYvAjDIql6c8PdZyWQqJo+Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			sI0e07gCT0RfXPiErSCCZqWYdJTRWUTk1b67o46/7gE=
+			HDOjnGGqj54f4wM3t0kQkA5xeY06hAINN8qu4q/Zqpo=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			luBXb4lnlteUEzK890nueV2lstY=
+			ht0k+W0Mvo7l7ftAN8vUO2Cin2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			4KkMx+SLvyF7NnWFxkb9BmCeWngXAQi9Q47do+3q3yk=
+			NXCpQjqpEIH/qAbxwwP5cKXC+CJxgpo690dPiT3UUUo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -244,11 +244,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eQ30geLGw1VS+QjgovwGa1EbO6E=
+			uyS7vw35tP+Yx2fSVGDbn3OtA6Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			m/LirmtmSGjx4z4bKYtOBj16X+KwamVCg0ptRnblaB8=
+			zosoHGbT4uQFsud+7Lp8vT7WcWI2ZqBlshmtGjRnaNQ=
 			</data>
 		</dict>
 	</dict>
