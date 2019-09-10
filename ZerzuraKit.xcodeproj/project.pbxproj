@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		D50B18D02328354D0005439E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D50B18CF2328354D0005439E /* LICENSE */; };
 		D50CEF5D22FE043700667AC7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D50CEF5C22FE043700667AC7 /* README.md */; };
 		D52ECFAA22F4DCCB005AE4DE /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; };
 		D52ECFAC22F4DD07005AE4DE /* CocoaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */; };
@@ -83,6 +84,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D50B18CF2328354D0005439E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D50CEF5C22FE043700667AC7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaExt.swift; sourceTree = "<group>"; };
 		D52F864F2325B3AC00F7E7A8 /* UIKitExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExt.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				D53811172307ECD6006888E8 /* ZerzuraKit.podspec */,
 				D50CEF5C22FE043700667AC7 /* README.md */,
+				D50B18CF2328354D0005439E /* LICENSE */,
 				D5DA152B22F4DAC900EB4C3F /* Common */,
 				D59CBC9B22D408E9009ED4C2 /* iOS */,
 				D54394272325AFF6001106D8 /* tvOS */,
@@ -478,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50B18D02328354D0005439E /* LICENSE in Resources */,
 				D50CEF5D22FE043700667AC7 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
