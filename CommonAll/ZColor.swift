@@ -6,6 +6,9 @@
 //  Copyright © 2019 Mesarthim. All rights reserved.
 //
 
+import Foundation
+import Darwin
+
 /**
  An object that stores and handles conversion of color and opacity (alpha value) data.
 */

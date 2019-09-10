@@ -6,6 +6,8 @@
 //  Copyright © 2019 Mesarthim. All rights reserved.
 //
 
+import Foundation
+
 extension Date {
     /**
      Generates a localized time string, i.e. 12:00 PM.
