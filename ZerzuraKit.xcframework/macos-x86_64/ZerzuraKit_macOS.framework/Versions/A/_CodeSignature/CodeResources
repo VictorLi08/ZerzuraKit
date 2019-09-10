@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		CiSQukRH5vT1C86C+xSLz5U2Lpo=
+		DfGs5Bm8erT2iRKH3e3U0CyrZoE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -20,17 +20,6 @@
 			<key>hash2</key>
 			<data>
 			7AwnC9JOuvkinTjMgB6evKMBHGrYcPd0Zs8TNqsW6YE=
-			</data>
-		</dict>
-		<key>Headers/ZerzuraKit_macOS.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ybS8MShVBQcc62YXoJLFoPi28XU=
-			</data>
-			<key>hash2</key>
-			<data>
-			wiBwhwv2hAUMef9EWMLSJh/7GBVopaGp//inY+untfw=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit_macOS.swiftmodule/x86_64-apple-macos.swiftdoc</key>
@@ -48,22 +37,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mFPa32t/LODbPtpcU5PlqzMLzgs=
+			0yr5Mc521ky0IEiT6POGU5xKba0=
 			</data>
 			<key>hash2</key>
 			<data>
-			5MDFy6qfgKXT8veVuJMoyAEsB4gKSOgEmbkPAObW3HA=
+			FqPtGiiPg3GcJSoE5IqeGahRCpYHcQzIV7jhW9GMD6k=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit_macOS.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vvh8MY+Tgxbztp3yZ2OEER7oY6g=
+			N8a+mlFvqsYO7x010bzD3cwEtfs=
 			</data>
 			<key>hash2</key>
 			<data>
-			AG9fm9AYw4kQPrwe6Vrkaq7C9QJiMPP3kdGHU0Mhzxk=
+			S6BsfoqEh0wRyITuxAmxjkIjdnXQz+pXwhiWt0/00wQ=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit_macOS.swiftmodule/x86_64.swiftdoc</key>
@@ -81,44 +70,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mFPa32t/LODbPtpcU5PlqzMLzgs=
+			0yr5Mc521ky0IEiT6POGU5xKba0=
 			</data>
 			<key>hash2</key>
 			<data>
-			5MDFy6qfgKXT8veVuJMoyAEsB4gKSOgEmbkPAObW3HA=
+			FqPtGiiPg3GcJSoE5IqeGahRCpYHcQzIV7jhW9GMD6k=
 			</data>
 		</dict>
 		<key>Modules/ZerzuraKit_macOS.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vvh8MY+Tgxbztp3yZ2OEER7oY6g=
+			N8a+mlFvqsYO7x010bzD3cwEtfs=
 			</data>
 			<key>hash2</key>
 			<data>
-			AG9fm9AYw4kQPrwe6Vrkaq7C9QJiMPP3kdGHU0Mhzxk=
+			S6BsfoqEh0wRyITuxAmxjkIjdnXQz+pXwhiWt0/00wQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g84veIF0e7uKhrz/tL5Nu/imObA=
+			St1f1VXCEh7nqGF+5gc+xeWiCew=
 			</data>
 			<key>hash2</key>
 			<data>
-			YFQoK9kaJ7VSW4Fc+sCq3NLmMxt6u5hsWO7Mig9mCu4=
+			YWd66P3tIgw6q3/51c73QNqFWsUpxyCFIuQloShfFnk=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CiSQukRH5vT1C86C+xSLz5U2Lpo=
+			DfGs5Bm8erT2iRKH3e3U0CyrZoE=
 			</data>
 			<key>hash2</key>
 			<data>
-			qlAo7JeocajjXvbTfzPtRXTfBkrfiYf5sH8CejiuOT4=
+			YzFBBB0i1K9xKTRO3utleJrG4GhpGMTB4WBZD5dN3F4=
 			</data>
 		</dict>
 	</dict>

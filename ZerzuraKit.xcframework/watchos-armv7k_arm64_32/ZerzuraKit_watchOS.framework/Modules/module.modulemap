@@ -1,0 +1,4 @@
+framework module ZerzuraKit_watchOS {
+  header "ZerzuraKit_watchOS-Swift.h"
+  requires objc
+}

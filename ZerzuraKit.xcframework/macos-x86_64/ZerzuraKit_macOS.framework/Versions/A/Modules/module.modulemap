@@ -1,11 +1,4 @@
 framework module ZerzuraKit_macOS {
-  umbrella header "ZerzuraKit_macOS.h"
-
-  export *
-  module * { export * }
-}
-
-module ZerzuraKit_macOS.Swift {
-    header "ZerzuraKit_macOS-Swift.h"
-    requires objc
+  header "ZerzuraKit_macOS-Swift.h"
+  requires objc
 }

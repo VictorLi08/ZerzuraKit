@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
   spec.license       = { :type => 'MIT' }
   spec.homepage      = 'https://github.com/VictorLi08/ZerzuraKit'
   spec.authors       = { 'Victor Li' => 'victorli08@outlook.com' }
-  spec.summary       = 'Versatile general-purpose library for iOS and macOS.'
+  spec.summary       = 'Versatile general-purpose Swift library.'
   spec.source        = { :git => 'https://github.com/VictorLi08/ZerzuraKit.git', :tag => 'v0.8.0' }
   spec.swift_version = '5.1'
 
@@ -13,10 +13,10 @@ Pod::Spec.new do |spec|
   spec.watchos.deployment_target    = '2.0'
   spec.osx.deployment_target        = '10.10'
 
-  spec.source_files             = 'CommonAll/*.swift'
-  spec.ios.source_files         = 'CommonMobile/*.swift', 'CommonMobile/iOS-tvOS/*.swift', 'iOS/*.swift'
-  spec.tvos.source_files        = 'CommonMobile/*.swift', 'CommonMobile/iOS-tvOS/*.swift', 'tvOS/*.swift'
-  spec.watchos.source_files     = 'CommonMobile/*.swift', 'watchOS/*.swift'
+  spec.source_files             = 'Common/*.swift'
+  spec.ios.source_files         = 'Common/Mobile/*.swift', 'Common/iOS_tvOS/*.swift', 'iOS/*.swift'
+  spec.tvos.source_files        = 'Common/Mobile/*.swift', 'Common/iOS_tvOS/*.swift', 'tvOS/*.swift'
+  spec.watchos.source_files     = 'Common/Mobile/*.swift', 'watchOS/*.swift'
   spec.osx.source_files         = 'macOS/*.swift'
 
   spec.framework            = 'CoreLocation'

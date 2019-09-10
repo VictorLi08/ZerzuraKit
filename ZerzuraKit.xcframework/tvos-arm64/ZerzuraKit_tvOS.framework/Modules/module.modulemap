@@ -1,0 +1,4 @@
+framework module ZerzuraKit_tvOS {
+  header "ZerzuraKit_tvOS-Swift.h"
+  requires objc
+}

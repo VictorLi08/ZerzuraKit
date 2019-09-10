@@ -3,5 +3,6 @@
 // swift-module-flags: -target x86_64-apple-macos10.10 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ZerzuraKit_macOS
 import Cocoa
 import CoreLocation
+import Darwin
+import Foundation
 import Swift
-@_exported import ZerzuraKit_macOS
