@@ -44,9 +44,7 @@
 		D54A3FE5231DC24800B73334 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* Structs.swift */; };
 		D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; platformFilter = ios; };
 		D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
-		D56E0D70230B46F0007A3468 /* ZerzuraKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E0D6F230B46F0007A3468 /* ZerzuraKitTests.swift */; };
 		D56E0D72230B46F0007A3468 /* ZerzuraKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59CBC9922D408E9009ED4C2 /* ZerzuraKit_iOS.framework */; };
-		D56E0D8E230B49EC007A3468 /* ZerzuraKit_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E0D8D230B49EC007A3468 /* ZerzuraKit_macOSTests.swift */; };
 		D56E0D90230B49EC007A3468 /* ZerzuraKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59CBCA922D40A82009ED4C2 /* ZerzuraKit_macOS.framework */; };
 		D57E53CE23075AB200CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; platformFilter = ios; };
 		D57E53D1230780C100CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
@@ -96,11 +94,7 @@
 		D54A3FE3231DC24800B73334 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		D569DCE022F8E96B003F13EE /* ZColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZColor.swift; sourceTree = "<group>"; };
 		D56E0D6D230B46F0007A3468 /* ZerzuraKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZerzuraKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D56E0D6F230B46F0007A3468 /* ZerzuraKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZerzuraKitTests.swift; sourceTree = "<group>"; };
-		D56E0D71230B46F0007A3468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D56E0D8B230B49EC007A3468 /* ZerzuraKit_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZerzuraKit_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D56E0D8D230B49EC007A3468 /* ZerzuraKit_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZerzuraKit_macOSTests.swift; sourceTree = "<group>"; };
-		D56E0D8F230B49EC007A3468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D57E53CD23075AB200CCCF9E /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
 		D59CBC9922D408E9009ED4C2 /* ZerzuraKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59CBC9D22D408E9009ED4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -189,24 +183,6 @@
 			path = tvOS;
 			sourceTree = "<group>";
 		};
-		D56E0D6E230B46F0007A3468 /* ZerzuraKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				D56E0D6F230B46F0007A3468 /* ZerzuraKitTests.swift */,
-				D56E0D71230B46F0007A3468 /* Info.plist */,
-			);
-			path = ZerzuraKitTests;
-			sourceTree = "<group>";
-		};
-		D56E0D8C230B49EC007A3468 /* ZerzuraKit_macOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				D56E0D8D230B49EC007A3468 /* ZerzuraKit_macOSTests.swift */,
-				D56E0D8F230B49EC007A3468 /* Info.plist */,
-			);
-			path = ZerzuraKit_macOSTests;
-			sourceTree = "<group>";
-		};
 		D59CBC8F22D408E9009ED4C2 = {
 			isa = PBXGroup;
 			children = (
@@ -217,8 +193,6 @@
 				D54394272325AFF6001106D8 /* tvOS */,
 				D5CE2F262325AEE00056F6C2 /* watchOS */,
 				D59CBCAA22D40A82009ED4C2 /* macOS */,
-				D56E0D6E230B46F0007A3468 /* ZerzuraKitTests */,
-				D56E0D8C230B49EC007A3468 /* ZerzuraKit_macOSTests */,
 				D59CBC9A22D408E9009ED4C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -583,7 +557,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56E0D70230B46F0007A3468 /* ZerzuraKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,7 +564,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56E0D8E230B49EC007A3468 /* ZerzuraKit_macOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
