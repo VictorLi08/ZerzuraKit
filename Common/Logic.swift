@@ -139,4 +139,19 @@ extension Array where Element: Equatable {
         
         return false
     }
+    
+    static func &=(lhs: Array, rhs: Array) -> Bool {
+        if lhs.count != rhs.count {
+            return false
+        }
+        
+        let adjustedLength = lhs.count - 1
+        for index in 0 ... adjustedLength {
+            if lhs[index] != rhs[index] {
+                return false
+            }
+        }
+        
+        return true
+    }
 }
