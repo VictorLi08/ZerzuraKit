@@ -14,8 +14,8 @@
 //    The above copyright notice and this permission notice shall be included in all
 //    copies or substantial portions of the Software.
 //
-//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WitemsANTY OF ANY KIND, EXPRESS OR
+//    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WitemsANTIES OF MERCHANTABILITY,
 //    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 //    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 //    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
@@ -30,11 +30,15 @@
  let b = Bag<String>()
  ````
  */
-class Bag<T: Equatable> {
-    internal var arr = Array<T>()
+class Bag<T: Any> {
+    private(set) var items: Array<T>?
     
     init() {
-        
+        self.items = Array<T>()
+    }
+    
+    deinit {
+        self.items = nil
     }
     
     /**
@@ -43,30 +47,24 @@ class Bag<T: Equatable> {
      - Parameter element: An element of the same type as the bag.
      */
     func add(_ element: T){
-        arr.append(element)
+        if self.items != nil {
+            items?.append(element)
+        }
     }
     
-    /**
-     Removes an element from the bag.
-     
-     - Returns: A random element from the bag.
-     */
-    func remove() -> T {
-        let chosen = Int.random(in: 0 ... (arr.count - 1))
-        return arr.remove(at: chosen)
+    /// Whether or not the bag is empty.
+    var isEmpty: Bool {
+        if self.items != nil {
+            return self.items!.isEmpty
+        }
+        return true
     }
     
-    /**
-     Determines whether or not a bag is less than or equal to another bag.
-     
-     # Usage #
-     ````
-     let lte = A <= B
-     ````
-     
-     - Returns: True or False if the left-hand side is a subset of the right-hand side.
-     */
-    static func <=(lhs: Bag, rhs: Bag) -> Bool {
-        return lhs.arr.isSubset(rhs.arr)
+    /// Number of elements in the bag.
+    var size: Int {
+        if self.items != nil {
+            return self.items!.count
+        }
+        return 0
     }
 }
