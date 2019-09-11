@@ -16,7 +16,8 @@ ZerzuraKit is currently under active development and is being distributed in a p
 - [x] Array subset, intersection, difference, and equivalence convenience methods
 - [ ] Abstract data types
     - [x] Bags
-    - [ ] Stacks
+    - [ ] FIFOs
+    - [ ] LIFOs (Stacks)
     - [ ] Multimaps
 - [x] Additional convenience methods and properties for modifying UI elements
 - [x] Quick image compression, resize, and asynchronous web fetch/display
