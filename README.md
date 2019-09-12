@@ -41,7 +41,7 @@ pod 'ZerzuraKit'
 and run `pod install`.
 
 ### Manually (Xcode 11+)
-- Clone this repository or download an `.xcframework` package from Releases.
+- Download and decompress an  `.xcframework` package from Releases.
 - Add `ZerzuraKit.xcframework` to your Xcode project under `Frameworks, Libraries, and Embedded Content`.
 
 ## Requirements
