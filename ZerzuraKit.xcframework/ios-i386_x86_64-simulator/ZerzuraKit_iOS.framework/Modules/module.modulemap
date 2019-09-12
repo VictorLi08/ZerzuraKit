@@ -1,4 +1,0 @@
-framework module ZerzuraKit_iOS {
-  header "ZerzuraKit_iOS-Swift.h"
-  requires objc
-}
