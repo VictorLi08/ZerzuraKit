@@ -122,7 +122,7 @@ class Queue<T: Any>: ADT {
     }
     
     /**
-     Pushes an element to the top of the stack.
+     Appends an element to the rear of the queue.
      
      - Parameter element: An element of the same type as the bag.
      */
@@ -131,7 +131,7 @@ class Queue<T: Any>: ADT {
     }
     
     /**
-     Pops an element off the top of the stack.
+     Pops an element from the front of the queue.
      
      - Parameter element: An element of the same type as the bag.
      */
@@ -139,12 +139,12 @@ class Queue<T: Any>: ADT {
         return items.removeFirst()
     }
     
-    /// Whether or not the stack is empty.
+    /// Whether or not the queue is empty.
     var isEmpty: Bool {
         return self.items.isEmpty
     }
     
-    /// Number of elements in the stack.
+    /// Number of elements in the queue.
     var size: Int {
         return self.items.count
     }
