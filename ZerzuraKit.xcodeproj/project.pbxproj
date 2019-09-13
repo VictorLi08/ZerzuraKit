@@ -36,13 +36,13 @@
 		D54394312325B063001106D8 /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
 		D54394322325B063001106D8 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
 		D54394332325B063001106D8 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE0231DB88900B73334 /* Logic.swift */; };
-		D54394342325B063001106D8 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* Structs.swift */; };
+		D54394342325B063001106D8 /* ADTs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* ADTs.swift */; };
 		D54394372325B067001106D8 /* ZColorM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB922D40B06009ED4C2 /* ZColorM.swift */; };
 		D543943A2325B06E001106D8 /* ZColorM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB922D40B06009ED4C2 /* ZColorM.swift */; };
 		D54A3FE1231DB88900B73334 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE0231DB88900B73334 /* Logic.swift */; platformFilter = ios; };
 		D54A3FE2231DB88900B73334 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE0231DB88900B73334 /* Logic.swift */; };
-		D54A3FE4231DC24800B73334 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* Structs.swift */; platformFilter = ios; };
-		D54A3FE5231DC24800B73334 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* Structs.swift */; };
+		D54A3FE4231DC24800B73334 /* ADTs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* ADTs.swift */; platformFilter = ios; };
+		D54A3FE5231DC24800B73334 /* ADTs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* ADTs.swift */; };
 		D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; platformFilter = ios; };
 		D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
 		D56E0D72230B46F0007A3468 /* ZerzuraKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59CBC9922D408E9009ED4C2 /* ZerzuraKit_iOS.framework */; };
@@ -60,7 +60,7 @@
 		D5CE2F302325AF280056F6C2 /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
 		D5CE2F312325AF280056F6C2 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
 		D5CE2F322325AF280056F6C2 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE0231DB88900B73334 /* Logic.swift */; };
-		D5CE2F332325AF280056F6C2 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* Structs.swift */; };
+		D5CE2F332325AF280056F6C2 /* ADTs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* ADTs.swift */; };
 		D5DA152E22F4DB1600EB4C3F /* ZTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* ZTime.swift */; };
 		D5DA152F22F4DB1800EB4C3F /* ZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* ZLocation.swift */; };
 		D5DA153122F4DB4F00EB4C3F /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; platformFilter = ios; };
@@ -93,7 +93,7 @@
 		D54394262325AFF6001106D8 /* ZerzuraKit_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54394292325AFF6001106D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D54A3FE0231DB88900B73334 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
-		D54A3FE3231DC24800B73334 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		D54A3FE3231DC24800B73334 /* ADTs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADTs.swift; sourceTree = "<group>"; };
 		D569DCE022F8E96B003F13EE /* ZColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZColor.swift; sourceTree = "<group>"; };
 		D56E0D6D230B46F0007A3468 /* ZerzuraKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZerzuraKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56E0D8B230B49EC007A3468 /* ZerzuraKit_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZerzuraKit_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,7 +249,7 @@
 				D569DCE022F8E96B003F13EE /* ZColor.swift */,
 				D57E53CD23075AB200CCCF9E /* Numbers.swift */,
 				D54A3FE0231DB88900B73334 /* Logic.swift */,
-				D54A3FE3231DC24800B73334 /* Structs.swift */,
+				D54A3FE3231DC24800B73334 /* ADTs.swift */,
 				D54394202325AF7F001106D8 /* Mobile */,
 				D52F864E2325B3AC00F7E7A8 /* iOS_tvOS */,
 			);
@@ -553,7 +553,7 @@
 				D54394332325B063001106D8 /* Logic.swift in Sources */,
 				D52F86542325B3AC00F7E7A8 /* Images.swift in Sources */,
 				D52F86522325B3AC00F7E7A8 /* UIKitExt.swift in Sources */,
-				D54394342325B063001106D8 /* Structs.swift in Sources */,
+				D54394342325B063001106D8 /* ADTs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,7 +576,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5DA153122F4DB4F00EB4C3F /* ZDevice.swift in Sources */,
-				D54A3FE4231DC24800B73334 /* Structs.swift in Sources */,
+				D54A3FE4231DC24800B73334 /* ADTs.swift in Sources */,
 				D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */,
 				D59CBCBF22D40B06009ED4C2 /* ZColorM.swift in Sources */,
 				D54A3FE1231DB88900B73334 /* Logic.swift in Sources */,
@@ -594,7 +594,7 @@
 			files = (
 				D52ECFAA22F4DCCB005AE4DE /* ZDevice.swift in Sources */,
 				D54A3FE2231DB88900B73334 /* Logic.swift in Sources */,
-				D54A3FE5231DC24800B73334 /* Structs.swift in Sources */,
+				D54A3FE5231DC24800B73334 /* ADTs.swift in Sources */,
 				D59CBCCB22D40B11009ED4C2 /* Images.swift in Sources */,
 				D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */,
 				D59CBCCC22D40B11009ED4C2 /* ZColorD.swift in Sources */,
@@ -616,7 +616,7 @@
 				D5CE2F302325AF280056F6C2 /* ZColor.swift in Sources */,
 				D5CE2F312325AF280056F6C2 /* Numbers.swift in Sources */,
 				D5CE2F322325AF280056F6C2 /* Logic.swift in Sources */,
-				D5CE2F332325AF280056F6C2 /* Structs.swift in Sources */,
+				D5CE2F332325AF280056F6C2 /* ADTs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
