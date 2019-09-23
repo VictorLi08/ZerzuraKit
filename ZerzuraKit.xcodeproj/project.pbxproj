@@ -45,8 +45,6 @@
 		D54A3FE5231DC24800B73334 /* ADTs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* ADTs.swift */; };
 		D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; platformFilter = ios; };
 		D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
-		D56E0D72230B46F0007A3468 /* ZerzuraKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59CBC9922D408E9009ED4C2 /* ZerzuraKit_iOS.framework */; };
-		D56E0D90230B49EC007A3468 /* ZerzuraKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59CBCA922D40A82009ED4C2 /* ZerzuraKit_macOS.framework */; };
 		D57E53CE23075AB200CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; platformFilter = ios; };
 		D57E53D1230780C100CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
 		D59CBCBC22D40B06009ED4C2 /* ZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* ZLocation.swift */; platformFilter = ios; };
@@ -66,23 +64,6 @@
 		D5DA153122F4DB4F00EB4C3F /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D56E0D73230B46F0007A3468 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D59CBC9022D408E9009ED4C2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D59CBC9822D408E9009ED4C2;
-			remoteInfo = ZerzuraKit;
-		};
-		D56E0D91230B49EC007A3468 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D59CBC9022D408E9009ED4C2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D59CBCA822D40A82009ED4C2;
-			remoteInfo = "ZerzuraKit-macOS";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		D50B18CF2328354D0005439E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D50CEF5C22FE043700667AC7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -95,8 +76,6 @@
 		D54A3FE0231DB88900B73334 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
 		D54A3FE3231DC24800B73334 /* ADTs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADTs.swift; sourceTree = "<group>"; };
 		D569DCE022F8E96B003F13EE /* ZColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZColor.swift; sourceTree = "<group>"; };
-		D56E0D6D230B46F0007A3468 /* ZerzuraKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZerzuraKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D56E0D8B230B49EC007A3468 /* ZerzuraKit_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZerzuraKit_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57E53CD23075AB200CCCF9E /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
 		D59CBC9922D408E9009ED4C2 /* ZerzuraKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59CBC9D22D408E9009ED4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +86,14 @@
 		D59CBCBA22D40B06009ED4C2 /* ZTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTime.swift; sourceTree = "<group>"; };
 		D59CBCC522D40B11009ED4C2 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D59CBCC622D40B11009ED4C2 /* ZColorD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZColorD.swift; sourceTree = "<group>"; };
+		D59F88202339828B00E2232B /* GettingStarted.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GettingStarted.md; sourceTree = "<group>"; };
+		D59F8821233983FB00E2232B /* Arrays.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Arrays.md; sourceTree = "<group>"; };
+		D59F88222339842100E2232B /* ADTs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ADTs.md; sourceTree = "<group>"; };
+		D59F88232339844A00E2232B /* DT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DT.md; sourceTree = "<group>"; };
+		D59F88242339846800E2232B /* Nums.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Nums.md; sourceTree = "<group>"; };
+		D59F88252339847100E2232B /* UI.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UI.md; sourceTree = "<group>"; };
+		D59F88262339847D00E2232B /* Device.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Device.md; sourceTree = "<group>"; };
+		D59F88272339849300E2232B /* ZLocation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ZLocation.md; sourceTree = "<group>"; };
 		D5CE2F252325AEE00056F6C2 /* ZerzuraKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CE2F282325AEE00056F6C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDevice.swift; sourceTree = "<group>"; };
@@ -117,22 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D56E0D6A230B46F0007A3468 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D56E0D72230B46F0007A3468 /* ZerzuraKit_iOS.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D56E0D88230B49EC007A3468 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D56E0D90230B49EC007A3468 /* ZerzuraKit_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +162,7 @@
 				D53811172307ECD6006888E8 /* ZerzuraKit.podspec */,
 				D50CEF5C22FE043700667AC7 /* README.md */,
 				D50B18CF2328354D0005439E /* LICENSE */,
+				D59F881F2339825600E2232B /* Documentation */,
 				D5DA152B22F4DAC900EB4C3F /* Common */,
 				D59CBC9B22D408E9009ED4C2 /* iOS */,
 				D54394272325AFF6001106D8 /* tvOS */,
@@ -205,8 +177,6 @@
 			children = (
 				D59CBC9922D408E9009ED4C2 /* ZerzuraKit_iOS.framework */,
 				D59CBCA922D40A82009ED4C2 /* ZerzuraKit_macOS.framework */,
-				D56E0D6D230B46F0007A3468 /* ZerzuraKitTests.xctest */,
-				D56E0D8B230B49EC007A3468 /* ZerzuraKit_macOSTests.xctest */,
 				D5CE2F252325AEE00056F6C2 /* ZerzuraKit_watchOS.framework */,
 				D54394262325AFF6001106D8 /* ZerzuraKit_tvOS.framework */,
 			);
@@ -230,6 +200,21 @@
 				D59CBCAC22D40A82009ED4C2 /* Info.plist */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		D59F881F2339825600E2232B /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				D59F88202339828B00E2232B /* GettingStarted.md */,
+				D59F8821233983FB00E2232B /* Arrays.md */,
+				D59F88222339842100E2232B /* ADTs.md */,
+				D59F88232339844A00E2232B /* DT.md */,
+				D59F88242339846800E2232B /* Nums.md */,
+				D59F88252339847100E2232B /* UI.md */,
+				D59F88262339847D00E2232B /* Device.md */,
+				D59F88272339849300E2232B /* ZLocation.md */,
+			);
+			path = Documentation;
 			sourceTree = "<group>";
 		};
 		D5CE2F262325AEE00056F6C2 /* watchOS */ = {
@@ -308,42 +293,6 @@
 			productReference = D54394262325AFF6001106D8 /* ZerzuraKit_tvOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D56E0D6C230B46F0007A3468 /* ZerzuraKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D56E0D75230B46F0007A3468 /* Build configuration list for PBXNativeTarget "ZerzuraKitTests" */;
-			buildPhases = (
-				D56E0D69230B46F0007A3468 /* Sources */,
-				D56E0D6A230B46F0007A3468 /* Frameworks */,
-				D56E0D6B230B46F0007A3468 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D56E0D74230B46F0007A3468 /* PBXTargetDependency */,
-			);
-			name = ZerzuraKitTests;
-			productName = ZerzuraKitTests;
-			productReference = D56E0D6D230B46F0007A3468 /* ZerzuraKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D56E0D8A230B49EC007A3468 /* ZerzuraKit_macOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D56E0D93230B49EC007A3468 /* Build configuration list for PBXNativeTarget "ZerzuraKit_macOSTests" */;
-			buildPhases = (
-				D56E0D87230B49EC007A3468 /* Sources */,
-				D56E0D88230B49EC007A3468 /* Frameworks */,
-				D56E0D89230B49EC007A3468 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D56E0D92230B49EC007A3468 /* PBXTargetDependency */,
-			);
-			name = ZerzuraKit_macOSTests;
-			productName = ZerzuraKit_macOSTests;
-			productReference = D56E0D8B230B49EC007A3468 /* ZerzuraKit_macOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		D59CBC9822D408E9009ED4C2 /* ZerzuraKit-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D59CBCA122D408E9009ED4C2 /* Build configuration list for PBXNativeTarget "ZerzuraKit-iOS" */;
@@ -411,12 +360,6 @@
 					D54394252325AFF6001106D8 = {
 						CreatedOnToolsVersion = 11.0;
 					};
-					D56E0D6C230B46F0007A3468 = {
-						CreatedOnToolsVersion = 11.0;
-					};
-					D56E0D8A230B49EC007A3468 = {
-						CreatedOnToolsVersion = 11.0;
-					};
 					D59CBC9822D408E9009ED4C2 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -448,8 +391,6 @@
 				D5CE2F242325AEE00056F6C2 /* ZerzuraKit-watchOS */,
 				D54394252325AFF6001106D8 /* ZerzuraKit-tvOS */,
 				D59CBCA822D40A82009ED4C2 /* ZerzuraKit-macOS */,
-				D56E0D6C230B46F0007A3468 /* ZerzuraKitTests */,
-				D56E0D8A230B49EC007A3468 /* ZerzuraKit_macOSTests */,
 				D59CBCB122D40AA3009ED4C2 /* ZerzuraKit-Universal */,
 			);
 		};
@@ -457,20 +398,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		D54394242325AFF6001106D8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D56E0D6B230B46F0007A3468 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D56E0D89230B49EC007A3468 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -557,20 +484,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D56E0D69230B46F0007A3468 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D56E0D87230B49EC007A3468 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D59CBC9522D408E9009ED4C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -622,30 +535,17 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		D56E0D74230B46F0007A3468 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D59CBC9822D408E9009ED4C2 /* ZerzuraKit-iOS */;
-			targetProxy = D56E0D73230B46F0007A3468 /* PBXContainerItemProxy */;
-		};
-		D56E0D92230B49EC007A3468 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D59CBCA822D40A82009ED4C2 /* ZerzuraKit-macOS */;
-			targetProxy = D56E0D91230B49EC007A3468 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		D543942C2325AFF6001106D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 21;
+				DYLIB_CURRENT_VERSION = 22;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -656,7 +556,7 @@
 				);
 				MARKETING_VERSION = 0.8.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "xunonaut.ZerzuraKit-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = NO;
@@ -671,11 +571,11 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 21;
+				DYLIB_CURRENT_VERSION = 22;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -686,89 +586,13 @@
 				);
 				MARKETING_VERSION = 0.8.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "xunonaut.ZerzuraKit-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Release;
-		};
-		D56E0D76230B46F0007A3468 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
-				INFOPLIST_FILE = ZerzuraKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ophiuchi.ZerzuraKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D56E0D77230B46F0007A3468 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
-				INFOPLIST_FILE = ZerzuraKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ophiuchi.ZerzuraKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		D56E0D94230B49EC007A3468 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
-				INFOPLIST_FILE = ZerzuraKit_macOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-macOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		D56E0D95230B49EC007A3468 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
-				INFOPLIST_FILE = ZerzuraKit_macOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-macOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -805,7 +629,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -869,7 +693,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -899,11 +723,11 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 21;
+				DYLIB_CURRENT_VERSION = 22;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -915,7 +739,7 @@
 				);
 				MARKETING_VERSION = 0.8.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = mesarthim.ZerzuraKit;
+				PRODUCT_BUNDLE_IDENTIFIER = xunonaut.ZerzuraKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
@@ -928,11 +752,11 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 21;
+				DYLIB_CURRENT_VERSION = 22;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -944,7 +768,7 @@
 				);
 				MARKETING_VERSION = 0.8.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = mesarthim.ZerzuraKit;
+				PRODUCT_BUNDLE_IDENTIFIER = xunonaut.ZerzuraKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
@@ -958,11 +782,11 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 21;
+				DYLIB_CURRENT_VERSION = 22;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -974,7 +798,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 0.8.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "mesarthim.ZerzuraKit-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "xunonaut.ZerzuraKit-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
@@ -988,11 +812,11 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 21;
+				DYLIB_CURRENT_VERSION = 22;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1004,7 +828,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 0.8.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "mesarthim.ZerzuraKit-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "xunonaut.ZerzuraKit-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
@@ -1017,7 +841,7 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1030,7 +854,7 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
@@ -1043,11 +867,11 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 21;
+				DYLIB_CURRENT_VERSION = 22;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1058,7 +882,7 @@
 				);
 				MARKETING_VERSION = 0.8.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "xunonaut.ZerzuraKit-watchOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = NO;
@@ -1074,11 +898,11 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 21;
+				DYLIB_CURRENT_VERSION = 22;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1089,7 +913,7 @@
 				);
 				MARKETING_VERSION = 0.8.0;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "ophiuchi.ZerzuraKit-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "xunonaut.ZerzuraKit-watchOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = NO;
@@ -1107,24 +931,6 @@
 			buildConfigurations = (
 				D543942C2325AFF6001106D8 /* Debug */,
 				D543942D2325AFF6001106D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D56E0D75230B46F0007A3468 /* Build configuration list for PBXNativeTarget "ZerzuraKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D56E0D76230B46F0007A3468 /* Debug */,
-				D56E0D77230B46F0007A3468 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D56E0D93230B49EC007A3468 /* Build configuration list for PBXNativeTarget "ZerzuraKit_macOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D56E0D94230B49EC007A3468 /* Debug */,
-				D56E0D95230B49EC007A3468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
