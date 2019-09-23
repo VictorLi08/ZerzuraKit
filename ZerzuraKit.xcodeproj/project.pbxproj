@@ -86,6 +86,14 @@
 		D59CBCBA22D40B06009ED4C2 /* ZTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTime.swift; sourceTree = "<group>"; };
 		D59CBCC522D40B11009ED4C2 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D59CBCC622D40B11009ED4C2 /* ZColorD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZColorD.swift; sourceTree = "<group>"; };
+		D59F88202339828B00E2232B /* GettingStarted.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = GettingStarted.md; sourceTree = "<group>"; };
+		D59F8821233983FB00E2232B /* Arrays.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Arrays.md; sourceTree = "<group>"; };
+		D59F88222339842100E2232B /* ADTs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ADTs.md; sourceTree = "<group>"; };
+		D59F88232339844A00E2232B /* DT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DT.md; sourceTree = "<group>"; };
+		D59F88242339846800E2232B /* Nums.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Nums.md; sourceTree = "<group>"; };
+		D59F88252339847100E2232B /* UI.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UI.md; sourceTree = "<group>"; };
+		D59F88262339847D00E2232B /* Device.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Device.md; sourceTree = "<group>"; };
+		D59F88272339849300E2232B /* ZLocation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ZLocation.md; sourceTree = "<group>"; };
 		D5CE2F252325AEE00056F6C2 /* ZerzuraKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CE2F282325AEE00056F6C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDevice.swift; sourceTree = "<group>"; };
@@ -154,6 +162,7 @@
 				D53811172307ECD6006888E8 /* ZerzuraKit.podspec */,
 				D50CEF5C22FE043700667AC7 /* README.md */,
 				D50B18CF2328354D0005439E /* LICENSE */,
+				D59F881F2339825600E2232B /* Documentation */,
 				D5DA152B22F4DAC900EB4C3F /* Common */,
 				D59CBC9B22D408E9009ED4C2 /* iOS */,
 				D54394272325AFF6001106D8 /* tvOS */,
@@ -191,6 +200,21 @@
 				D59CBCAC22D40A82009ED4C2 /* Info.plist */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		D59F881F2339825600E2232B /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				D59F88202339828B00E2232B /* GettingStarted.md */,
+				D59F8821233983FB00E2232B /* Arrays.md */,
+				D59F88222339842100E2232B /* ADTs.md */,
+				D59F88232339844A00E2232B /* DT.md */,
+				D59F88242339846800E2232B /* Nums.md */,
+				D59F88252339847100E2232B /* UI.md */,
+				D59F88262339847D00E2232B /* Device.md */,
+				D59F88272339849300E2232B /* ZLocation.md */,
+			);
+			path = Documentation;
 			sourceTree = "<group>";
 		};
 		D5CE2F262325AEE00056F6C2 /* watchOS */ = {
