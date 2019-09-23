@@ -1,11 +1,11 @@
 Pod::Spec.new do |spec|
   spec.name          = 'ZerzuraKit'
-  spec.version       = '0.8.0'
+  spec.version       = '0.8.1'
   spec.license       = { :type => 'MIT' }
   spec.homepage      = 'https://github.com/VictorLi08/ZerzuraKit'
   spec.authors       = { 'Victor Li' => 'victorli08@outlook.com' }
   spec.summary       = 'Versatile general-purpose Swift library.'
-  spec.source        = { :git => 'https://github.com/VictorLi08/ZerzuraKit.git', :tag => 'v0.8.0' }
+  spec.source        = { :git => 'https://github.com/VictorLi08/ZerzuraKit.git', :tag => 'v0.8.1' }
   spec.swift_version = '5.1'
 
   spec.ios.deployment_target        = '10.0'
