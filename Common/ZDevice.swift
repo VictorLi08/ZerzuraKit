@@ -27,13 +27,13 @@ import Foundation
 /**
  A class that interacts with device settings and device properties.
  */
-class ZDevice {
+public final class ZDevice {
     /**
      Produces a locale based on the device's most preferred language.
      
      - Returns: A Locale() object.
      */
-    static func preferredLocale() -> Locale {
+    public static func preferredLocale() -> Locale {
         guard let localeID = Locale.preferredLanguages.first else {
             return Locale.current
         }

@@ -12,17 +12,17 @@
 		<key>ZerzuraKit-Universal.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>5</integer>
 		</dict>
 		<key>ZerzuraKit-iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
 		</dict>
 		<key>ZerzuraKit-macOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>4</integer>
 		</dict>
 		<key>ZerzuraKit-tvOS.xcscheme_^#shared#^_</key>
 		<dict>
@@ -32,19 +32,14 @@
 		<key>ZerzuraKit-watchOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>2</integer>
 		</dict>
 		<key>ZerzuraKit.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>ZerzuraKitTests.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-		<key>ZerzuraKit_macOSTests.xcscheme_^#shared#^_</key>
+		<key>ZerzuraKit_iOSTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -53,6 +48,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>D5117F2E230B41940011C2C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D51DD598233D8739003BFB49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D54394252325AFF6001106D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -68,6 +73,26 @@
 			<true/>
 		</dict>
 		<key>D56E0D8A230B49EC007A3468</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D59CBC9822D408E9009ED4C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D59CBCA822D40A82009ED4C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D59CBCB122D40AA3009ED4C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5CE2F242325AEE00056F6C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

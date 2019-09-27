@@ -22,7 +22,7 @@
 //    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //    SOFTWARE.
 
-protocol ADT {
+internal protocol ADT {
     var isEmpty: Bool {get}
     var size: Int {get}
 }
@@ -35,10 +35,10 @@ protocol ADT {
  let b = Bag<String>()
  ````
  */
-class Bag<T: Any>: ADT {
-    private(set) var items = Array<T>()
+public final class Bag<T: Any>: ADT {
+    public final private(set) var items = Array<T>()
     
-    init() {
+    public init() {
         
     }
     
@@ -47,17 +47,17 @@ class Bag<T: Any>: ADT {
      
      - Parameter element: An element of the same type as the bag.
      */
-    func add(_ element: T){
+    public final func add(_ element: T){
         items.append(element)
     }
     
     /// Whether or not the bag is empty.
-    var isEmpty: Bool {
+    public final var isEmpty: Bool {
         return self.items.isEmpty
     }
     
     /// Number of elements in the bag.
-    var size: Int {
+    public final var size: Int {
         return self.items.count
     }
 }
@@ -70,10 +70,10 @@ class Bag<T: Any>: ADT {
  let b = Stack<String>()
  ````
  */
-class Stack<T: Any>: ADT {
-    private var items = Array<T>()
+public final class Stack<T: Any>: ADT {
+    private final var items = Array<T>()
     
-    init() {
+    public init() {
         
     }
     
@@ -82,7 +82,7 @@ class Stack<T: Any>: ADT {
      
      - Parameter element: An element of the same type as the bag.
      */
-    func push(_ element: T){
+    public final func push(_ element: T){
         items.append(element)
     }
     
@@ -91,17 +91,17 @@ class Stack<T: Any>: ADT {
      
      - Parameter element: An element of the same type as the bag.
      */
-    func pop() -> T {
+    public final func pop() -> T {
         return items.removeLast()
     }
     
     /// Whether or not the stack is empty.
-    var isEmpty: Bool {
+    public final var isEmpty: Bool {
         return self.items.isEmpty
     }
     
     /// Number of elements in the stack.
-    var size: Int {
+    public final var size: Int {
         return self.items.count
     }
 }
@@ -114,10 +114,10 @@ class Stack<T: Any>: ADT {
  let b = Queue<String>()
  ````
  */
-class Queue<T: Any>: ADT {
-    private var items = Array<T>()
+public final class Queue<T: Any>: ADT {
+    private final var items = Array<T>()
     
-    init() {
+    public init() {
         
     }
     
@@ -126,7 +126,7 @@ class Queue<T: Any>: ADT {
      
      - Parameter element: An element of the same type as the bag.
      */
-    func enqueue(_ element: T){
+    public final func enqueue(_ element: T){
         items.append(element)
     }
     
@@ -135,17 +135,17 @@ class Queue<T: Any>: ADT {
      
      - Parameter element: An element of the same type as the bag.
      */
-    func dequeue() -> T {
+    public final func dequeue() -> T {
         return items.removeFirst()
     }
     
     /// Whether or not the queue is empty.
-    var isEmpty: Bool {
+    public final var isEmpty: Bool {
         return self.items.isEmpty
     }
     
     /// Number of elements in the queue.
-    var size: Int {
+    public final var size: Int {
         return self.items.count
     }
 }

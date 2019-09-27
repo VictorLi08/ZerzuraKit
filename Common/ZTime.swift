@@ -24,7 +24,7 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     /**
      Generates a localized time string, i.e. 12:00 PM.
      
@@ -140,7 +140,7 @@ extension Date {
     }
 }
 
-extension TimeInterval {
+public extension TimeInterval {
     /**
      Generates a localized string representing a time interval (e.g. 3 days; 10 hours; 30 minutes; etc.)..
      

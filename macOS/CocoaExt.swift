@@ -24,7 +24,7 @@
 
 import Cocoa
 
-extension NSWindow {
+public extension NSWindow {
     var isResizable: Bool {
         get {
             return self.styleMask.contains(.resizable)
@@ -41,7 +41,7 @@ extension NSWindow {
     }
 }
 
-extension NSView {
+public extension NSView {
 //    func fadeIn(duration: TimeInterval) {
 //        NSView.animate(withDuration: duration, animations: {
 //            self.alpha = 1.0
@@ -104,7 +104,7 @@ extension NSView {
     }
 }
 
-extension NSScrollView {
+public extension NSScrollView {
     /// Scrolls the view to its topmost position.
     func top() {
         self.scroll(CGPoint(x: self.contentInsets.left, y: self.contentInsets.top))
@@ -116,8 +116,7 @@ extension NSScrollView {
     }
 }
 
-
-extension NSTextView {
+public extension NSTextView {
     /// Scrolls the view to its topmost position.
     func top() {
         self.scrollRangeToVisible(NSRange(location: 0, length: 0))
@@ -129,7 +128,7 @@ extension NSTextView {
     }
 }
 
-extension NSText {
+public extension NSText {
     /**
      Resizes the font to the given size.
      

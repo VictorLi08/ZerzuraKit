@@ -24,7 +24,7 @@
 
 import Cocoa
 
-extension NSImage {
+public extension NSImage {
     /**
      Generates a compressed NSImage.
      
@@ -46,7 +46,7 @@ extension NSImage {
     }
 }
 
-extension NSImageView {
+public extension NSImageView {
     /**
      Resizes a NSImageView to the given width and height.
      Specifying only one or the other results in a resize that retains the current aspect ratio.
