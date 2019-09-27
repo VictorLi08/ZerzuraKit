@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D56E0D8A230B49EC007A3468"
-               BuildableName = "ZerzuraKit_macOSTests.xctest"
-               BlueprintName = "ZerzuraKit_macOSTests"
+               BlueprintIdentifier = "D59CBC9822D408E9009ED4C2"
+               BuildableName = "ZerzuraKit_iOS.framework"
+               BlueprintName = "ZerzuraKit-iOS"
                ReferencedContainer = "container:ZerzuraKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D56E0D8A230B49EC007A3468"
-               BuildableName = "ZerzuraKit_macOSTests.xctest"
-               BlueprintName = "ZerzuraKit_macOSTests"
-               ReferencedContainer = "container:ZerzuraKit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -60,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D56E0D8A230B49EC007A3468"
-            BuildableName = "ZerzuraKit_macOSTests.xctest"
-            BlueprintName = "ZerzuraKit_macOSTests"
+            BlueprintIdentifier = "D59CBC9822D408E9009ED4C2"
+            BuildableName = "ZerzuraKit_iOS.framework"
+            BlueprintName = "ZerzuraKit-iOS"
             ReferencedContainer = "container:ZerzuraKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -24,6 +24,8 @@
 /* Begin PBXBuildFile section */
 		D50B18D02328354D0005439E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D50B18CF2328354D0005439E /* LICENSE */; };
 		D50CEF5D22FE043700667AC7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D50CEF5C22FE043700667AC7 /* README.md */; };
+		D51DD59C233D8739003BFB49 /* ZerzuraKit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DD59B233D8739003BFB49 /* ZerzuraKit_iOSTests.swift */; };
+		D51DD59E233D8739003BFB49 /* ZerzuraKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59CBC9922D408E9009ED4C2 /* ZerzuraKit_iOS.framework */; };
 		D52ECFAA22F4DCCB005AE4DE /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; };
 		D52ECFAC22F4DD07005AE4DE /* CocoaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */; };
 		D52F86512325B3AC00F7E7A8 /* UIKitExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52F864F2325B3AC00F7E7A8 /* UIKitExt.swift */; platformFilter = ios; };
@@ -64,9 +66,22 @@
 		D5DA153122F4DB4F00EB4C3F /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D51DD59F233D8739003BFB49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D59CBC9022D408E9009ED4C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D59CBC9822D408E9009ED4C2;
+			remoteInfo = "ZerzuraKit-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D50B18CF2328354D0005439E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D50CEF5C22FE043700667AC7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D51DD599233D8739003BFB49 /* ZerzuraKit_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZerzuraKit_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51DD59B233D8739003BFB49 /* ZerzuraKit_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZerzuraKit_iOSTests.swift; sourceTree = "<group>"; };
+		D51DD59D233D8739003BFB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D52ECFAB22F4DD07005AE4DE /* CocoaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaExt.swift; sourceTree = "<group>"; };
 		D52F864F2325B3AC00F7E7A8 /* UIKitExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExt.swift; sourceTree = "<group>"; };
 		D52F86502325B3AC00F7E7A8 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -100,6 +115,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D51DD596233D8739003BFB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51DD59E233D8739003BFB49 /* ZerzuraKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D54394232325AFF6001106D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +154,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D51DD59A233D8739003BFB49 /* ZerzuraKit_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D51DD59B233D8739003BFB49 /* ZerzuraKit_iOSTests.swift */,
+				D51DD59D233D8739003BFB49 /* Info.plist */,
+			);
+			path = ZerzuraKit_iOSTests;
+			sourceTree = "<group>";
+		};
 		D52F864E2325B3AC00F7E7A8 /* iOS_tvOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +200,7 @@
 				D54394272325AFF6001106D8 /* tvOS */,
 				D5CE2F262325AEE00056F6C2 /* watchOS */,
 				D59CBCAA22D40A82009ED4C2 /* macOS */,
+				D51DD59A233D8739003BFB49 /* ZerzuraKit_iOSTests */,
 				D59CBC9A22D408E9009ED4C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -179,6 +212,7 @@
 				D59CBCA922D40A82009ED4C2 /* ZerzuraKit_macOS.framework */,
 				D5CE2F252325AEE00056F6C2 /* ZerzuraKit_watchOS.framework */,
 				D54394262325AFF6001106D8 /* ZerzuraKit_tvOS.framework */,
+				D51DD599233D8739003BFB49 /* ZerzuraKit_iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,6 +309,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D51DD598233D8739003BFB49 /* ZerzuraKit_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D51DD5A1233D8739003BFB49 /* Build configuration list for PBXNativeTarget "ZerzuraKit_iOSTests" */;
+			buildPhases = (
+				D51DD595233D8739003BFB49 /* Sources */,
+				D51DD596233D8739003BFB49 /* Frameworks */,
+				D51DD597233D8739003BFB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D51DD5A0233D8739003BFB49 /* PBXTargetDependency */,
+			);
+			name = ZerzuraKit_iOSTests;
+			productName = ZerzuraKit_iOSTests;
+			productReference = D51DD599233D8739003BFB49 /* ZerzuraKit_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D54394252325AFF6001106D8 /* ZerzuraKit-tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D543942B2325AFF6001106D8 /* Build configuration list for PBXNativeTarget "ZerzuraKit-tvOS" */;
@@ -357,6 +409,9 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Mesarthim;
 				TargetAttributes = {
+					D51DD598233D8739003BFB49 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					D54394252325AFF6001106D8 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -392,11 +447,19 @@
 				D54394252325AFF6001106D8 /* ZerzuraKit-tvOS */,
 				D59CBCA822D40A82009ED4C2 /* ZerzuraKit-macOS */,
 				D59CBCB122D40AA3009ED4C2 /* ZerzuraKit-Universal */,
+				D51DD598233D8739003BFB49 /* ZerzuraKit_iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D51DD597233D8739003BFB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D54394242325AFF6001106D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,6 +530,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D51DD595233D8739003BFB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51DD59C233D8739003BFB49 /* ZerzuraKit_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D54394222325AFF6001106D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -535,7 +606,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D51DD5A0233D8739003BFB49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D59CBC9822D408E9009ED4C2 /* ZerzuraKit-iOS */;
+			targetProxy = D51DD59F233D8739003BFB49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D51DD5A2233D8739003BFB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				INFOPLIST_FILE = ZerzuraKit_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lucian-interactive.ZerzuraKit-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D51DD5A3233D8739003BFB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8F4NZ9TY3N;
+				INFOPLIST_FILE = ZerzuraKit_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lucian-interactive.ZerzuraKit-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D543942C2325AFF6001106D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -926,6 +1043,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D51DD5A1233D8739003BFB49 /* Build configuration list for PBXNativeTarget "ZerzuraKit_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D51DD5A2233D8739003BFB49 /* Debug */,
+				D51DD5A3233D8739003BFB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D543942B2325AFF6001106D8 /* Build configuration list for PBXNativeTarget "ZerzuraKit-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
