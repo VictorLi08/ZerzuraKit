@@ -161,7 +161,7 @@ public class CLPersister {
             }
         }
         if dbError != nil {
-            print("[CLPersister] Location could not be stored due to: \(error)")
+            print("[CLPersister] Location could not be stored due to: \(dbError)")
             return false
         }
         return true
