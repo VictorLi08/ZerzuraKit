@@ -15,7 +15,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var cityLabel: UILabel!
     
     private let locator = CLLocationManager()
-    private let myzl = ZLocation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +57,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 //                    print(city)
 //                }
 //            }
-            geocoder.revGeocode(location) { placemark in
+            geocoder.quickReverseGeocode(location) { placemark in
                 let city = String(placemark.locality ?? "")
                 let province = String(placemark.administrativeArea ?? "")
                 let country = String(placemark.country ?? "")
@@ -71,6 +70,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 let placeName = String(placemark.name ?? "")
                 let area = String(placemark.subLocality ?? "")
                 print(city)
+            }
+            
+            let persister = CLPersister()
+            print(persister.store(location))
+            
+//            persister.load { error, location in
+//                if let l = location {
+//                    print(l.coordinate.latitude)
+//                }
+//            }
+            if let loc = persister.load() {
+                print(loc.coordinate.latitude)
             }
         }
     }

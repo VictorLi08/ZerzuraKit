@@ -109,7 +109,7 @@
 		D59F88242339846800E2232B /* Nums.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Nums.md; sourceTree = "<group>"; };
 		D59F88252339847100E2232B /* UI.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UI.md; sourceTree = "<group>"; };
 		D59F88262339847D00E2232B /* Device.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Device.md; sourceTree = "<group>"; };
-		D59F88272339849300E2232B /* ZLocation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ZLocation.md; sourceTree = "<group>"; };
+		D59F88272339849300E2232B /* Location.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Location.md; sourceTree = "<group>"; };
 		D5CE2F252325AEE00056F6C2 /* ZerzuraKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CE2F282325AEE00056F6C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDevice.swift; sourceTree = "<group>"; };
@@ -256,7 +256,7 @@
 				D59F88242339846800E2232B /* Nums.md */,
 				D59F88252339847100E2232B /* UI.md */,
 				D59F88262339847D00E2232B /* Device.md */,
-				D59F88272339849300E2232B /* ZLocation.md */,
+				D59F88272339849300E2232B /* Location.md */,
 			);
 			path = Documentation;
 			sourceTree = "<group>";

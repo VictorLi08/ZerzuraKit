@@ -25,6 +25,27 @@
 import CoreLocation
 import SQLite3
 
+/// Completion handler for reverse geocoding.
+public typealias geocodeCompletionHandler = (_ placemark: CLPlacemark) -> ()
+
+public extension CLGeocoder {
+    /**
+     Reverse geocodes a location directly into a placemark, wrapping error handling.
+     
+     - Parameter location: The location to be reverse geocoded.
+     - Parameter completion: A closure specifying what should execute after the location has been successfully geocoded.
+     */
+    func quickReverseGeocode(_ location: CLLocation, _ completion: @escaping geocodeCompletionHandler) {
+        self.reverseGeocodeLocation(location) { (placemarks, error) in
+            if error != nil {
+                print("[ZerzuraKit] Quick geocode failed because of \(String(describing: error))")
+            } else if let places = placemarks, let placemark = places.first {
+                completion(placemark)
+            }
+        }
+    }
+}
+
 /**
  An object used to decode addresses from CoreLocation data structures.
  
@@ -32,213 +53,24 @@ import SQLite3
  * Location Services must be enabled.
  * Properties are only refreshed when instantiated or calling update() with a new location.
 */
-public class ZLocation: NSObject, CLLocationManagerDelegate {
-    /// The city name of the stored location.
-    public final private(set) var city: String = ""
-    
-    /// The state or province the stored location is located in.
-    public final private(set) var province: String = ""
-    
-    /// The country the stored location is located in.
-    public final private(set) var country: String = ""
-    
-    /// The isoCountryCode of the stored location.
-    public final private(set) var countryCode: String = ""
-    
-    /// The postal code of the stored location.
-    public final private(set) var postalCode: String = ""
-    
-    /// The house number of the stored location. Not all locations retrieved by CoreLocation have an associated house number.
-    public final private(set) var houseNumber: String = ""
-    
-    /// The street name of the stored location. Not all locations retrieved by CoreLocation have an associated street name.
-    public final private(set) var street: String = ""
-    
-    /// A landmark associated with the stored location.
-    public final private(set) var placeName: String = ""
-    
-    /// The neighborhood or area the stored location is located in.
-    public final private(set) var area: String = ""
-    
-    // The latitude coordinate of the stored location.
-    public final private(set) var latitude: Double = 0.0
-    
-    // The longitude coordinate of the stored location.
-    public final private(set) var longitude: Double = 0.0
+public class CLPersister {
     
     /**
-     Initializes an empty ZLocation.
+     Initializes an empty CLPersister.
      
      - Parameter latitude: Latitude in degrees (positive for North and negative for South).
      - Parameter longitude: Longitude in degrees (negative for West and positive for East).
     */
-    public override init() {
-        super.init()
-        self.initCLLocationManager()
-    }
-    
-    fileprivate final var locator = CLLocationManager()
-    
-    fileprivate final func initCLLocationManager() {
-        locator.delegate = self
-        locator.distanceFilter = kCLDistanceFilterNone
-        locator.desiredAccuracy = kCLLocationAccuracyBest
-        locator.requestWhenInUseAuthorization()
-    }
-    
-    /**
-     Initializes a ZLocation from a latitude and longitude value.
-     
-     - Parameter latitude: Latitude in degrees (positive for North and negative for South).
-     - Parameter longitude: Longitude in degrees (negative for West and positive for East).
-     
-     ### Usage Example ###
-     ````
-     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-         if CLLocationManager.locationServicesEnabled() {
-             if let currentLocation = locations.first {
-                let c = ZLocation.init(latitude: currentLocation.coordinate.latitude, longitude: currentLocation.coordinate.longitude)
-             }
-         }
-     }
-     ````
-    */
-    public init(latitude lat: CLLocationDegrees, longitude lon: CLLocationDegrees) {
-        super.init()
-        self.initCLLocationManager()
-        self.update(latitude: lat, longitude: lon)
-    }
-    
-    /**
-     Initializes a ZLocation from a CLLocation.
-     
-     - Parameter location: A CLLocation representing the location to be stored.
-     
-     ### Usage Example ###
-     ````
-     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-         if CLLocationManager.locationServicesEnabled() {
-             if let currentLocation = locations.first {
-                let c = ZLocation.init(location: currentLocation)
-             }
-         }
-     }
-     ````
-    */
-    public convenience init(location l: CLLocation) {
-        self.init(latitude: l.coordinate.latitude, longitude: l.coordinate.longitude)
-    }
-    
-    /**
-     Initializes a ZLocation from a CLLocationCoordinate2D.
-     
-     - Parameter coordinates: A CLLocationCoordinate2D representing the location to be stored.
-     
-     ### Usage Example ###
-     ````
-     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-         if CLLocationManager.locationServicesEnabled() {
-             if let currentLocation = locations.first {
-                let c = ZLocation.init(coordinates: currentLocation.coordinate)
-             }
-         }
-     }
-     ````
-    */
-    public convenience init(coordinates c: CLLocationCoordinate2D) {
-        self.init(location: CLLocation(latitude: c.latitude, longitude: c.longitude))
-    }
-    
-    /**
-     Resets an existing ZLocation instance using CLLocationCoordinate2D coodinates.
-     
-     - Parameter coordinates: A CLLocationCoordinate2D representing the location to be stored.
-     */
-    public final func update(coordinates: CLLocationCoordinate2D) {
-        self.update(latitude: coordinates.latitude, longitude: coordinates.longitude)
-    }
-    
-    /**
-     Resets an existing ZLocation instance using a CLLocation.
-     
-     - Parameter location: A CLLocation representing the location to be stored.
-    */
-    public final func update(location: CLLocation) {
-        let coords = location.coordinate
-        self.update(latitude: coords.latitude, longitude: coords.longitude)
-    }
-    
-    /**
-     Resets an existing ZLocation instsance using a latitude and longitude value.
-     
-     - Parameter latitude: Latitude in degrees (positive for North and negative for South).
-     - Parameter longitude: Longitude in degrees (negative for West and positive for East).
-    */
-    public final func update(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
-        self.latitude = latitude
-        self.longitude = longitude
-        
-        print(latitude)
-        print(longitude)
-        
-        let location = CLLocation(latitude: latitude, longitude: longitude)
-        let geocoder = CLGeocoder()
-        geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
-            if let ps = placemarks, let placemark = ps.first {
-                self.city = String(placemark.locality ?? "")
-                self.province = String(placemark.administrativeArea ?? "")
-                self.country = String(placemark.country ?? "")
-                self.countryCode = String(placemark.isoCountryCode ?? "")
-                self.postalCode = String(placemark.postalCode ?? "")
-                
-                self.houseNumber = String(placemark.subThoroughfare ?? "")
-                self.street = String(placemark.thoroughfare ?? "")
-                
-                self.placeName = String(placemark.name ?? "")
-                self.area = String(placemark.subLocality ?? "")
-                print("I'm at: " + self.houseNumber)
-            }
-            print("...?")
-        }
-    }
-    
-    /**
-     The CLLocation coordinates of the stored location.
-     
-     - Returns: A CLLocationCoordinate2D containing the coordinates of the currently stored location.
-    */
-    public final var coordinates: CLLocationCoordinate2D {
-        return CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
-    }
-    
-    /**
-     The CLLocation of the stored location.
-     
-     - Returns: A CLLocation representing the currently stored location.
-    */
-    public final var position: CLLocation {
-        return CLLocation.init(latitude: self.latitude, longitude: self.longitude)
-    }
-    
-    /**
-     Experimental: generates a searchable address string using the stored location data.
-     
-     - Returns: A formatted String for the location stored.
-     */
-    open var string: String {
-        let address1 = self.houseNumber + " " + self.street
-        let address2 = self.placeName + ", " + self.area
-        let address3 = self.city + ", " + self.province + " " + self.postalCode
-        return address1 + "\n" + address2 + "\n" + address3 + "\n" + self.country
+    public init() {
+
     }
     
     // MARK: Store/Load
     // 0.8.2 methods for store and load
-    
     fileprivate final var dbURL: URL?
     fileprivate final var dbConn: OpaquePointer?
-    fileprivate final let dbFileName = "_zk.offlinestorage.location.sqlite"
-    fileprivate final let tableName = "zlocation"
+    fileprivate final let dbFileName = "_zk.offlinestorage.clpersister.sqlite"
+    fileprivate final let tableName = "CLPersister"
     fileprivate final var dbPrepared = false
     fileprivate final var dbError: String?
     
@@ -295,11 +127,9 @@ public class ZLocation: NSObject, CLLocationManagerDelegate {
         if !createDBFile() {
             return false
         }
-        
         if !connect() {
             return false
         }
-        
         if !prepareTable() {
             return false
         }
@@ -312,55 +142,54 @@ public class ZLocation: NSObject, CLLocationManagerDelegate {
     }
     
     /**
-     Stores this ZLocation in device storage.
+     Stores this CLPersister in device storage.
      */
-    public final func store(_ completion: @escaping (_ error: String?) -> ()) {
-        DispatchQueue.global(qos: .utility).async {
-            if self.dbReadyForQuery() {
-                let queryString =
-                """
-                INSERT INTO \(self.tableName) (id, lat, lon)
-                VALUES (0, \(String(self.latitude)), \(String(self.longitude)))
-                ON CONFLICT(id)
-                DO UPDATE SET lat=\(String(self.latitude)), lon=\(String(self.longitude))
-                """
-                
-                if sqlite3_exec(self.dbConn, queryString, nil, nil, nil) != SQLITE_OK {
-                    self.dbError = String(cString: sqlite3_errmsg(self.dbConn))
-                } else {
-                    self.dbError = nil
-                }
+    public final func store(_ location: CLLocation) -> Bool {
+        if self.dbReadyForQuery() {
+            let queryString =
+            """
+            INSERT INTO \(self.tableName) (id, lat, lon)
+            VALUES (0, \(String(location.coordinate.latitude)), \(String(location.coordinate.longitude)))
+            ON CONFLICT(id)
+            DO UPDATE SET lat=\(String(location.coordinate.latitude)), lon=\(String(location.coordinate.longitude))
+            """
+            
+            if sqlite3_exec(self.dbConn, queryString, nil, nil, nil) != SQLITE_OK {
+                self.dbError = String(cString: sqlite3_errmsg(self.dbConn))
+            } else {
+                self.dbError = nil
             }
-            completion(self.dbError)
         }
+        if dbError != nil {
+            print("[CLPersister] Location could not be stored due to: \(error)")
+            return false
+        }
+        return true
     }
     
     /**
-     Updates this ZLocation with the most recently stored ZLocation.
+     Updates this CLPersister with the most recently stored CLPersister.
      */
-    public final func load(completion: @escaping (_ error: String?) -> ()) {
-        DispatchQueue.global(qos: .utility).async {
-            if self.dbReadyForQuery() {
-                var sqlStatement: OpaquePointer?
-                let queryString = "SELECT lat, lon FROM \(self.tableName) WHERE id='0'"
-                
-                if sqlite3_prepare(self.dbConn, queryString, -1, &sqlStatement, nil) != SQLITE_OK {
-                    self.dbError = String(cString: sqlite3_errmsg(self.dbConn)!)
-                    sqlite3_finalize(sqlStatement)
-                    return
-                }
-                
-                while(sqlite3_step(sqlStatement) == SQLITE_ROW) {
-                    let latRaw = String(cString: sqlite3_column_text(sqlStatement,0))
-                    let lat = Double(latRaw) ?? 0.0
-                    let lonRaw = String(cString: sqlite3_column_text(sqlStatement,1))
-                    let lon = Double(lonRaw) ?? 0.0
-                    self.update(latitude: lat, longitude: lon)
-                }
-                
+    public final func load() -> CLLocation? {
+        var location: CLLocation?
+        if self.dbReadyForQuery() {
+            var sqlStatement: OpaquePointer?
+            let queryString = "SELECT lat, lon FROM \(self.tableName) WHERE id='0'"
+            
+            if sqlite3_prepare(self.dbConn, queryString, -1, &sqlStatement, nil) != SQLITE_OK {
+                self.dbError = String(cString: sqlite3_errmsg(self.dbConn)!)
                 sqlite3_finalize(sqlStatement)
+                return nil
             }
-            completion(self.dbError)
+            while(sqlite3_step(sqlStatement) == SQLITE_ROW) {
+                let latRaw = String(cString: sqlite3_column_text(sqlStatement,0))
+                let lat = Double(latRaw) ?? 0.0
+                let lonRaw = String(cString: sqlite3_column_text(sqlStatement,1))
+                let lon = Double(lonRaw) ?? 0.0
+                location = CLLocation(latitude: lat, longitude: lon)
+            }
+            sqlite3_finalize(sqlStatement)
         }
+        return location
     }
 }
