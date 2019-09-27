@@ -30,7 +30,7 @@ ZerzuraKit is currently under active development and is being distributed in a p
 - [Numbers](Documentation/Nums.md)
 - [UI Elements](Documentation/UI.md)
 - [Device Properties](Documentation/Device.md)
-- [ZLocation](Documentation/ZLocation.md)
+- [Location Extensions](Documentation/Location.md)
 
 ## Installation
 ### CocoaPods

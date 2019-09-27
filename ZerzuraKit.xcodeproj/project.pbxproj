@@ -32,7 +32,7 @@
 		D52F86522325B3AC00F7E7A8 /* UIKitExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52F864F2325B3AC00F7E7A8 /* UIKitExt.swift */; };
 		D52F86532325B3AC00F7E7A8 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52F86502325B3AC00F7E7A8 /* Images.swift */; platformFilter = ios; };
 		D52F86542325B3AC00F7E7A8 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52F86502325B3AC00F7E7A8 /* Images.swift */; };
-		D543942E2325B063001106D8 /* ZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* ZLocation.swift */; };
+		D543942E2325B063001106D8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* Location.swift */; };
 		D543942F2325B063001106D8 /* ZTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* ZTime.swift */; };
 		D54394302325B063001106D8 /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; };
 		D54394312325B063001106D8 /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
@@ -49,12 +49,12 @@
 		D569DCE222F8EA3E003F13EE /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
 		D57E53CE23075AB200CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; platformFilter = ios; };
 		D57E53D1230780C100CCCF9E /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E53CD23075AB200CCCF9E /* Numbers.swift */; };
-		D59CBCBC22D40B06009ED4C2 /* ZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* ZLocation.swift */; platformFilter = ios; };
+		D59CBCBC22D40B06009ED4C2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* Location.swift */; platformFilter = ios; };
 		D59CBCBF22D40B06009ED4C2 /* ZColorM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB922D40B06009ED4C2 /* ZColorM.swift */; platformFilter = ios; };
 		D59CBCC022D40B06009ED4C2 /* ZTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* ZTime.swift */; platformFilter = ios; };
 		D59CBCCB22D40B11009ED4C2 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC522D40B11009ED4C2 /* Images.swift */; };
 		D59CBCCC22D40B11009ED4C2 /* ZColorD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCC622D40B11009ED4C2 /* ZColorD.swift */; };
-		D5CE2F2D2325AF280056F6C2 /* ZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* ZLocation.swift */; };
+		D5CE2F2D2325AF280056F6C2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* Location.swift */; };
 		D5CE2F2E2325AF280056F6C2 /* ZTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* ZTime.swift */; };
 		D5CE2F2F2325AF280056F6C2 /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; };
 		D5CE2F302325AF280056F6C2 /* ZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569DCE022F8E96B003F13EE /* ZColor.swift */; };
@@ -62,7 +62,7 @@
 		D5CE2F322325AF280056F6C2 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE0231DB88900B73334 /* Logic.swift */; };
 		D5CE2F332325AF280056F6C2 /* ADTs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A3FE3231DC24800B73334 /* ADTs.swift */; };
 		D5DA152E22F4DB1600EB4C3F /* ZTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCBA22D40B06009ED4C2 /* ZTime.swift */; };
-		D5DA152F22F4DB1800EB4C3F /* ZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* ZLocation.swift */; };
+		D5DA152F22F4DB1800EB4C3F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CBCB622D40B06009ED4C2 /* Location.swift */; };
 		D5DA153122F4DB4F00EB4C3F /* ZDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
@@ -97,7 +97,7 @@
 		D59CBC9D22D408E9009ED4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D59CBCA922D40A82009ED4C2 /* ZerzuraKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59CBCAC22D40A82009ED4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D59CBCB622D40B06009ED4C2 /* ZLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLocation.swift; sourceTree = "<group>"; };
+		D59CBCB622D40B06009ED4C2 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D59CBCB922D40B06009ED4C2 /* ZColorM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZColorM.swift; sourceTree = "<group>"; };
 		D59CBCBA22D40B06009ED4C2 /* ZTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTime.swift; sourceTree = "<group>"; };
 		D59CBCC522D40B11009ED4C2 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		D59F88242339846800E2232B /* Nums.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Nums.md; sourceTree = "<group>"; };
 		D59F88252339847100E2232B /* UI.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UI.md; sourceTree = "<group>"; };
 		D59F88262339847D00E2232B /* Device.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Device.md; sourceTree = "<group>"; };
-		D59F88272339849300E2232B /* ZLocation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ZLocation.md; sourceTree = "<group>"; };
+		D59F88272339849300E2232B /* Location.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Location.md; sourceTree = "<group>"; };
 		D5CE2F252325AEE00056F6C2 /* ZerzuraKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZerzuraKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CE2F282325AEE00056F6C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDevice.swift; sourceTree = "<group>"; };
@@ -256,7 +256,7 @@
 				D59F88242339846800E2232B /* Nums.md */,
 				D59F88252339847100E2232B /* UI.md */,
 				D59F88262339847D00E2232B /* Device.md */,
-				D59F88272339849300E2232B /* ZLocation.md */,
+				D59F88272339849300E2232B /* Location.md */,
 			);
 			path = Documentation;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 		D5DA152B22F4DAC900EB4C3F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				D59CBCB622D40B06009ED4C2 /* ZLocation.swift */,
+				D59CBCB622D40B06009ED4C2 /* Location.swift */,
 				D59CBCBA22D40B06009ED4C2 /* ZTime.swift */,
 				D5DA153022F4DB4F00EB4C3F /* ZDevice.swift */,
 				D569DCE022F8E96B003F13EE /* ZColor.swift */,
@@ -553,7 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D54394372325B067001106D8 /* ZColorM.swift in Sources */,
-				D543942E2325B063001106D8 /* ZLocation.swift in Sources */,
+				D543942E2325B063001106D8 /* Location.swift in Sources */,
 				D543942F2325B063001106D8 /* ZTime.swift in Sources */,
 				D54394302325B063001106D8 /* ZDevice.swift in Sources */,
 				D54394312325B063001106D8 /* ZColor.swift in Sources */,
@@ -574,7 +574,7 @@
 				D569DCE122F8E96B003F13EE /* ZColor.swift in Sources */,
 				D59CBCBF22D40B06009ED4C2 /* ZColorM.swift in Sources */,
 				D54A3FE1231DB88900B73334 /* Logic.swift in Sources */,
-				D59CBCBC22D40B06009ED4C2 /* ZLocation.swift in Sources */,
+				D59CBCBC22D40B06009ED4C2 /* Location.swift in Sources */,
 				D59CBCC022D40B06009ED4C2 /* ZTime.swift in Sources */,
 				D52F86532325B3AC00F7E7A8 /* Images.swift in Sources */,
 				D52F86512325B3AC00F7E7A8 /* UIKitExt.swift in Sources */,
@@ -594,7 +594,7 @@
 				D59CBCCC22D40B11009ED4C2 /* ZColorD.swift in Sources */,
 				D57E53D1230780C100CCCF9E /* Numbers.swift in Sources */,
 				D52ECFAC22F4DD07005AE4DE /* CocoaExt.swift in Sources */,
-				D5DA152F22F4DB1800EB4C3F /* ZLocation.swift in Sources */,
+				D5DA152F22F4DB1800EB4C3F /* Location.swift in Sources */,
 				D5DA152E22F4DB1600EB4C3F /* ZTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,7 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D543943A2325B06E001106D8 /* ZColorM.swift in Sources */,
-				D5CE2F2D2325AF280056F6C2 /* ZLocation.swift in Sources */,
+				D5CE2F2D2325AF280056F6C2 /* Location.swift in Sources */,
 				D5CE2F2E2325AF280056F6C2 /* ZTime.swift in Sources */,
 				D5CE2F2F2325AF280056F6C2 /* ZDevice.swift in Sources */,
 				D5CE2F302325AF280056F6C2 /* ZColor.swift in Sources */,

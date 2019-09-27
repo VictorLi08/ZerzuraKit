@@ -15,4 +15,4 @@ Select one of the below topics to read up on features and usage:
 - [Numbers](Nums.md)
 - [UI Elements](UI.md)
 - [Device Properties](Device.md)
-- [ZLocation](ZLocation.md)
+- [Location Extensions](Location.md)

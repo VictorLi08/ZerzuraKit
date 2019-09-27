@@ -15,7 +15,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var cityLabel: UILabel!
     
     private let locator = CLLocationManager()
-    private let myzl = ZLocation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,19 +57,36 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 //                    print(city)
 //                }
 //            }
-            geocoder.revGeocode(location) { placemark in
+            geocoder.quickReverseGeocode(location) { placemark in
                 let city = String(placemark.locality ?? "")
-                let province = String(placemark.administrativeArea ?? "")
-                let country = String(placemark.country ?? "")
-                let countryCode = String(placemark.isoCountryCode ?? "")
-                let postalCode = String(placemark.postalCode ?? "")
-
-                let houseNumber = String(placemark.subThoroughfare ?? "")
-                let street = String(placemark.thoroughfare ?? "")
-
-                let placeName = String(placemark.name ?? "")
-                let area = String(placemark.subLocality ?? "")
+//                let province = String(placemark.administrativeArea ?? "")
+//                let country = String(placemark.country ?? "")
+//                let countryCode = String(placemark.isoCountryCode ?? "")
+//                let postalCode = String(placemark.postalCode ?? "")
+//
+//                let houseNumber = String(placemark.subThoroughfare ?? "")
+//                let street = String(placemark.thoroughfare ?? "")
+//
+//                let placeName = String(placemark.name ?? "")
+//                let area = String(placemark.subLocality ?? "")
                 print(city)
+            }
+            
+            let persister = CLPersister()
+            print(persister.store(location))
+            
+//            persister.load { error, location in
+//                if let l = location {
+//                    print(l.coordinate.latitude)
+//                }
+//            }
+            
+            let loc = persister.load()
+            if loc != nil {
+                print(loc?.coordinate.latitude)
+                geocoder.quickReverseGeocode(loc!) { placemark in
+                    self.cityLabel.text = String(placemark.locality ?? "") + ", " + String(placemark.country ?? "")
+                }
             }
         }
     }
