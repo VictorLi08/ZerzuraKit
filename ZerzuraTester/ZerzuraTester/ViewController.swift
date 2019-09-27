@@ -59,16 +59,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 //            }
             geocoder.quickReverseGeocode(location) { placemark in
                 let city = String(placemark.locality ?? "")
-                let province = String(placemark.administrativeArea ?? "")
-                let country = String(placemark.country ?? "")
-                let countryCode = String(placemark.isoCountryCode ?? "")
-                let postalCode = String(placemark.postalCode ?? "")
-
-                let houseNumber = String(placemark.subThoroughfare ?? "")
-                let street = String(placemark.thoroughfare ?? "")
-
-                let placeName = String(placemark.name ?? "")
-                let area = String(placemark.subLocality ?? "")
+//                let province = String(placemark.administrativeArea ?? "")
+//                let country = String(placemark.country ?? "")
+//                let countryCode = String(placemark.isoCountryCode ?? "")
+//                let postalCode = String(placemark.postalCode ?? "")
+//
+//                let houseNumber = String(placemark.subThoroughfare ?? "")
+//                let street = String(placemark.thoroughfare ?? "")
+//
+//                let placeName = String(placemark.name ?? "")
+//                let area = String(placemark.subLocality ?? "")
                 print(city)
             }
             
@@ -80,8 +80,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 //                    print(l.coordinate.latitude)
 //                }
 //            }
-            if let loc = persister.load() {
-                print(loc.coordinate.latitude)
+            
+            let loc = persister.load()
+            if loc != nil {
+                print(loc?.coordinate.latitude)
+                geocoder.quickReverseGeocode(loc!) { placemark in
+                    self.cityLabel.text = String(placemark.locality ?? "") + ", " + String(placemark.country ?? "")
+                }
             }
         }
     }

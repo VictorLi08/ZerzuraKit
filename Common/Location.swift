@@ -47,19 +47,12 @@ public extension CLGeocoder {
 }
 
 /**
- An object used to decode addresses from CoreLocation data structures.
- 
- ### Notes ###
- * Location Services must be enabled.
- * Properties are only refreshed when instantiated or calling update() with a new location.
+ An object used to store and load CLLocation data for persistence.
 */
 public class CLPersister {
     
     /**
      Initializes an empty CLPersister.
-     
-     - Parameter latitude: Latitude in degrees (positive for North and negative for South).
-     - Parameter longitude: Longitude in degrees (negative for West and positive for East).
     */
     public init() {
 
@@ -142,7 +135,7 @@ public class CLPersister {
     }
     
     /**
-     Stores this CLPersister in device storage.
+     Stores a CLLocation in device storage.
      */
     public final func store(_ location: CLLocation) -> Bool {
         if self.dbReadyForQuery() {
@@ -161,14 +154,14 @@ public class CLPersister {
             }
         }
         if dbError != nil {
-            print("[CLPersister] Location could not be stored due to: \(dbError)")
+            print("[CLPersister] Location could not be stored due to: \(String(describing: dbError))")
             return false
         }
         return true
     }
     
     /**
-     Updates this CLPersister with the most recently stored CLPersister.
+     Loads the most recently stored location from storage.
      */
     public final func load() -> CLLocation? {
         var location: CLLocation?
