@@ -22,7 +22,7 @@
 //    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //    SOFTWARE.
 
-extension Int {
+public extension Int {
     /// Pre-increments an integer and returns its incremented value.
     @discardableResult
     static prefix func ++(lhs: inout Int) -> Int {
@@ -86,7 +86,7 @@ extension Int {
     }
 }
 
-extension Double {
+public extension Double {
     @discardableResult
     static func %(lhs: Double, rhs: Double) -> Double {
         return lhs.truncatingRemainder(dividingBy: rhs)

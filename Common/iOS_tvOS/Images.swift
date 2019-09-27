@@ -24,7 +24,7 @@
 
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     /**
      Generates a compressed copy of the UIImage.
      
@@ -46,7 +46,7 @@ extension UIImage {
     }
 }
 
-extension UIImageView {
+public extension UIImageView {
     /**
      Resizes a UIImageView to the given width and height.
      Specifying only one or the other results in a resize that retains the current aspect ratio.

@@ -22,7 +22,7 @@
 //    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //    SOFTWARE.
 
-extension Array where Element: Equatable {
+public extension Array where Element: Equatable {
     /**
      Determines whether or not this array is a subset of another.
      

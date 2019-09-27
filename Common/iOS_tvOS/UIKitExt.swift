@@ -24,7 +24,7 @@
 
 import UIKit
 
-extension UIView {  
+public extension UIView {
     /// The position of the view's upper left-hand corner.
     var topLeftCorner: CGPoint {
         let positionX = self.center.x - (self.frame.width/2.0)
@@ -54,7 +54,7 @@ extension UIView {
     }
 }
 
-extension UIScrollView {
+public extension UIScrollView {
     /// Scrolls the view to its topmost position.
     @objc func top() {
         self.setContentOffset(.zero, animated: true)
@@ -67,7 +67,7 @@ extension UIScrollView {
     }
 }
 
-extension UITextView {
+public extension UITextView {
     /// Scrolls the view to its topmost position.
     override func top() {
         self.scrollRangeToVisible(NSRange(location: 0, length: 0))
