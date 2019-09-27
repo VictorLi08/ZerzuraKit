@@ -7,6 +7,8 @@
 //
 
 import XCTest
+
+import CoreLocation
 @testable import ZerzuraKit_iOS
 
 class ZerzuraKit_iOSTests: XCTestCase {
@@ -22,6 +24,9 @@ class ZerzuraKit_iOSTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        var a = 1
+        let b = ++a
+        XCTAssert(b == 2)
     }
 
     func testPerformanceExample() {
@@ -43,9 +48,9 @@ class ZLocationTests: XCTestCase {
     }
     
     func testStore() {
-        let myLocation = ZLocation()
+        let someLocation = ZLocation()
         var err: String?
-        myLocation.store({ error in
+        someLocation.store({ error in
             err = error
         })
         XCTAssert(err == nil)
@@ -57,11 +62,8 @@ class ZLocationTests: XCTestCase {
         var err: String?
         
         myLocation.load(completion: { error in
-            if error == nil {
-                myCity = myLocation.city
-            }
+            myCity = myLocation.city
             err = error
-            
         })
         
         XCTAssert(err == nil)
